@@ -15,6 +15,8 @@ services:
     ports:
       - 4326:4326
       - 4327:4327
+    volumes:
+      - "rcon:/opt/rcon-web-admin/db"
   mc:
     image: itzg/minecraft-server
     restart: on-failure:3
@@ -35,13 +37,21 @@ services:
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       USE_LARGE_PAGES: "false"
+#      TUNE_VIRTUALIZED: "true"
+      TZ: "Europe/Paris"
       OPS: Bensuperpc
       ENABLE_AUTOPAUSE: "true"
       OVERRIDE_SERVER_PROPERTIES: "true"
       MAX_TICK_TIME: "-1"
       GUI: "false"
       PLAYER_IDLE_TIMEOUT: "240"
+      MAX_PLAYERS: "50"
+      MODE: "survival"
+      ALLOW_FLIGHT: "false"
+#       RCON options
       ENABLE_RCON: "true"
+      RCON_PASSWORD: "minecraft"
+      RCON_PORT: "25575"
 #       Plugins options
       BUILD_FROM_SOURCE: "false"
       SPIGET_RESOURCES: "9089,34315,274"
@@ -49,14 +59,19 @@ services:
 #       Minecraft option
       LEVEL: world
       LEVEL_TYPE=: "default"
+#      MAX_WORLD_SIZE: "10000"
+#      MAX_BUILD_HEIGHT: "256"
       VIEW_DISTANCE: "10"
       ENABLE_COMMAND_BLOCK: "true"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
       PVP: "true"
       DIFFICULTY: hard
+      HARDCORE: "false"
       ALLOW_NETHER: "true"
       SPAWN_ANIMALS: "true"
       SPAWN_MONSTERS: "true"
       SPAWN_NPCS: "true"
+#      SPAWN_PROTECTION: "0"
 #      SEED: "-1785852800490497919"
     volumes:
     - mc:/data
@@ -96,3 +111,4 @@ services:
       DEBUG: "true"
 volumes:
   mc: {}
+  rcon: {}
