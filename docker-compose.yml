@@ -23,7 +23,7 @@ services:
     ports:
       - 25565:25565
 #       For Dynmap
-      - 8123:8123
+#      - 8123:8123
     environment:
 #       Server options
       EULA: "true"
@@ -54,7 +54,7 @@ services:
       RCON_PORT: "25575"
 #       Plugins options
       BUILD_FROM_SOURCE: "false"
-      SPIGET_RESOURCES: "9089,34315,274"
+      SPIGET_RESOURCES: "9089,34315" #,274,8631,68271,390,271,28140,81534,32748 #85151,67701
 #      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
 #       Minecraft option
       LEVEL: world
