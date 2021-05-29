@@ -1,0 +1,18 @@
+[submodule "mc-monitor"]
+	path = mc-monitor
+	url = https://github.com/itzg/mc-monitor.git
+[submodule "docker-minecraft-server"]
+	path = docker-minecraft-server
+	url = https://github.com/itzg/docker-minecraft-server.git
+[submodule "docker-mc-backup"]
+	path = docker-mc-backup
+	url = https://github.com/itzg/docker-mc-backup.git
+[submodule "docker-rcon-web-admin"]
+	path = docker-rcon-web-admin
+	url = https://github.com/itzg/docker-rcon-web-admin.git
+[submodule "mc-router"]
+	path = mc-router
+	url = https://github.com/itzg/mc-router.git
+[submodule "mc-modpacks-starter"]
+	path = mc-modpacks-starter
+	url = https://github.com/itzg/mc-modpacks-starter.git

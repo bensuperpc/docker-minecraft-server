@@ -1,0 +1,98 @@
+version: '3.7'
+
+services:
+  web:
+    image: itzg/rcon
+    restart: on-failure:3
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: admin
+      RWA_ADMIN: "TRUE"
+      # is referring to the hostname of 'mc' compose service below
+      RWA_RCON_HOST: mc
+      # needs to match the password configured for the container, which is 'minecraft' by default
+      RWA_RCON_PASSWORD: minecraft
+    ports:
+      - 4326:4326
+      - 4327:4327
+  mc:
+    image: itzg/minecraft-server
+    restart: on-failure:3
+    ports:
+      - 25565:25565
+#       For Dynmap
+      - 8123:8123
+    environment:
+#       Server options
+      EULA: "true"
+      ONLINE_MODE: "true"
+      SERVER_PORT: "25565"
+      TYPE: PAPER
+      SERVER_NAME: "hyperworld"
+      MOTD: "My Server" 
+      VERSION: "1.16.5"
+      MEMORY: 4G
+      EXEC_DIRECTLY: "false"
+      USE_AIKAR_FLAGS: "true"
+      USE_LARGE_PAGES: "false"
+      OPS: Bensuperpc
+      ENABLE_AUTOPAUSE: "true"
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      MAX_TICK_TIME: "-1"
+      GUI: "false"
+      PLAYER_IDLE_TIMEOUT: "240"
+      ENABLE_RCON: "true"
+#       Plugins options
+      BUILD_FROM_SOURCE: "false"
+      SPIGET_RESOURCES: "9089,34315,274"
+#      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
+#       Minecraft option
+      LEVEL: world
+      LEVEL_TYPE=: "default"
+      VIEW_DISTANCE: "10"
+      ENABLE_COMMAND_BLOCK: "true"
+      PVP: "true"
+      DIFFICULTY: hard
+      ALLOW_NETHER: "true"
+      SPAWN_ANIMALS: "true"
+      SPAWN_MONSTERS: "true"
+      SPAWN_NPCS: "true"
+#      SEED: "-1785852800490497919"
+    volumes:
+    - mc:/data
+  backups:
+    image: itzg/mc-backup
+    restart: on-failure:3
+    environment:
+      BACKUP_INTERVAL: "2h"
+      INITIAL_DELAY: "3m"
+      PRUNE_BACKUPS_DAYS: "7"
+      # instead of network_mode below, could declare RCON_HOST
+      # RCON_HOST: mc
+    volumes:
+    # mount the same volume used by server, but read-only
+    - mc:/data:ro
+    # use a host attached directory so that it in turn can be backed up
+    # to external/cloud storage
+    - ./mc-backups:/backups
+    # share network namespace with server to simplify rcon access
+    network_mode: "service:mc"
+  prom:
+    image: prom/prometheus
+    ports:
+    - 9090:9090
+    volumes:
+    - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    depends_on:
+      - monitor
+  monitor:
+    restart: on-failure:3
+    build:
+      context: ./mc-monitor
+    command: export-for-prometheus
+    environment:
+      EXPORT_SERVERS: 127.0.0.1,mc.hypixel.net,play.cubecraft.net
+      EXPORT_BEDROCK_SERVERS: play.fallentech.io
+      DEBUG: "true"
+volumes:
+  mc: {}
