@@ -16,3 +16,6 @@
 [submodule "mc-modpacks-starter"]
 	path = mc-modpacks-starter
 	url = https://github.com/itzg/mc-modpacks-starter.git
+[submodule "docker-bungeecord"]
+	path = docker-bungeecord
+	url = https://github.com/itzg/docker-bungeecord.git

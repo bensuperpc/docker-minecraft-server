@@ -30,6 +30,9 @@ jobs:
         run: docker-compose -f docker-compose.yml build
       - name: "Up server"
         run: docker-compose -f docker-compose.yml up -d
+      - name: "Check server"
+        if: always()
+        run: sleep 20 && docker-compose -f docker-compose.yml top
       - name: "Stop containers"
         if: always()
         run: docker-compose -f docker-compose.yml down
