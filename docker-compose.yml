@@ -97,7 +97,7 @@ services:
     ports:
     - 9090:9090
     volumes:
-    - ./prometheus.yml:/etc/prometheus/prometheus.yml
+    - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml:/etc/prometheus/prometheus.yml
     depends_on:
       - monitor
   monitor:
