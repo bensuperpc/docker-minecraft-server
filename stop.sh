@@ -10,7 +10,7 @@
 #//                                                          //
 #//  Script, 2021                                            //
 #//  Created: 27, May, 2021                                  //
-#//  Modified: 27, May, 2021                                 //
+#//  Modified: 02, June, 2021                                //
 #//  file: -                                                 //
 #//  -                                                       //
 #//  Source: https://unix.stackexchange.com/a/39341/359833                                               //
@@ -21,4 +21,4 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 
-docker-compose up
+docker-compose -f docker-compose.yml down $@

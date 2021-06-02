@@ -76,7 +76,10 @@ services:
 #      SPAWN_PROTECTION: "0"
 #      SEED: "-1785852800490497919"
     volumes:
-    - mc:/data
+      - mc:/data
+#    - type: bind
+#      source: ./mc-server
+#      target: /data
   backups:
     image: itzg/mc-backup
     restart: on-failure:3
@@ -101,7 +104,10 @@ services:
     ports:
     - 9090:9090
     volumes:
-    - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml:/etc/prometheus/prometheus.yml
+    - type: bind
+      source: ./mc-monitor/examples/mc-monitor-prom/prometheus.yml
+      target: /etc/prometheus/prometheus.yml
+      read_only: true
     depends_on:
       - monitor
   monitor:

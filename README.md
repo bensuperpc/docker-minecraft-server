@@ -21,7 +21,7 @@ cd docker-minecraft-server && ./sync_submodule.sh
 #### Usage
 
 ```sh
-./run.sh
+./start.sh
 ```
 
 ### Todos
