@@ -4,6 +4,8 @@ services:
   web:
     image: itzg/rcon
     restart: on-failure:3
+    depends_on:
+      - mc
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
@@ -33,7 +35,7 @@ services:
       SERVER_NAME: "hyperworld"
       MOTD: "My Server" 
       VERSION: "1.16.5"
-      MEMORY: 4G
+      MEMORY: 6G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       USE_LARGE_PAGES: "false"
@@ -78,6 +80,8 @@ services:
   backups:
     image: itzg/mc-backup
     restart: on-failure:3
+    depends_on:
+      - mc
     environment:
       BACKUP_INTERVAL: "2h"
       INITIAL_DELAY: "3m"
@@ -102,6 +106,8 @@ services:
       - monitor
   monitor:
     restart: on-failure:3
+    depends_on:
+      - mc
     build:
       context: ./mc-monitor
     command: export-for-prometheus
