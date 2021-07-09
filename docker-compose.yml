@@ -34,13 +34,13 @@ services:
       TYPE: PAPER
       SERVER_NAME: "hyperworld"
       MOTD: "My Server" 
-      VERSION: "1.16.5"
+      VERSION: "1.17.1"
       MEMORY: 6G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       USE_LARGE_PAGES: "false"
 #      TUNE_VIRTUALIZED: "true"
-#      TZ: "Europe/Paris"
+      TZ: "Europe/Paris"
       OPS: Bensuperpc
       ENABLE_AUTOPAUSE: "true"
       OVERRIDE_SERVER_PROPERTIES: "true"
@@ -63,7 +63,7 @@ services:
       LEVEL_TYPE=: "default"
 #      MAX_WORLD_SIZE: "10000"
 #      MAX_BUILD_HEIGHT: "256"
-      VIEW_DISTANCE: "10"
+      VIEW_DISTANCE: "12"
       ENABLE_COMMAND_BLOCK: "true"
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
       PVP: "true"
