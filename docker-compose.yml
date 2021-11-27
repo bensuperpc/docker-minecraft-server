@@ -40,6 +40,7 @@ services:
       USE_AIKAR_FLAGS: "true"
       USE_LARGE_PAGES: "false"
 #      TUNE_VIRTUALIZED: "true"
+      CONSOLE: "false"
       TZ: "Europe/Paris"
       OPS: Bensuperpc
       ENABLE_AUTOPAUSE: "true"
