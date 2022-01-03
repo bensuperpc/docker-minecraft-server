@@ -15,9 +15,7 @@ You need Linux distribution like Ubuntu or Manjaoro
 ```sh
 git clone --recurse-submodules --remote-submodules https://github.com/Bensuperpc/docker-minecraft-server.git
 ```
-```sh
-cd docker-minecraft-server && ./sync_submodule.sh
-```
+
 ### Usage
 
 #### Start server
@@ -34,14 +32,19 @@ cd docker-minecraft-server && ./sync_submodule.sh
 
 ### Server website 
 The server must be started!
+
 #### Dynmap
 http://127.0.0.1:8123/
+
 #### Rcon (CMD...)
 http://127.0.0.1:4326/
+
 #### Grafana
 http://127.0.0.1:3000/
+
 #### Cadvisor
 http://127.0.0.1:8180/
+
 #### Prometheus (Disabled by default)
 http://127.0.0.1:9090/
 
