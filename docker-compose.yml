@@ -32,7 +32,8 @@ services:
       EULA: "true"
       ONLINE_MODE: "true"
       SERVER_PORT: "25565"
-      TYPE: PAPER
+      # TYPE: PAPER
+      TYPE: PURPUR
       SERVER_NAME: "MyServer"
       MOTD: "My Server"
       VERSION: "1.18.1"
