@@ -45,9 +45,11 @@ services:
       TZ: "Europe/Paris"
       OPS: "Bensuperpc"
       ENABLE_AUTOPAUSE: "true"
+      AUTOPAUSE_TIMEOUT_EST: "3600"
       OVERRIDE_SERVER_PROPERTIES: "true"
       MAX_TICK_TIME: "-1"
       GUI: "false"
+      # Time (sec) before AFK player was disconect
       PLAYER_IDLE_TIMEOUT: "240"
       MAX_PLAYERS: "100"
       MODE: "survival"
@@ -56,12 +58,22 @@ services:
       ENABLE_RCON: "true"
       RCON_PASSWORD: "minecraft"
       RCON_PORT: "25575"
-      #       Plugins options
       BUILD_FROM_SOURCE: "false"
+      # Plugins options
       # 274 = Dynmap
-      SPIGET_RESOURCES: "274" #,8631,68271,390,271,28140,81534,32748 #85151,67701,9089,34315
+      # 390 = Multiverse-Core
+      # 9089 = EssentialsX
+      # 28140 = LuckyPerm
+      # 34315 = Vault
+      # 32748 = Set Home
+      # 81534 = Chunky
+      # 8631 = CoreProtect
+      # 67701 = BanItems
+      # 1997 = ProtocolLib
+      # 13932 = Fast Async WorldEdit
+      SPIGET_RESOURCES: "274"
       #      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
-      #       Minecraft option
+      #      Minecraft option
       LEVEL: world
       LEVEL_TYPE=: "default"
       #      MAX_WORLD_SIZE: "10000"
@@ -73,6 +85,7 @@ services:
       DIFFICULTY: hard
       HARDCORE: "false"
       ALLOW_NETHER: "true"
+      # Spawn Entities Options
       SPAWN_ANIMALS: "true"
       SPAWN_MONSTERS: "true"
       SPAWN_NPCS: "true"
