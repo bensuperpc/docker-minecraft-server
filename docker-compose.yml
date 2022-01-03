@@ -21,6 +21,7 @@ services:
       - "rcon:/opt/rcon-web-admin/db"
   mc:
     image: itzg/minecraft-server:latest
+    container_name: minecraft-server
     restart: on-failure:3
     ports:
       - 25565:25565
