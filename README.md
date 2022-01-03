@@ -13,7 +13,7 @@
 You need Linux distribution like Ubuntu or Manjaoro
 
 ```sh
-git clone --recurse-submodules --remote-submodules https://github.com/Bensuperpc/docker-minecraft-server.git
+git clone --recurse-submodules https://github.com/Bensuperpc/docker-minecraft-server.git
 ```
 
 ### Usage
