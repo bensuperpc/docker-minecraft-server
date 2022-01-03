@@ -1,8 +1,8 @@
-version: '3.7'
+version: '3.8'
 
 services:
   web:
-    image: itzg/rcon
+    image: itzg/rcon:lastest
     restart: on-failure:3
     depends_on:
       - mc
@@ -20,7 +20,7 @@ services:
     volumes:
       - "rcon:/opt/rcon-web-admin/db"
   mc:
-    image: itzg/minecraft-server
+    image: itzg/minecraft-server:lastest
     restart: on-failure:3
     ports:
       - 25565:25565
@@ -34,7 +34,7 @@ services:
       TYPE: PAPER
       SERVER_NAME: "hyperworld"
       MOTD: "My Server" 
-      VERSION: "1.17.1"
+      VERSION: "1.18.1"
       MEMORY: 6G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
@@ -82,7 +82,7 @@ services:
 #      source: ./mc-server
 #      target: /data
   backups:
-    image: itzg/mc-backup
+    image: itzg/mc-backup:lastest
     restart: on-failure:3
     depends_on:
       - mc
@@ -101,7 +101,7 @@ services:
     # share network namespace with server to simplify rcon access
     network_mode: "service:mc"
   prom:
-    image: prom/prometheus
+    image: prom/prometheus:lastest
     ports:
     - 9090:9090
     volumes:
