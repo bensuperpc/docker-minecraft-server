@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   web:
@@ -25,46 +25,47 @@ services:
     restart: on-failure:3
     ports:
       - 25565:25565
-#       For Dynmap
-#      - 8123:8123
+      #       For Dynmap
+      - 8123:8123
     environment:
-#       Server options
+      #       Server options
       EULA: "true"
       ONLINE_MODE: "true"
       SERVER_PORT: "25565"
       TYPE: PAPER
-      SERVER_NAME: "hyperworld"
-      MOTD: "My Server" 
+      SERVER_NAME: "MyServer"
+      MOTD: "My Server"
       VERSION: "1.18.1"
-      MEMORY: 6G
+      MEMORY: 8G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       USE_LARGE_PAGES: "false"
-#      TUNE_VIRTUALIZED: "true"
+      #      TUNE_VIRTUALIZED: "true"
       CONSOLE: "false"
       TZ: "Europe/Paris"
-      OPS: Bensuperpc
+      OPS: "Bensuperpc"
       ENABLE_AUTOPAUSE: "true"
       OVERRIDE_SERVER_PROPERTIES: "true"
       MAX_TICK_TIME: "-1"
       GUI: "false"
       PLAYER_IDLE_TIMEOUT: "240"
-      MAX_PLAYERS: "50"
+      MAX_PLAYERS: "100"
       MODE: "survival"
       ALLOW_FLIGHT: "false"
-#       RCON options
+      #       RCON options
       ENABLE_RCON: "true"
       RCON_PASSWORD: "minecraft"
       RCON_PORT: "25575"
-#       Plugins options
+      #       Plugins options
       BUILD_FROM_SOURCE: "false"
-      SPIGET_RESOURCES: "9089,34315" #,274,8631,68271,390,271,28140,81534,32748 #85151,67701
-#      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
-#       Minecraft option
+      # 274 = Dynmap
+      SPIGET_RESOURCES: "274" #,8631,68271,390,271,28140,81534,32748 #85151,67701,9089,34315
+      #      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
+      #       Minecraft option
       LEVEL: world
       LEVEL_TYPE=: "default"
-#      MAX_WORLD_SIZE: "10000"
-#      MAX_BUILD_HEIGHT: "256"
+      #      MAX_WORLD_SIZE: "10000"
+      #      MAX_BUILD_HEIGHT: "256"
       VIEW_DISTANCE: "12"
       ENABLE_COMMAND_BLOCK: "true"
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
@@ -75,30 +76,29 @@ services:
       SPAWN_ANIMALS: "true"
       SPAWN_MONSTERS: "true"
       SPAWN_NPCS: "true"
-#      SPAWN_PROTECTION: "0"
-#      SEED: "-1785852800490497919"
+      SPAWN_PROTECTION: "16"
+      #      SEED: "-1785852800490497919"
+      SNOOPER_ENABLED: "true"
     volumes:
       - mc-data:/data
-#    - type: bind
-#      source: ./mc-server
-#      target: /data
   backups:
     image: itzg/mc-backup:latest
     restart: on-failure:3
     depends_on:
       - mc
     environment:
-      BACKUP_INTERVAL: "2h"
+      BACKUP_INTERVAL: "8h"
       INITIAL_DELAY: "3m"
       PRUNE_BACKUPS_DAYS: "7"
+      PAUSE_IF_NO_PLAYERS: "true"
       # instead of network_mode below, could declare RCON_HOST
       # RCON_HOST: mc
     volumes:
-    # mount the same volume used by server, but read-only
-    - mc-data:/data:ro
-    # use a host attached directory so that it in turn can be backed up
-    # to external/cloud storage
-    - ./mc-backups:/backups
+      # mount the same volume used by server, but read-only
+      - mc-data:/data:ro
+      # use a host attached directory so that it in turn can be backed up
+      # to external/cloud storage
+      - ./mc-backups:/backups
     # share network namespace with server to simplify rcon access
     network_mode: "service:mc"
   cadvisor:
@@ -110,12 +110,21 @@ services:
       - /var/run:/var/run:rw
       - /sys:/sys:ro
       - /var/lib/docker/:/var/lib/docker:ro
-  prom:
+  monitor:
+    image: itzg/mc-monitor:latest
+    command: export-for-prometheus
+    environment:
+      EXPORT_SERVERS: mc
+      DEBUG: "true"
+    depends_on:
+      - mc
+  prometheus:
     image: prom/prometheus:latest
-    ports:
-      - 9090:9090
+    # Disable port because there is grafana.
+    #    ports:
+    #      - 9090:9090
     volumes:
-      - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml
+      - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml:/etc/prometheus/prometheus.yml
       - prometheus-tsdb:/prometheus
     depends_on:
       - monitor
@@ -125,22 +134,11 @@ services:
       - "3000:3000"
     volumes:
       - grafana-lib:/var/lib/grafana
-      - ./grafana/provisioning:/etc/grafana/provisioning
-      - ./dashboards:/etc/grafana/dashboards
+      - ./mc-monitor/examples/mc-monitor-prom/grafana/provisioning:/etc/grafana/provisioning
+      - ./mc-monitor/examples/mc-monitor-prom/dashboards:/etc/grafana/dashboards
     depends_on:
       - prometheus
-  monitor:
-    image: itzg/mc-monitor:latest
-    restart: on-failure:3
-    depends_on:
-      - mc
-    build:
-      context: ./mc-monitor
-    command: export-for-prometheus
-    environment:
-      EXPORT_SERVERS: mc,mc.hypixel.net,play.cubecraft.net
-      EXPORT_BEDROCK_SERVERS: play.fallentech.io
-      DEBUG: "true"
+
 volumes:
   mc-data: {}
   rcon: {}
