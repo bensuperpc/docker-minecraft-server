@@ -112,6 +112,7 @@ services:
     depends_on:
       - monitor
   monitor:
+    image: itzg/mc-monitor:latest
     restart: on-failure:3
     depends_on:
       - mc
