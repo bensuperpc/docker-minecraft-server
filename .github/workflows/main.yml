@@ -18,8 +18,8 @@ on:
 jobs:
   image:
     name: docker-minecraft-server
-    runs-on: ubuntu-20.04
-    timeout-minutes: 20
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: "Checkout Code"
         uses: actions/checkout@v2.4.0
@@ -32,7 +32,7 @@ jobs:
         run: ./start.sh -d
       - name: "Check server"
         if: always()
-        run: sleep 30 && docker-compose -f docker-compose.yml top
+        run: sleep 60 && docker-compose -f docker-compose.yml top
       - name: "Check graph port"
         run: nc -zv 127.0.0.1 9090
       - name: "Check web rcon port"
