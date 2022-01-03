@@ -1,6 +1,6 @@
 # docker minecraft server
 
-### _minecraft server in docker_
+## _minecraft server in docker_
  [![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/powered-by-jeffs-keyboard.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/contains-cat-gifs.svg)](https://forthebadge.com)
 
 [![docker-minecraft-server](https://github.com/Bensuperpc/docker-minecraft-server/actions/workflows/main.yml/badge.svg)](https://github.com/Bensuperpc/docker-minecraft-server/actions/workflows/main.yml)
@@ -9,20 +9,41 @@
 
   - Add github CI and update submodule
 
-#### Install
+### Install
 You need Linux distribution like Ubuntu or Manjaoro
 
 ```sh
-git clone https://github.com/Bensuperpc/docker-minecraft-server.git
+git clone --recurse-submodules --remote-submodules https://github.com/Bensuperpc/docker-minecraft-server.git
 ```
 ```sh
 cd docker-minecraft-server && ./sync_submodule.sh
 ```
-#### Usage
+### Usage
+
+#### Start server
 
 ```sh
 ./start.sh
 ```
+
+#### Stop server
+
+```sh
+./stop.sh
+```
+
+### Server website 
+The server must be started!
+#### Dynmap
+http://127.0.0.1:8123/
+#### Rcon (CMD...)
+http://127.0.0.1:4326/
+#### Grafana
+http://127.0.0.1:3000/
+#### Cadvisor
+http://127.0.0.1:8180/
+#### Prometheus (Disabled by default)
+http://127.0.0.1:9090/
 
 ### Todos
 
