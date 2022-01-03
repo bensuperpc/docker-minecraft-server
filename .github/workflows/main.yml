@@ -33,12 +33,12 @@ jobs:
       - name: "Check server"
         if: always()
         run: sleep 60 && docker-compose -f docker-compose.yml top
-      - name: "Check graph port"
-        run: nc -zv 127.0.0.1 9090
+      - name: "Check graphana port"
+        run: nc -zv 127.0.0.1 3000
       - name: "Check web rcon port"
         run: nc -zv 127.0.0.1 4326
-#      - name: "Check dynmap port"
-#        run: nc -zv 127.0.0.1 8123
+      - name: "Check dynmap port"
+        run: nc -zv 127.0.0.1 8123
       - name: "Check minecraft port"
         run: nc -zv 127.0.0.1 25565
       - name: "Stop containers"
