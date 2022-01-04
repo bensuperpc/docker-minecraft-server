@@ -117,6 +117,7 @@ services:
     network_mode: "service:mc"
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
+    restart: on-failure:3
     ports:
       - "8180:8080"
     volumes:
@@ -126,6 +127,7 @@ services:
       - /var/lib/docker/:/var/lib/docker:ro
   monitor:
     image: itzg/mc-monitor:latest
+    restart: on-failure:3
     command: export-for-prometheus
     environment:
       EXPORT_SERVERS: mc
@@ -134,6 +136,7 @@ services:
       - mc
   prometheus:
     image: prom/prometheus:latest
+    restart: on-failure:3
     # Disable port because there is grafana.
     #    ports:
     #      - 9090:9090
@@ -144,6 +147,7 @@ services:
       - monitor
   grafana:
     image: grafana/grafana-oss:${GRAFANA_VERSION:-8.3.3}
+    restart: on-failure:3
     ports:
       - "3000:3000"
     volumes:
