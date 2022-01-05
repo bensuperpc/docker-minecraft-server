@@ -18,7 +18,7 @@ services:
       - 4326:4326
       - 4327:4327
     volumes:
-      - ./volumes/rcon:/opt/rcon-web-admin/db
+      - ./volumes/rcon:/opt/rcon-web-admin/db:rw
   mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
@@ -94,7 +94,7 @@ services:
       #      SEED: "-1785852800490497919"
       SNOOPER_ENABLED: "true"
     volumes:
-      - ./volumes/mc-data:/data
+      - ./volumes/mc-data:/data:rw
   backups:
     image: itzg/mc-backup:latest
     restart: on-failure:3
@@ -113,7 +113,7 @@ services:
       # use a host attached directory so that it in turn can be backed up
       # to external/cloud storage
       #- ./mc-backups:/backups
-      - ./volumes/mc-backups:/backups
+      - ./volumes/mc-backups:/backups:rw
     # share network namespace with server to simplify rcon access
     network_mode: "service:mc-server"
   cadvisor:
@@ -143,7 +143,7 @@ services:
     #      - 9090:9090
     volumes:
       - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml:/etc/prometheus/prometheus.yml
-      - ./volumes/prometheus-tsdb:/prometheus
+      - ./volumes/prometheus-tsdb:/prometheus:rw
     depends_on:
       - monitor
   grafana:
@@ -152,7 +152,7 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./volumes/grafana-lib:/var/lib/grafana
+      - ./volumes/grafana-lib:/var/lib/grafana:rw
       - ./mc-monitor/examples/mc-monitor-prom/grafana/provisioning:/etc/grafana/provisioning
       - ./mc-monitor/examples/mc-monitor-prom/dashboards:/etc/grafana/dashboards
     depends_on:
