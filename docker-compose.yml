@@ -5,13 +5,13 @@ services:
     image: itzg/rcon:latest
     restart: on-failure:3
     depends_on:
-      - mc
+      - mc-server
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
       RWA_ADMIN: "TRUE"
-      # is referring to the hostname of 'mc' compose service below
-      RWA_RCON_HOST: mc
+      # is referring to the hostname of 'mc-server' compose service below
+      RWA_RCON_HOST: mc-server
       # needs to match the password configured for the container, which is 'minecraft' by default
       RWA_RCON_PASSWORD: minecraft
     ports:
@@ -19,7 +19,7 @@ services:
       - 4327:4327
     volumes:
       - ./volumes/rcon:/opt/rcon-web-admin/db
-  mc:
+  mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
     restart: on-failure:3
@@ -99,14 +99,14 @@ services:
     image: itzg/mc-backup:latest
     restart: on-failure:3
     depends_on:
-      - mc
+      - mc-server
     environment:
       BACKUP_INTERVAL: "8h"
       INITIAL_DELAY: "3m"
       PRUNE_BACKUPS_DAYS: "7"
       PAUSE_IF_NO_PLAYERS: "true"
       # instead of network_mode below, could declare RCON_HOST
-      # RCON_HOST: mc
+      # RCON_HOST: mc-server
     volumes:
       # mount the same volume used by server, but read-only
       - ./volumes/mc-data:/data:ro
@@ -115,7 +115,7 @@ services:
       #- ./mc-backups:/backups
       - ./volumes/mc-backups:/backups
     # share network namespace with server to simplify rcon access
-    network_mode: "service:mc"
+    network_mode: "service:mc-server"
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
     restart: on-failure:3
@@ -131,10 +131,10 @@ services:
     restart: on-failure:3
     command: export-for-prometheus
     environment:
-      EXPORT_SERVERS: mc
+      EXPORT_SERVERS: mc-server
       DEBUG: "true"
     depends_on:
-      - mc
+      - mc-server
   prometheus:
     image: prom/prometheus:latest
     restart: on-failure:3
