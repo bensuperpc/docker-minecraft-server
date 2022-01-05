@@ -31,13 +31,7 @@ jobs:
       - name: "Start server"
         run: ./start.sh
       - name: "Wait..."
-        run: sleep 90
-      - name: "Check server"
-        if: always()
-        run: docker-compose -f docker-compose.yml top
-      - name: "Check logs server"
-        if: always()
-        run: docker-compose -f docker-compose.yml logs
+        run: sleep 120
       - name: "Check grafana port"
         if: always()
         run: nc -zv 127.0.0.1 3000
@@ -53,6 +47,12 @@ jobs:
       - name: "Check cadvisor port"
         if: always()
         run: nc -zv 127.0.0.1 8180
+      - name: "Check server"
+        if: always()
+        run: docker-compose -f docker-compose.yml top
+      - name: "Check logs server"
+        if: always()
+        run: docker-compose -f docker-compose.yml logs
       - name: "Stop containers"
         if: always()
         run: ./stop.sh

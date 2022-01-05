@@ -1,24 +1,6 @@
 version: "3.8"
 
 services:
-  web:
-    image: itzg/rcon:latest
-    restart: on-failure:3
-    depends_on:
-      - mc-server
-    environment:
-      RWA_USERNAME: admin
-      RWA_PASSWORD: admin
-      RWA_ADMIN: "TRUE"
-      # is referring to the hostname of 'mc-server' compose service below
-      RWA_RCON_HOST: mc-server
-      # needs to match the password configured for the container, which is 'minecraft' by default
-      RWA_RCON_PASSWORD: minecraft
-    ports:
-      - 4326:4326
-      - 4327:4327
-    volumes:
-      - ./volumes/rcon:/opt/rcon-web-admin/db:rw
   mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
@@ -32,8 +14,7 @@ services:
       EULA: "true"
       ONLINE_MODE: "true"
       SERVER_PORT: "25565"
-      # TYPE: PAPER
-      TYPE: PURPUR
+      TYPE: PAPER
       SERVER_NAME: "MyServer"
       MOTD: "My Server"
       VERSION: "1.18.1"
@@ -94,28 +75,47 @@ services:
       #      SEED: "-1785852800490497919"
       SNOOPER_ENABLED: "true"
     volumes:
-      - ./volumes/mc-data:/data:rw
+      - mc-data:/data
+  web:
+    image: itzg/rcon:latest
+    restart: on-failure:3
+    depends_on:
+      - mc-server
+    environment:
+      RWA_USERNAME: admin
+      RWA_PASSWORD: admin
+      RWA_ADMIN: "TRUE"
+      # is referring to the hostname of 'mc-server' compose service below
+      RWA_RCON_HOST: mc-server
+      # needs to match the password configured for the container, which is 'minecraft' by default
+      RWA_RCON_PASSWORD: minecraft
+    ports:
+      - 4326:4326
+      - 4327:4327
+    volumes:
+      - "rcon:/opt/rcon-web-admin/db"
   backups:
     image: itzg/mc-backup:latest
     restart: on-failure:3
     depends_on:
       - mc-server
     environment:
-      BACKUP_INTERVAL: "8h"
+      BACKUP_INTERVAL: "12h"
       INITIAL_DELAY: "3m"
       PRUNE_BACKUPS_DAYS: "7"
       PAUSE_IF_NO_PLAYERS: "true"
+      EXCLUDES: ""
       # instead of network_mode below, could declare RCON_HOST
-      # RCON_HOST: mc-server
+      RCON_HOST: mc-server
     volumes:
       # mount the same volume used by server, but read-only
-      - ./volumes/mc-data:/data:ro
+      - mc-data:/data:ro
       # use a host attached directory so that it in turn can be backed up
       # to external/cloud storage
       #- ./mc-backups:/backups
-      - ./volumes/mc-backups:/backups:rw
+      - mc-backups:/backups
     # share network namespace with server to simplify rcon access
-    network_mode: "service:mc-server"
+    # network_mode: "service:mc-server"
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
     restart: on-failure:3
@@ -143,7 +143,7 @@ services:
     #      - 9090:9090
     volumes:
       - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml:/etc/prometheus/prometheus.yml
-      - ./volumes/prometheus-tsdb:/prometheus:rw
+      - prometheus-tsdb:/prometheus
     depends_on:
       - monitor
   grafana:
@@ -152,14 +152,15 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - ./volumes/grafana-lib:/var/lib/grafana:rw
+      - grafana-lib:/var/lib/grafana
       - ./mc-monitor/examples/mc-monitor-prom/grafana/provisioning:/etc/grafana/provisioning
       - ./mc-monitor/examples/mc-monitor-prom/dashboards:/etc/grafana/dashboards
     depends_on:
       - prometheus
-# Remove "./volumes/" and "#" on volumes if you want docker's volumes
-#volumes:
-#  mc-data: {}
-#  rcon: {}
-#  prometheus-tsdb: {}
-#  grafana-lib: {}
+
+volumes:
+  mc-data: {}
+  mc-backups: {}
+  rcon: {}
+  prometheus-tsdb: {}
+  grafana-lib: {}
