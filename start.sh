@@ -21,4 +21,4 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 
-docker-compose -f docker-compose.yml up -d
+UID_GID="$(id -u):$(id -g)" docker-compose -f docker-compose.yml up -d
