@@ -41,6 +41,8 @@ jobs:
         run: nc -zv 127.0.0.1 8123
       - name: "Check minecraft port"
         run: nc -zv 127.0.0.1 25565
+      - name: "Check cadvisor port"
+        run: nc -zv 127.0.0.1 8180
       - name: "Stop containers"
         if: always()
         run: ./stop.sh
