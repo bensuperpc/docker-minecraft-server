@@ -2,7 +2,7 @@ name: submodule-update
 
 on:
   schedule:
-    - cron: '30 22 * * *'
+    - cron: '30 21 * * *'
   workflow_dispatch:
 
 jobs:
