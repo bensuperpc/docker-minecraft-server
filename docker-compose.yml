@@ -16,6 +16,8 @@ services:
       SERVER_PORT: "25565"
       TYPE: PAPER
       SERVER_NAME: "MyServer"
+      #      ICON: "http://..../some/other/image.png"
+      #      OVERRIDE_ICON: "true"
       MOTD: "My Server"
       VERSION: "1.18.1"
       MEMORY: 8G
