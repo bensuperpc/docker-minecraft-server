@@ -15,6 +15,7 @@ services:
       ONLINE_MODE: "true"
       SERVER_PORT: "25565"
       TYPE: PAPER
+      FORCE_REDOWNLOAD: "false"
       SERVER_NAME: "MyServer"
       #      ICON: "http://..../some/other/image.png"
       #      OVERRIDE_ICON: "true"
