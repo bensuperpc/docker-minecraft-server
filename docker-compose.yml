@@ -48,13 +48,18 @@ services:
       # 390 = Multiverse-Core
       # 9089 = EssentialsX
       # 28140 = LuckyPerm
+      # 3836 = NametagEdit
       # 34315 = Vault
       # 32748 = Set Home
       # 81534 = Chunky
       # 8631 = CoreProtect
       # 67701 = BanItems
       # 1997 = ProtocolLib
+      # 19254 = ViaVersion 
+      # 27448 = ViaBackwards
+      # 52109 = ViaRewind 
       # 13932 = Fast Async WorldEdit
+      # 8631 = CoreProtect
       SPIGET_RESOURCES: "274"
       #      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
       #      Minecraft option
