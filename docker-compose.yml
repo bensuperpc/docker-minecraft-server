@@ -23,16 +23,15 @@ services:
       MEMORY: 8G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
-      USE_LARGE_PAGES: "false"
       #      TUNE_VIRTUALIZED: "true"
       CONSOLE: "false"
+      GUI: "false"
       TZ: "Europe/Paris"
       OPS: "Bensuperpc"
       ENABLE_AUTOPAUSE: "true"
       AUTOPAUSE_TIMEOUT_EST: "3600"
       OVERRIDE_SERVER_PROPERTIES: "true"
       MAX_TICK_TIME: "-1"
-      GUI: "false"
       # Time (sec) before AFK player was disconect
       PLAYER_IDLE_TIMEOUT: "240"
       MAX_PLAYERS: "100"
