@@ -8,9 +8,12 @@ services:
     # tty: true
     # stdin_open: false
     ports:
+      #       Server Minecraft port
       - 25565:25565
       #       Dynmap port
       - 8123:8123
+      #       Rcon port
+      - 25575:25575
     environment:
       #       Server options
       EULA: "true"
@@ -89,7 +92,7 @@ services:
       SNOOPER_ENABLED: "true"
     volumes:
       - mc-data:/data
-  web:
+  rcon-web:
     image: itzg/rcon:latest
     restart: on-failure:3
     depends_on:
@@ -103,7 +106,9 @@ services:
       # needs to match the password configured for the container, which is 'minecraft' by default
       RWA_RCON_PASSWORD: minecraft
     ports:
+      #       web UI port
       - 4326:4326
+      #       websocket access from UI
       - 4327:4327
     volumes:
       - "rcon:/opt/rcon-web-admin/db"
