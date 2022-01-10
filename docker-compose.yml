@@ -71,6 +71,7 @@ services:
       #      MAX_WORLD_SIZE: "10000"
       #      MAX_BUILD_HEIGHT: "256"
       ALLOW_NETHER: "true"
+      GENERATE_STRUCTURES: "true"
       VIEW_DISTANCE: "12"
       ENABLE_COMMAND_BLOCK: "true"
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
