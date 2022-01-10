@@ -7,7 +7,7 @@ services:
     restart: on-failure:3
     ports:
       - 25565:25565
-      #       For Dynmap
+      #       Dynmap port
       - 8123:8123
     environment:
       #       Server options
@@ -19,7 +19,7 @@ services:
       SERVER_NAME: "MyServer"
       #      ICON: "http://..../some/other/image.png"
       #      OVERRIDE_ICON: "true"
-      MOTD: "My Server"
+      MOTD: "A §l§cMinecraft§r §nserver"
       VERSION: "1.18.1"
       MEMORY: 8G
       EXEC_DIRECTLY: "false"
@@ -29,6 +29,7 @@ services:
       GUI: "false"
       TZ: "Europe/Paris"
       OPS: "Bensuperpc"
+      # WHITELIST: ""
       ENABLE_AUTOPAUSE: "true"
       AUTOPAUSE_TIMEOUT_EST: "3600"
       OVERRIDE_SERVER_PROPERTIES: "true"
@@ -67,19 +68,20 @@ services:
       LEVEL_TYPE=: "default"
       #      MAX_WORLD_SIZE: "10000"
       #      MAX_BUILD_HEIGHT: "256"
+      ALLOW_NETHER: "true"
       VIEW_DISTANCE: "12"
       ENABLE_COMMAND_BLOCK: "true"
       ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
       PVP: "true"
       DIFFICULTY: hard
       HARDCORE: "false"
-      ALLOW_NETHER: "true"
       # Spawn Entities Options
       SPAWN_ANIMALS: "true"
       SPAWN_MONSTERS: "true"
       SPAWN_NPCS: "true"
       SPAWN_PROTECTION: "16"
-      #      SEED: "-1785852800490497919"
+      ALLOW_NETHER: "true"
+      #      SEED: "3820"
       SNOOPER_ENABLED: "true"
     volumes:
       - mc-data:/data
