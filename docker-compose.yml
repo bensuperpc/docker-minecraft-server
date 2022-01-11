@@ -88,7 +88,7 @@ services:
       SPAWN_NPCS: "true"
       SPAWN_PROTECTION: "16"
       ALLOW_NETHER: "true"
-      #      SEED: "3820"
+      #      SEED: 3820
       SNOOPER_ENABLED: "true"
     volumes:
       - mc-data:/data
