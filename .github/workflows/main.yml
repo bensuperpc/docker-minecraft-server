@@ -41,9 +41,6 @@ jobs:
       - name: "Check web rcon port"
         if: always()
         run: nc -zv 127.0.0.1 4326
-      - name: "Check dynmap port"
-        if: always()
-        run: nc -zv 127.0.0.1 8123
       - name: "Check grafana port"
         if: always()
         run: nc -zv 127.0.0.1 3000
