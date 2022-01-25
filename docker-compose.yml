@@ -67,7 +67,7 @@ services:
       # 13932 = Fast Async WorldEdit
       # 8631 = CoreProtect
       # 2124 = SkinsRestorer
-      #      SPIGET_RESOURCES: ""
+      SPIGET_RESOURCES: "9089,34315"
       #      MODPACK: "http://dev.bukkit.org/projects/worldedit/files/latest,http://dev.bukkit.org/projects/timber-plugin/files/latest"
       #      Minecraft option
       LEVEL: world
