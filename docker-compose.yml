@@ -68,7 +68,7 @@ services:
       # 8631 = CoreProtect
       # 2124 = SkinsRestorer
       #      SPIGET_RESOURCES: ""
-      MODPACK: "https://dev.bukkit.org/projects/dynmap/files/3620010/download"
+      # MODPACK: ""
       #      Minecraft option
       LEVEL: world
       LEVEL_TYPE=: "default"
