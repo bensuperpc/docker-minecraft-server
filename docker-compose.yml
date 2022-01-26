@@ -61,9 +61,9 @@ services:
       # 8631 = CoreProtect
       # 67701 = BanItems
       # 1997 = ProtocolLib
-      # 19254 = ViaVersion 
+      # 19254 = ViaVersion
       # 27448 = ViaBackwards
-      # 52109 = ViaRewind 
+      # 52109 = ViaRewind
       # 13932 = Fast Async WorldEdit
       # 8631 = CoreProtect
       # 2124 = SkinsRestorer
