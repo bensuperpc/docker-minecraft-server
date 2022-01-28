@@ -8,7 +8,7 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXSp
 https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
 https://ci.athion.net/job/FastAsyncWorldEdit/lastSuccessfulBuild/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.0.2-SNAPSHOT-78.jar
-https://www.spigotmc.org/resources/worldeditselectionvisualizer-1-7-10-1-18.17311/download?version=406445
+https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 # LuckPerms
 # https://ci.lucko.me/job/LuckPerms/1398/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.3.98.jar
 # Multiverse-Core, Multiverse-Portals, Multiverse-NetherPortals, Multiverse-Inventories, Multiverse-SignPortals
@@ -17,7 +17,7 @@ https://www.spigotmc.org/resources/worldeditselectionvisualizer-1-7-10-1-18.1731
 # https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
 # https://dev.bukkit.org/projects/multiverse-inventories/files/latest
 # https://dev.bukkit.org/projects/multiverse-signportals/files/latest
-# TreeAssist
+# TreeAssist (Not working now)
 # https://www.spigotmc.org/resources/treeassist.67436/download?version=436652
-# BetterSleeping
+# BetterSleeping (Not working now)
 # https://www.spigotmc.org/resources/bettersleeping.60837/download?version=435731
