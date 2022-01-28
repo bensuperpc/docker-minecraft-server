@@ -69,7 +69,8 @@ services:
       # 2124 = SkinsRestorer
       #      SPIGET_RESOURCES: ""
       #      MODPACK: "" # MODPACK or MODS
-      MODS: "https://dev.bukkit.org/projects/dynmap/files/3620010/download"
+      #      MODS: "https://dev.bukkit.org/projects/dynmap/files/3620010/download"
+      MODS_FILE: "/extras/plugins.txt"
       REMOVE_OLD_MODS: "true"
       REMOVE_OLD_MODS_INCLUDE: "*.jar"
       REMOVE_OLD_MODS_DEPTH: "1"
@@ -96,6 +97,7 @@ services:
       SNOOPER_ENABLED: "true"
     volumes:
       - mc-data:/data
+      - ./plugins.txt:/extras/plugins.txt:ro
   rcon-web:
     image: itzg/rcon:latest
     restart: on-failure:3
