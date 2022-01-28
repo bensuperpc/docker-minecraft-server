@@ -26,7 +26,7 @@ services:
       #      OVERRIDE_ICON: "true"
       MOTD: "A §l§cMinecraft§r §nserver"
       VERSION: "1.18.1"
-      MEMORY: 12G
+      MEMORY: 8G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       #      TUNE_VIRTUALIZED: "true"
