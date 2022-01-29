@@ -29,7 +29,10 @@ https://dev.bukkit.org/projects/multiverse-inventories/files/latest
 https://dev.bukkit.org/projects/multiverse-signportals/files/latest
 
 # Holographic Displays
-https://dev.bukkit.org/projects/holographic-displays/files/latest
+# https://dev.bukkit.org/projects/holographic-displays/files/latest
+
+# Chunk Loader
+https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
 
 # DropHeads
 # https://dev.bukkit.org/projects/dropheads/files/latest
@@ -40,8 +43,11 @@ https://dev.bukkit.org/projects/holographic-displays/files/latest
 # DeadChest
 # https://dev.bukkit.org/projects/dead-chest/files/latest
 
-# TreeAssist (Not working now)
-# https://www.spigotmc.org/resources/treeassist.67436/download?version=436652
+# VoidSpawn
+# https://dev.bukkit.org/projects/voidspawn/files/latest
 
-# BetterSleeping (Not working now)
-# https://www.spigotmc.org/resources/bettersleeping.60837/download?version=435731
+# TreeAssist
+# https://dev.bukkit.org/projects/tree-assist/files/latest
+
+# ChatColor
+# https://dev.bukkit.org/projects/chatcolor-s/files/latest
