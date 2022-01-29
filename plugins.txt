@@ -2,8 +2,10 @@
 https://dev.bukkit.org/projects/dynmap/files/3620010/download
 
 # EssentialsX
-# https://dev.bukkit.org/projects/essentialsx/files/latest
-https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsX-2.19.2.jar
+https://dev.bukkit.org/projects/essentialsx/files/latest
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsX-2.19.2.jar
+
+# EssentialsX Add-on
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXChat-2.19.2.jar
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXSpawn-2.19.2.jar
 
@@ -20,11 +22,23 @@ https://ci.lucko.me/job/LuckPerms/1398/artifact/bukkit/loader/build/libs/LuckPer
 https://dev.bukkit.org/projects/vault/files/latest
 
 # Multiverse-Core, Multiverse-Portals, Multiverse-NetherPortals, Multiverse-Inventories, Multiverse-SignPortals
-# https://dev.bukkit.org/projects/multiverse-core/files/latest
-# https://dev.bukkit.org/projects/multiverse-portals/files/latest
-# https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
-# https://dev.bukkit.org/projects/multiverse-inventories/files/latest
-# https://dev.bukkit.org/projects/multiverse-signportals/files/latest
+https://dev.bukkit.org/projects/multiverse-core/files/latest
+https://dev.bukkit.org/projects/multiverse-portals/files/latest
+https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
+https://dev.bukkit.org/projects/multiverse-inventories/files/latest
+https://dev.bukkit.org/projects/multiverse-signportals/files/latest
+
+# Holographic Displays
+https://dev.bukkit.org/projects/holographic-displays/files/latest
+
+# DropHeads
+# https://dev.bukkit.org/projects/dropheads/files/latest
+
+# SilkSpawners
+# https://dev.bukkit.org/projects/silkspawners/files/latest
+
+# DeadChest
+# https://dev.bukkit.org/projects/dead-chest/files/latest
 
 # TreeAssist (Not working now)
 # https://www.spigotmc.org/resources/treeassist.67436/download?version=436652
