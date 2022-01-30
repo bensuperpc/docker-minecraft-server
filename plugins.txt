@@ -28,11 +28,14 @@ https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
 https://dev.bukkit.org/projects/multiverse-inventories/files/latest
 https://dev.bukkit.org/projects/multiverse-signportals/files/latest
 
+# CoreProtect
+# https://dev.bukkit.org/projects/coreprotect/files/latest
+
 # Set Homes
 https://dev.bukkit.org/projects/set-homes/files/latest
 
 # Holographic Displays
-# https://dev.bukkit.org/projects/holographic-displays/files/latest
+https://dev.bukkit.org/projects/holographic-displays/files/latest
 
 # Chunk Loader
 https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
@@ -41,7 +44,7 @@ https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
 # https://dev.bukkit.org/projects/dropheads/files/latest
 
 # SilkSpawners
-# https://dev.bukkit.org/projects/silkspawners/files/latest
+https://dev.bukkit.org/projects/silkspawners/files/latest
 
 # DeadChest
 # https://dev.bukkit.org/projects/dead-chest/files/latest
@@ -53,4 +56,4 @@ https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
 # https://dev.bukkit.org/projects/tree-assist/files/latest
 
 # ChatColor
-# https://dev.bukkit.org/projects/chatcolor-s/files/latest
+https://dev.bukkit.org/projects/chatcolor-s/files/latest
