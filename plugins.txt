@@ -28,6 +28,9 @@ https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
 https://dev.bukkit.org/projects/multiverse-inventories/files/latest
 https://dev.bukkit.org/projects/multiverse-signportals/files/latest
 
+# Set Homes
+https://dev.bukkit.org/projects/set-homes/files/latest
+
 # Holographic Displays
 # https://dev.bukkit.org/projects/holographic-displays/files/latest
 
