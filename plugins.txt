@@ -47,7 +47,7 @@ https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
 https://dev.bukkit.org/projects/silkspawners/files/latest
 
 # OpenInv
-# https://dev.bukkit.org/projects/openinv/files/latest
+https://dev.bukkit.org/projects/openinv/files/latest
 
 # Minepacks
 # https://dev.bukkit.org/projects/minepacks/files/latest
@@ -59,7 +59,7 @@ https://dev.bukkit.org/projects/silkspawners/files/latest
 https://dev.bukkit.org/projects/dead-chest/files/latest
 
 # UberEnchant
-https://dev.bukkit.org/projects/uberenchant/files/latest
+# https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # VoidSpawn
 # https://dev.bukkit.org/projects/voidspawn/files/latest
