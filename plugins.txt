@@ -34,8 +34,8 @@ https://dev.bukkit.org/projects/coreprotect/files/latest
 # Set Homes
 https://dev.bukkit.org/projects/set-homes/files/latest
 
-# Holographic Displays
-https://dev.bukkit.org/projects/holographic-displays/files/latest
+# Holographic Displays (1.16.4 max 31-01-22)
+# https://dev.bukkit.org/projects/holographic-displays/files/latest
 
 # Chunk Loader
 https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
@@ -46,8 +46,20 @@ https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
 # SilkSpawners
 https://dev.bukkit.org/projects/silkspawners/files/latest
 
+# OpenInv
+# https://dev.bukkit.org/projects/openinv/files/latest
+
+# Minepacks
+# https://dev.bukkit.org/projects/minepacks/files/latest
+
+# TrollBoss
+# https://dev.bukkit.org/projects/troll-extreme/files/latest
+
 # DeadChest
-# https://dev.bukkit.org/projects/dead-chest/files/latest
+https://dev.bukkit.org/projects/dead-chest/files/latest
+
+# UberEnchant
+https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # VoidSpawn
 # https://dev.bukkit.org/projects/voidspawn/files/latest
@@ -58,8 +70,11 @@ https://dev.bukkit.org/projects/silkspawners/files/latest
 # ChatColor
 https://dev.bukkit.org/projects/chatcolor-s/files/latest
 
-# Morph
-# https://dev.bukkit.org/projects/morph/files/latest
-
 # Chests++
-# https://dev.bukkit.org/projects/chests-plus-plus/files/latest
+https://dev.bukkit.org/projects/chests-plus-plus/files/latest
+
+# Shopkeepers
+https://dev.bukkit.org/projects/shopkeepers/files/latest
+
+# EconomyShopGUI
+https://dev.bukkit.org/projects/economyshopgui/files/latest
