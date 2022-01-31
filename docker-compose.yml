@@ -41,7 +41,7 @@ services:
       OVERRIDE_SERVER_PROPERTIES: "true"
       MAX_TICK_TIME: "-1"
       # Time (sec) before AFK player was disconect
-      PLAYER_IDLE_TIMEOUT: "240"
+      PLAYER_IDLE_TIMEOUT: "600"
       MAX_PLAYERS: "100"
       MODE: "survival"
       ALLOW_FLIGHT: "false"
