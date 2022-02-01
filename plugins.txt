@@ -8,6 +8,8 @@ https://dev.bukkit.org/projects/essentialsx/files/latest
 # EssentialsX Add-on
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXChat-2.19.2.jar
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXSpawn-2.19.2.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXDiscord-2.19.2.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXGeoIP-2.19.2.jar
 
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 https://dev.bukkit.org/projects/worldedit/files/latest
@@ -34,11 +36,14 @@ https://dev.bukkit.org/projects/coreprotect/files/latest
 # Set Homes
 https://dev.bukkit.org/projects/set-homes/files/latest
 
-# Holographic Displays (1.16.4 max 31-01-22)
+# Holographic Displays (1.17.1 max 31-01-22)
 # https://dev.bukkit.org/projects/holographic-displays/files/latest
 
 # Chunk Loader
 https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
+
+# Chunky Pregenerator
+https://dev.bukkit.org/projects/chunky-pregenerator/files/latest
 
 # DropHeads
 # https://dev.bukkit.org/projects/dropheads/files/latest
@@ -53,7 +58,7 @@ https://dev.bukkit.org/projects/openinv/files/latest
 # https://dev.bukkit.org/projects/minepacks/files/latest
 
 # TrollBoss
-# https://dev.bukkit.org/projects/troll-extreme/files/latest
+https://dev.bukkit.org/projects/troll-extreme/files/latest
 
 # DeadChest
 https://dev.bukkit.org/projects/dead-chest/files/latest
@@ -78,3 +83,22 @@ https://dev.bukkit.org/projects/shopkeepers/files/latest
 
 # EconomyShopGUI
 https://dev.bukkit.org/projects/economyshopgui/files/latest
+
+# SignShop v3
+https://dev.bukkit.org/projects/signshop/files/latest
+
+# QualityArmory
+# https://dev.bukkit.org/projects/qualityarmory/files/latest
+
+# CustomCrafting Advanced Custom Recipes
+https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
+https://www.curseforge.com/minecraft/bukkit-plugins/wolfyutilities/download/3592590
+
+# CraftBook 3
+# https://dev.bukkit.org/projects/craftbook/files/latest
+
+# MythicMobs
+# https://dev.bukkit.org/projects/mythicmobs/files/latest
+
+# AntiCheatReloaded
+# https://dev.bukkit.org/projects/anticheatreloaded/files/latest
