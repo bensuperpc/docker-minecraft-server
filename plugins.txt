@@ -30,6 +30,16 @@ https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
 https://dev.bukkit.org/projects/multiverse-inventories/files/latest
 https://dev.bukkit.org/projects/multiverse-signportals/files/latest
 
+# Advanced Portals
+# https://dev.bukkit.org/projects/advanced-portals/files/latest
+
+# ProtocolLib
+# https://www.spigotmc.org/resources/protocollib.1997/download?version=408253
+https://github.com/dmulloy2/ProtocolLib/releases/download/4.7.0/ProtocolLib.jar
+
+# Server Essentials for Bukkit
+# https://dev.bukkit.org/projects/server-essentials-for-bukkit/files/latest
+
 # CoreProtect
 https://dev.bukkit.org/projects/coreprotect/files/latest
 
@@ -54,6 +64,12 @@ https://dev.bukkit.org/projects/silkspawners/files/latest
 # OpenInv
 https://dev.bukkit.org/projects/openinv/files/latest
 
+# ClickSort
+https://dev.bukkit.org/projects/clicksort/files/latest
+
+# Animated-TabList
+https://dev.bukkit.org/projects/animated-tab-tablist/files/latest
+
 # Minepacks
 # https://dev.bukkit.org/projects/minepacks/files/latest
 
@@ -64,7 +80,7 @@ https://dev.bukkit.org/projects/troll-extreme/files/latest
 https://dev.bukkit.org/projects/dead-chest/files/latest
 
 # UberEnchant
-# https://dev.bukkit.org/projects/uberenchant/files/latest
+https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # VoidSpawn
 # https://dev.bukkit.org/projects/voidspawn/files/latest
@@ -89,6 +105,9 @@ https://dev.bukkit.org/projects/signshop/files/latest
 
 # QualityArmory
 # https://dev.bukkit.org/projects/qualityarmory/files/latest
+
+# PowerRanks (Need PlaceholderAPI ?)
+# https://dev.bukkit.org/projects/powerranks/files/latest
 
 # CustomCrafting Advanced Custom Recipes
 # https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
