@@ -48,6 +48,8 @@ https://dev.bukkit.org/projects/set-homes/files/latest
 
 # Holographic Displays (1.17.1 max 31-01-22)
 # https://dev.bukkit.org/projects/holographic-displays/files/latest
+# Beta 3.0.0 (02-02-22)
+https://ci.codemc.io/job/filoghost/job/HolographicDisplays/lastStableBuild/artifact/HolographicDisplays-3.0.0-SNAPSHOT.jar
 
 # Chunk Loader
 https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest

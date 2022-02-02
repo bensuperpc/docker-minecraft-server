@@ -119,7 +119,7 @@ services:
       - mc-server
     environment:
       BACKUP_INTERVAL: "12h"
-      INITIAL_DELAY: "3m"
+      INITIAL_DELAY: "10m"
       PRUNE_BACKUPS_DAYS: "7"
       PAUSE_IF_NO_PLAYERS: "true"
       EXCLUDES: ""
