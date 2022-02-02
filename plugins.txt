@@ -52,7 +52,9 @@ https://dev.bukkit.org/projects/set-homes/files/latest
 https://ci.codemc.io/job/filoghost/job/HolographicDisplays/lastStableBuild/artifact/HolographicDisplays-3.0.0-SNAPSHOT.jar
 
 # Chunk Loader
-https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
+# https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
+# chunkloader 1.0.8-beta1 (02-02-22)
+https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/3592486/download
 
 # Chunky Pregenerator
 https://dev.bukkit.org/projects/chunky-pregenerator/files/latest
