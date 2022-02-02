@@ -28,7 +28,7 @@ https://dev.bukkit.org/projects/multiverse-core/files/latest
 https://dev.bukkit.org/projects/multiverse-portals/files/latest
 https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
 https://dev.bukkit.org/projects/multiverse-inventories/files/latest
-# https://dev.bukkit.org/projects/multiverse-signportals/files/latest
+https://dev.bukkit.org/projects/multiverse-signportals/files/latest
 
 # Advanced Portals
 # https://dev.bukkit.org/projects/advanced-portals/files/latest
