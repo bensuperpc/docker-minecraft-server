@@ -122,7 +122,7 @@ services:
       INITIAL_DELAY: "10m"
       PRUNE_BACKUPS_DAYS: "7"
       PAUSE_IF_NO_PLAYERS: "true"
-      EXCLUDES: ""
+      EXCLUDES: "*.exe_bin_test"
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc-server
     volumes:
