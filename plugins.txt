@@ -64,6 +64,7 @@ https://dev.bukkit.org/projects/chunky-pregenerator/files/latest
 
 # SilkSpawners
 https://dev.bukkit.org/projects/silkspawners/files/latest
+https://dev.bukkit.org/projects/silkspawnersecoaddon/files/latest
 
 # OpenInv
 https://dev.bukkit.org/projects/openinv/files/latest
