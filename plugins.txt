@@ -92,6 +92,8 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # TreeAssist
 # https://dev.bukkit.org/projects/tree-assist/files/latest
+# Beta TreeAssist v7.3.10 (03-02-2022)
+https://dev.bukkit.org/projects/tree-assist/files/3606400/download
 
 # ChatColor
 https://dev.bukkit.org/projects/chatcolor-s/files/latest
@@ -126,3 +128,6 @@ https://dev.bukkit.org/projects/wolfyutilities/files/latest
 
 # AntiCheatReloaded
 # https://dev.bukkit.org/projects/anticheatreloaded/files/latest
+
+# Insta Mine Deepslate
+# https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
