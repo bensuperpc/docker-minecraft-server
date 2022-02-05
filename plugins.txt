@@ -37,7 +37,9 @@ https://dev.bukkit.org/projects/advanced-portals/files/latest
 
 # ProtocolLib
 # https://www.spigotmc.org/resources/protocollib.1997/download?version=408253
-https://github.com/dmulloy2/ProtocolLib/releases/download/4.7.0/ProtocolLib.jar
+# MC 1.17.1
+# https://github.com/dmulloy2/ProtocolLib/releases/download/4.7.0/ProtocolLib.jar
+https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar
 
 # Server Essentials for Bukkit
 # https://dev.bukkit.org/projects/server-essentials-for-bukkit/files/latest
@@ -142,3 +144,9 @@ https://dev.bukkit.org/projects/imageonmap/files/latest
 
 # Geyser
 https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
+
+# PvPManager
+https://dev.bukkit.org/projects/pvpmanager/files/latest
+
+# BannerMaker
+https://dev.bukkit.org/projects/bannermaker/files/latest
