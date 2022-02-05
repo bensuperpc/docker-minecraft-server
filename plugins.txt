@@ -113,7 +113,7 @@ https://dev.bukkit.org/projects/signshop/files/latest
 # QualityArmory
 # https://dev.bukkit.org/projects/qualityarmory/files/latest
 
-# PowerRanks (Need PlaceholderAPI ?)
+# PowerRanks (Need PlaceholderAPI)
 # https://dev.bukkit.org/projects/powerranks/files/latest
 
 # CustomCrafting Advanced Custom Recipes
@@ -131,3 +131,12 @@ https://dev.bukkit.org/projects/wolfyutilities/files/latest
 
 # Insta Mine Deepslate
 # https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
+
+# SkinsRestorerX
+https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.10/SkinsRestorer.jar
+
+# ImageOnMap
+https://dev.bukkit.org/projects/imageonmap/files/latest
+
+# Geyser
+https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
