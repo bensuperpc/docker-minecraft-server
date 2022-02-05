@@ -19,3 +19,6 @@
 [submodule "docker-bungeecord"]
 	path = docker-bungeecord
 	url = https://github.com/itzg/docker-bungeecord.git
+[submodule "docker-minecraft-bedrock-server"]
+	path = docker-minecraft-bedrock-server
+	url = https://github.com/itzg/docker-minecraft-bedrock-server.git

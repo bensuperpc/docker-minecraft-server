@@ -2,13 +2,15 @@
 https://dev.bukkit.org/projects/dynmap/files/3620010/download
 
 # EssentialsX
-https://dev.bukkit.org/projects/essentialsx/files/latest
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsX-2.19.2.jar
+# https://dev.bukkit.org/projects/essentialsx/files/latest
+https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsX-2.19.2.jar
 
 # EssentialsX Add-on
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXChat-2.19.2.jar
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXSpawn-2.19.2.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXDiscord-2.19.2.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXDiscord-2.19.2.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXProtect-2.19.2.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXAntiBuild-2.19.2.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXGeoIP-2.19.2.jar
 
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
@@ -31,7 +33,7 @@ https://dev.bukkit.org/projects/multiverse-inventories/files/latest
 https://dev.bukkit.org/projects/multiverse-signportals/files/latest
 
 # Advanced Portals
-# https://dev.bukkit.org/projects/advanced-portals/files/latest
+https://dev.bukkit.org/projects/advanced-portals/files/latest
 
 # ProtocolLib
 # https://www.spigotmc.org/resources/protocollib.1997/download?version=408253

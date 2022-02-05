@@ -10,6 +10,8 @@ services:
     ports:
       #       Server Minecraft port
       - 25565:25565
+      #       Server Minecraft Bedrock port (Geyser)
+      - 19132:19132
       #       Dynmap port
       - 8123:8123
       #       Rcon port
