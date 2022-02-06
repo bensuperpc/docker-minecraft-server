@@ -96,6 +96,7 @@ services:
       SPAWN_PROTECTION: "16"
       #      SEED: 3820
       SNOOPER_ENABLED: "true"
+      ENABLE_STATUS: "true"
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
