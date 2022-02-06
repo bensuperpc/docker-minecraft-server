@@ -22,12 +22,13 @@ services:
       ONLINE_MODE: "true"
       SERVER_PORT: "25565"
       TYPE: PURPUR
+      VERSION: "1.18.1"
+      PURPUR_BUILD: LATEST
       FORCE_REDOWNLOAD: "true"
       SERVER_NAME: "MyServer"
       #      ICON: "http://..../some/other/image.png"
       #      OVERRIDE_ICON: "true"
       MOTD: "A §l§cMinecraft§r §nserver"
-      VERSION: "1.18.1"
       MEMORY: 8G
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
@@ -64,11 +65,14 @@ services:
       MODS_FILE: "/extras/plugins.txt"
       REMOVE_OLD_MODS: "true"
       REMOVE_OLD_MODS_INCLUDE: "*.jar"
+      # REMOVE_OLD_MODS_EXCLUDE: ""
       REMOVE_OLD_MODS_DEPTH: "1"
+      # RESOURCE_PACK: ""
       # DATAPACKS: ""
       # DATAPACKS_FILE: "/extras/datapacks.txt"
       # REMOVE_OLD_DATAPACKS: "true"
       # REMOVE_OLD_DATAPACKS_INCLUDE: "*.zip"
+      # REMOVE_OLD_DATAPACKS_EXCLUDE: ""
       # REMOVE_OLD_DATAPACKS_DEPTH: "1"
       #      Minecraft option
       LEVEL: world
