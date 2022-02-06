@@ -1,5 +1,5 @@
 # Dynmap
-https://dev.bukkit.org/projects/dynmap/files/3620010/download
+https://dev.bukkit.org/projects/dynmap/files/latest
 
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
