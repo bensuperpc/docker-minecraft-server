@@ -8,7 +8,7 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsX-2
 # EssentialsX Add-on
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXChat-2.19.2.jar
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXSpawn-2.19.2.jar
-https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXDiscord-2.19.2.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXDiscord-2.19.2.jar
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXProtect-2.19.2.jar
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXAntiBuild-2.19.2.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXGeoIP-2.19.2.jar
@@ -47,8 +47,8 @@ https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/Prot
 # CoreProtect
 https://dev.bukkit.org/projects/coreprotect/files/latest
 
-# Set Homes
-https://dev.bukkit.org/projects/set-homes/files/latest
+# Set Homes (Abandoned project)
+# https://dev.bukkit.org/projects/set-homes/files/latest
 
 # Holographic Displays (1.17.1 max 31-01-22)
 # https://dev.bukkit.org/projects/holographic-displays/files/latest
@@ -150,3 +150,6 @@ https://dev.bukkit.org/projects/pvpmanager/files/latest
 
 # BannerMaker
 https://dev.bukkit.org/projects/bannermaker/files/latest
+
+# AuthMe Reloaded
+https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/lastSuccessfulBuild/artifact/target/AuthMe-5.6.0-SNAPSHOT.jar
