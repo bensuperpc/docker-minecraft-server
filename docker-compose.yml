@@ -174,7 +174,7 @@ services:
     depends_on:
       - monitor
   grafana:
-    image: grafana/grafana-oss:${GRAFANA_VERSION:-8.3.3}
+    image: grafana/grafana-oss:${GRAFANA_VERSION:-8.3.4}
     restart: on-failure:3
     ports:
       - "3000:3000"
