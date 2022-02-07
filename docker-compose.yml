@@ -94,7 +94,7 @@ services:
       SPAWN_MONSTERS: "true"
       SPAWN_NPCS: "true"
       SPAWN_PROTECTION: "16"
-      #      SEED: 3820
+      SEED: 3820
       SNOOPER_ENABLED: "true"
       ENABLE_STATUS: "true"
     volumes:

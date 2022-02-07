@@ -134,7 +134,7 @@ https://dev.bukkit.org/projects/wolfyutilities/files/latest
 # https://dev.bukkit.org/projects/anticheatreloaded/files/latest
 
 # Insta Mine Deepslate
-# https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
+https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
 https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.10/SkinsRestorer.jar
