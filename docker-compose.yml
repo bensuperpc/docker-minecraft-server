@@ -36,11 +36,11 @@ services:
       CONSOLE: "false"
       GUI: "false"
       TZ: "Europe/Paris"
-      OPS: "Bensuperpc,JeanC"
+      OPS: "Bensuperpc,RobertLePecheur"
       # OPS_FILE: ""
       # OVERRIDE_OPS: "true"
       # ENABLE_WHITELIST: "true"
-      WHITELIST: "Bensuperpc,JeanC"
+      WHITELIST: "Bensuperpc,RobertLePecheur"
       # WHITELIST_FILE: ""
       ENFORCE_WHITELIST: "true"
       ENABLE_AUTOPAUSE: "true"
@@ -134,6 +134,7 @@ services:
       EXCLUDES: "*.exe_bin_test"
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc-server
+      BACKUP_NAME: "server"
     volumes:
       # mount the same volume used by server, but read-only
       - mc-data:/data:ro
