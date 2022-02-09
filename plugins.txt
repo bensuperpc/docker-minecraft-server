@@ -32,8 +32,8 @@ https://dev.bukkit.org/projects/worldguard/files/latest
 # https://dev.bukkit.org/projects/fawe/files/latest
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
-# LuckPerms
-https://ci.lucko.me/job/LuckPerms/1398/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.3.98.jar
+# LuckPerms (Need update sometime)
+https://ci.lucko.me/job/LuckPerms/1409/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.1.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
