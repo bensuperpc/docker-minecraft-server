@@ -1,6 +1,19 @@
 # Dynmap
 https://dev.bukkit.org/projects/dynmap/files/latest
 
+# Dynmap-WorldGuard
+# https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
+# v1.4-beta-1
+https://dev.bukkit.org/projects/dynmap-worldguard/files/3635984/download
+
+# Dynmap-EssentialsX
+# https://dev.bukkit.org/projects/dynmap-essentialsx/files/latest
+# v1.0-beta-1 (09-02-2022)
+https://dev.bukkit.org/projects/dynmap-essentialsx/files/3634752/download
+
+# Dynmap-Structures
+https://dev.bukkit.org/projects/dynmap-structures/files/latest
+
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
 https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsX-2.19.2.jar
@@ -156,3 +169,6 @@ https://dev.bukkit.org/projects/bannermaker/files/latest
 
 # AuthMe Reloaded
 https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/lastSuccessfulBuild/artifact/target/AuthMe-5.6.0-SNAPSHOT.jar
+
+# SignBoard
+https://dev.bukkit.org/projects/signboard/files/latest
