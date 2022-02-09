@@ -9,13 +9,13 @@ services:
     # stdin_open: false
     ports:
       #       Server Minecraft port
-      - 25565:25565
-      #       Server Minecraft Bedrock port (Geyser)
-      - 19132:19132
-      #       Dynmap port
-      - 8123:8123
+      - "25565:25565"
       #       Rcon port
-      - 25575:25575
+      - "25575:25575"
+      #       Server Minecraft Bedrock port (Geyser)
+      - "19132:19132/udp"
+      #       Dynmap port
+      - "8123:8123"
     environment:
       #       Server options
       EULA: "true"
@@ -29,7 +29,7 @@ services:
       #      ICON: "http://..../some/other/image.png"
       #      OVERRIDE_ICON: "true"
       MOTD: "A §l§cMinecraft§r §nserver"
-      MEMORY: 8G
+      MEMORY: ${MEMORY:-8G}
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       #      TUNE_VIRTUALIZED: "true"
@@ -38,19 +38,22 @@ services:
       TZ: "Europe/Paris"
       OPS: "Bensuperpc,RobertLePecheur"
       # OPS_FILE: ""
-      # OVERRIDE_OPS: "true"
-      # ENABLE_WHITELIST: "true"
+      OVERRIDE_OPS: "true"
+      ENABLE_WHITELIST: "true"
+      OVERRIDE_WHITELIST: "true"
       WHITELIST: "Bensuperpc,RobertLePecheur"
       # WHITELIST_FILE: ""
       ENFORCE_WHITELIST: "true"
       ENABLE_AUTOPAUSE: "true"
-      AUTOPAUSE_TIMEOUT_EST: "7200"
+      AUTOPAUSE_TIMEOUT_EST: "3600"
+      AUTOPAUSE_TIMEOUT_INIT: "600"
+      AUTOPAUSE_TIMEOUT_KN: "120"
       OVERRIDE_SERVER_PROPERTIES: "true"
       LOG_TIMESTAMP: "true"
       MAX_TICK_TIME: "-1"
       # Time (sec) before AFK player was disconect
       PLAYER_IDLE_TIMEOUT: "600"
-      MAX_PLAYERS: "100"
+      MAX_PLAYERS: "24"
       MODE: "survival"
       ALLOW_FLIGHT: "false"
       #       RCON options
@@ -116,9 +119,9 @@ services:
       RWA_RCON_PASSWORD: minecraft
     ports:
       #       web UI port
-      - 4326:4326
+      - "4326:4326"
       #       websocket access from UI
-      - 4327:4327
+      - "4327:4327"
     volumes:
       - "rcon:/opt/rcon-web-admin/db"
   backups:
@@ -128,7 +131,7 @@ services:
       - mc-server
     environment:
       BACKUP_INTERVAL: "12h"
-      INITIAL_DELAY: "30m"
+      INITIAL_DELAY: "4h"
       PRUNE_BACKUPS_DAYS: "7"
       PAUSE_IF_NO_PLAYERS: "true"
       EXCLUDES: "*.exe_bin_test"
