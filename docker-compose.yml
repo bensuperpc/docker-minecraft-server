@@ -1,25 +1,41 @@
 version: "3.8"
 
 services:
-  mc-server:
+  proxy:
+    image: itzg/bungeecord
+    environment:
+      TYPE: VELOCITY
+      PLUGINS: "https://github.com/UnioDex/VelocityRcon/releases/download/v1.1/VelocityRcon.jar,https://ci.lucko.me/job/LuckPerms/lastSuccessfulBuild/artifact/velocity/build/libs/LuckPerms-Velocity-5.4.1.jar"
+      DEBUG: "false"
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "minecraft"
+      RCON_PORT: "25576"
+      MEMORY: "512m"
+    ports:
+      - "25565:25577"
+      - "25576:25576"
+    volumes:
+      - ./docker-bungeecord/docs/config.yml:/config/config.yml
+      - proxy:/server
+  mc:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
     restart: on-failure:3
     # tty: true
     # stdin_open: false
     ports:
-      #       Server Minecraft port
-      - "25565:25565"
+      #       Server Minecraft port (Disable if you use proxy like)
+      # - "25565:25565"
       #       Rcon port
       - "25575:25575"
       #       Server Minecraft Bedrock port (Geyser)
-      - "19132:19132/udp"
+      # - "19132:19132/udp"
       #       Dynmap port
       - "8123:8123"
     environment:
       #       Server options
       EULA: "true"
-      ONLINE_MODE: "true"
+      ONLINE_MODE: "false"
       SERVER_PORT: "25565"
       TYPE: PURPUR
       VERSION: "1.18.1"
@@ -29,7 +45,7 @@ services:
       #      ICON: "http://..../some/other/image.png"
       #      OVERRIDE_ICON: "true"
       MOTD: "A §l§cMinecraft§r §nserver"
-      MEMORY: ${MEMORY:-8G}
+      MEMORY: "${MEMORY:-8G}"
       EXEC_DIRECTLY: "false"
       USE_AIKAR_FLAGS: "true"
       #      TUNE_VIRTUALIZED: "true"
@@ -103,18 +119,119 @@ services:
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
-      - ./datapacks.txt:/extras/datapacks.txt:ro
+  mc-blitz:
+    image: itzg/minecraft-server:latest
+    container_name: minecraft-blitz-server
+    restart: on-failure:3
+    # tty: true
+    # stdin_open: false
+    ports:
+      #       Server Minecraft port (Disable if you use proxy like)
+      # - "25566:25566"
+      #       Rcon port
+      - "25577:25577"
+      #       Server Minecraft Bedrock port (Geyser)
+      # - "19132:19132/udp"
+      #       Dynmap port
+      # - "8123:8123"
+    environment:
+      #       Server options
+      EULA: "true"
+      ONLINE_MODE: "false"
+      SERVER_PORT: "25566"
+      TYPE: PURPUR
+      VERSION: "1.18.1"
+      PURPUR_BUILD: LATEST
+      FORCE_REDOWNLOAD: "true"
+      SERVER_NAME: "Blitz-Server"
+      #      ICON: "http://..../some/other/image.png"
+      #      OVERRIDE_ICON: "true"
+      MOTD: "A §l§cMinecraft§r §nserver"
+      MEMORY: "4G"
+      EXEC_DIRECTLY: "false"
+      USE_AIKAR_FLAGS: "true"
+      #      TUNE_VIRTUALIZED: "true"
+      CONSOLE: "false"
+      GUI: "false"
+      TZ: "Europe/Paris"
+      OPS: "Bensuperpc,RobertLePecheur"
+      # OPS_FILE: ""
+      OVERRIDE_OPS: "true"
+      ENABLE_WHITELIST: "true"
+      OVERRIDE_WHITELIST: "true"
+      WHITELIST: "Bensuperpc,RobertLePecheur"
+      # WHITELIST_FILE: ""
+      ENFORCE_WHITELIST: "true"
+      ENABLE_AUTOPAUSE: "true"
+      AUTOPAUSE_TIMEOUT_EST: "3600"
+      AUTOPAUSE_TIMEOUT_INIT: "1800"
+      AUTOPAUSE_TIMEOUT_KN: "240"
+      OVERRIDE_SERVER_PROPERTIES: "true"
+      LOG_TIMESTAMP: "true"
+      MAX_TICK_TIME: "-1"
+      # Time (sec) before AFK player was disconect
+      PLAYER_IDLE_TIMEOUT: "600"
+      MAX_PLAYERS: "24"
+      MODE: "survival"
+      ALLOW_FLIGHT: "false"
+      #       RCON options
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "minecraft"
+      RCON_PORT: "25577"
+      BUILD_FROM_SOURCE: "false"
+      # Plugins options
+      #      SPIGET_RESOURCES: ""
+      #      MODPACK: "" # MODPACK or MODS
+      #      MODS: "https://dev.bukkit.org/projects/dynmap/files/3620010/download"
+      MODS_FILE: "/extras/plugins.txt"
+      REMOVE_OLD_MODS: "true"
+      REMOVE_OLD_MODS_INCLUDE: "*.jar"
+      REMOVE_OLD_MODS_EXCLUDE: ""
+      REMOVE_OLD_MODS_DEPTH: "1"
+      # RESOURCE_PACK: ""
+      # DATAPACKS: ""
+      # DATAPACKS_FILE: "/extras/datapacks.txt"
+      # REMOVE_OLD_DATAPACKS: "true"
+      # REMOVE_OLD_DATAPACKS_INCLUDE: "*.zip"
+      # REMOVE_OLD_DATAPACKS_EXCLUDE: ""
+      # REMOVE_OLD_DATAPACKS_DEPTH: "1"
+      #      Minecraft option
+      LEVEL: world
+      LEVEL_TYPE=: "default"
+      #      MAX_WORLD_SIZE: "10000"
+      #      MAX_BUILD_HEIGHT: "256"
+      ALLOW_NETHER: "true"
+      GENERATE_STRUCTURES: "true"
+      VIEW_DISTANCE: "16"
+      SIMULATION_DISTANCE: "12"
+      ENABLE_COMMAND_BLOCK: "true"
+      ANNOUNCE_PLAYER_ACHIEVEMENTS: "true"
+      PVP: "true"
+      DIFFICULTY: "hard"
+      FORCE_GAMEMODE: "false"
+      HARDCORE: "false"
+      # Spawn Entities Options
+      SPAWN_ANIMALS: "true"
+      SPAWN_MONSTERS: "true"
+      SPAWN_NPCS: "true"
+      SPAWN_PROTECTION: "16"
+      # SEED: 3820
+      SNOOPER_ENABLED: "true"
+      ENABLE_STATUS: "true"
+    volumes:
+      - mc-blitz-data:/data
+      - ./plugins.txt:/extras/plugins.txt:ro
   rcon-web:
     image: itzg/rcon:latest
     restart: on-failure:3
     depends_on:
-      - mc-server
+      - mc
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
       RWA_ADMIN: "TRUE"
-      # is referring to the hostname of 'mc-server' compose service below
-      RWA_RCON_HOST: mc-server
+      # is referring to the hostname of 'mc' compose service below
+      RWA_RCON_HOST: mc
       # needs to match the password configured for the container, which is 'minecraft' by default
       RWA_RCON_PASSWORD: minecraft
     ports:
@@ -128,15 +245,15 @@ services:
     image: itzg/mc-backup:latest
     restart: on-failure:3
     depends_on:
-      - mc-server
+      - mc
     environment:
       BACKUP_INTERVAL: "12h"
-      INITIAL_DELAY: "4h"
+      INITIAL_DELAY: "8h"
       PRUNE_BACKUPS_DAYS: "7"
       PAUSE_IF_NO_PLAYERS: "true"
       EXCLUDES: "*.exe_bin_test"
       # instead of network_mode below, could declare RCON_HOST
-      RCON_HOST: mc-server
+      RCON_HOST: mc
       BACKUP_NAME: "server"
     volumes:
       # mount the same volume used by server, but read-only
@@ -146,7 +263,7 @@ services:
       #- ./mc-backups:/backups
       - mc-backups:/backups
     # share network namespace with server to simplify rcon access
-    # network_mode: "service:mc-server"
+    # network_mode: "service:mc"
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
     restart: on-failure:3
@@ -162,10 +279,10 @@ services:
     restart: on-failure:3
     command: export-for-prometheus
     environment:
-      EXPORT_SERVERS: mc-server
+      EXPORT_SERVERS: mc
       DEBUG: "true"
     depends_on:
-      - mc-server
+      - mc
   prometheus:
     image: prom/prometheus:latest
     restart: on-failure:3
@@ -191,7 +308,9 @@ services:
 
 volumes:
   mc-data: {}
+  mc-blitz-data: {}
   mc-backups: {}
   rcon: {}
   prometheus-tsdb: {}
   grafana-lib: {}
+  proxy: {}
