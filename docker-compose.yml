@@ -87,12 +87,9 @@ services:
     restart: on-failure:3
     depends_on:
       - mc
+    env_file:
+      - backup.env
     environment:
-      BACKUP_INTERVAL: "12h"
-      INITIAL_DELAY: "8h"
-      PRUNE_BACKUPS_DAYS: "7"
-      PAUSE_IF_NO_PLAYERS: "true"
-      EXCLUDES: "*.exe_bin_test"
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc
       BACKUP_NAME: "server-main"
@@ -110,12 +107,9 @@ services:
     restart: on-failure:3
     depends_on:
       - mc-blitz
+    env_file:
+      - backup.env
     environment:
-      BACKUP_INTERVAL: "12h"
-      INITIAL_DELAY: "8h"
-      PRUNE_BACKUPS_DAYS: "7"
-      PAUSE_IF_NO_PLAYERS: "true"
-      EXCLUDES: "*.exe_bin_test"
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc-blitz
       BACKUP_NAME: "server-blitz"
