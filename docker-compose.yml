@@ -6,6 +6,7 @@ services:
     environment:
       TYPE: VELOCITY
       PLUGINS: "https://github.com/UnioDex/VelocityRcon/releases/download/v1.1/VelocityRcon.jar,https://ci.lucko.me/job/LuckPerms/lastSuccessfulBuild/artifact/velocity/build/libs/LuckPerms-Velocity-5.4.1.jar,https://ci.minebench.de/job/ConnectorPlugin/lastSuccessfulBuild/artifact/target/ConnectorPlugin.jar"
+      # SPIGET_PLUGINS: ""
       DEBUG: "false"
       ENABLE_RCON: "true"
       RCON_PASSWORD: "minecraft"
@@ -15,8 +16,8 @@ services:
       - "25565:25577"
       - "25576:25576"
     volumes:
-      - ./docker-bungeecord/docs/config.yml:/config/config.yml
       - proxy:/server
+      # - ./docker-bungeecord/docs/config.yml:/config/config.yml
   mc:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
