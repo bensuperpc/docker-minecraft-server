@@ -27,7 +27,7 @@ jobs:
           submodules: "recursive"
           fetch-depth: 0
       - name: "Build server"
-        run: docker-compose -f docker-compose.yml build
+        run: MEMORY=4G docker-compose -f docker-compose.yml build
       - name: "Start server"
         run: ./start.sh
       - name: "Wait..."
