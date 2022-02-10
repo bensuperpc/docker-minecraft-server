@@ -28,7 +28,7 @@ services:
       # - "25565:25565"
       #       Rcon port
       - "25575:25575"
-      #       Server Minecraft Bedrock port (Geyser)
+      #       Server Minecraft Bedrock port (GeyserMC)
       # - "19132:19132/udp"
       #       Dynmap port
       - "8123:8123"
@@ -130,10 +130,10 @@ services:
       # - "25566:25566"
       #       Rcon port
       - "25577:25577"
-      #       Server Minecraft Bedrock port (Geyser)
+      #       Server Minecraft Bedrock port (GeyserMC)
       # - "19132:19132/udp"
       #       Dynmap port
-      # - "8123:8123"
+      - "8124:8123"
     environment:
       #       Server options
       EULA: "true"

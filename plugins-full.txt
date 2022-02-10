@@ -150,25 +150,25 @@ https://dev.bukkit.org/projects/signshop/files/latest
 # https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
-# https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.10/SkinsRestorer.jar
+https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.10/SkinsRestorer.jar
 
 # ImageOnMap
 https://dev.bukkit.org/projects/imageonmap/files/latest
 
 # Geyser
-# https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
+https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
 
 # Floodgate
-# https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar
+https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar
 
 # PvPManager
-# https://dev.bukkit.org/projects/pvpmanager/files/latest
+https://dev.bukkit.org/projects/pvpmanager/files/latest
 
 # BannerMaker
-# https://dev.bukkit.org/projects/bannermaker/files/latest
+https://dev.bukkit.org/projects/bannermaker/files/latest
 
 # AuthMe Reloaded
-# https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/lastSuccessfulBuild/artifact/target/AuthMe-5.6.0-SNAPSHOT.jar
+https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/lastSuccessfulBuild/artifact/target/AuthMe-5.6.0-SNAPSHOT.jar
 
 # SignBoard
-# https://dev.bukkit.org/projects/signboard/files/latest
+https://dev.bukkit.org/projects/signboard/files/latest
