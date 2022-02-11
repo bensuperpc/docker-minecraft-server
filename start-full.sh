@@ -21,7 +21,7 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 
-MEMORY=8G docker-compose -f docker-compose.yml \
+docker-compose -f docker-compose.yml \
     -f docker-compose.monitor.yml \
     -f docker-compose.cadvisor.yml \
     up -d

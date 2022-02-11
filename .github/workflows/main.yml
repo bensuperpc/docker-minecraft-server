@@ -27,11 +27,11 @@ jobs:
           submodules: "recursive"
           fetch-depth: 0
       - name: "Build server"
-        run: MEMORY=3G docker-compose -f docker-compose.yml build
+        run: MEMORY=2500M docker-compose -f docker-compose.yml build
       - name: "Start server"
         run: ./start.sh
       - name: "Wait..."
-        run: sleep 120
+        run: sleep 240
       - name: "Check minecraft port"
         if: always()
         run: nc -zv 127.0.0.1 25565
