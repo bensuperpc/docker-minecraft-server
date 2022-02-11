@@ -25,7 +25,7 @@ services:
     # tty: true
     # stdin_open: false
     ports:
-      #       Server Minecraft port (Disable if you use proxy like)
+      #       Server Minecraft port (Disable if you use proxy)
       # - "25565:25565"
       #       Rcon port
       - "25575:25575"
@@ -114,6 +114,8 @@ services:
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc-blitz
       BACKUP_NAME: "server-blitz"
+      SERVER_PORT: "25566"
+      RCON_PORT: "25577"
     volumes:
       # mount the same volume used by server, but read-only
       - mc-blitz-data:/data:ro
