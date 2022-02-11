@@ -78,7 +78,7 @@ services:
     depends_on:
       - mc
       - mc-blitz
-      - proxy
+      - mc-proxy
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
