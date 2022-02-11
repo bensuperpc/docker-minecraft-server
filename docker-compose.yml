@@ -2,15 +2,17 @@ version: "3.8"
 
 services:
   proxy:
-    image: itzg/bungeecord
+    image: itzg/bungeecord:latest
+    container_name: minecraft-proxy-server
     restart: on-failure:3
     env_file:
       - proxy.env
     environment:
-      MEMORY: "768m"
+      MEMORY: "1G"
     ports:
       - "25565:25577"
       - "25576:25576"
+      # - "8806:8804"
     volumes:
       - proxy:/server
       # - ./docker-bungeecord/docs/config.yml:/config/config.yml
@@ -29,6 +31,7 @@ services:
       # - "19132:19132/udp"
       #       Dynmap port
       - "8123:8123"
+      - "8804:8804"
     env_file:
       - minecraft.env
     environment:
@@ -52,6 +55,7 @@ services:
       # - "19132:19132/udp"
       #       Dynmap port
       - "8124:8123"
+      - "8805:8804"
     env_file:
       - minecraft.env
     environment:
@@ -63,6 +67,7 @@ services:
       # - ./datapacks.txt:/extras/datapacks.txt:ro
   rcon-web:
     image: itzg/rcon:latest
+    container_name: minecraft-rcon-web
     restart: on-failure:3
     depends_on:
       - mc
@@ -83,6 +88,7 @@ services:
       - "rcon:/opt/rcon-web-admin/db"
   backups:
     image: itzg/mc-backup:latest
+    container_name: minecraft-backup
     restart: on-failure:3
     depends_on:
       - mc
@@ -103,6 +109,7 @@ services:
     # network_mode: "service:mc"
   backups-blitz:
     image: itzg/mc-backup:latest
+    container_name: minecraft-backup-blitz
     restart: on-failure:3
     depends_on:
       - mc-blitz
@@ -123,54 +130,9 @@ services:
       - mc-backups:/backups
     # share network namespace with server to simplify rcon access
     # network_mode: "service:mc"
-  cadvisor:
-    image: gcr.io/cadvisor/cadvisor:latest
-    restart: on-failure:3
-    ports:
-      - "8180:8080"
-    volumes:
-      - /:/rootfs:ro
-      - /var/run:/var/run:rw
-      - /sys:/sys:ro
-      - /var/lib/docker/:/var/lib/docker:ro
-  monitor:
-    image: itzg/mc-monitor:latest
-    restart: on-failure:3
-    command: export-for-prometheus
-    environment:
-      EXPORT_SERVERS: "mc,mc-blitz"
-      DEBUG: "true"
-    depends_on:
-      - mc
-      - mc-blitz
-  prometheus:
-    image: prom/prometheus:latest
-    restart: on-failure:3
-    # Disable port because there is grafana.
-    #    ports:
-    #      - 9090:9090
-    volumes:
-      - ./mc-monitor/examples/mc-monitor-prom/prometheus.yml:/etc/prometheus/prometheus.yml
-      - prometheus-tsdb:/prometheus
-    depends_on:
-      - monitor
-  grafana:
-    image: grafana/grafana-oss:${GRAFANA_VERSION:-8.3.4}
-    restart: on-failure:3
-    ports:
-      - "3000:3000"
-    volumes:
-      - grafana-lib:/var/lib/grafana
-      - ./mc-monitor/examples/mc-monitor-prom/grafana/provisioning:/etc/grafana/provisioning
-      - ./mc-monitor/examples/mc-monitor-prom/dashboards:/etc/grafana/dashboards
-    depends_on:
-      - prometheus
-
 volumes:
   mc-data: {}
   mc-blitz-data: {}
   mc-backups: {}
   rcon: {}
-  prometheus-tsdb: {}
-  grafana-lib: {}
   proxy: {}

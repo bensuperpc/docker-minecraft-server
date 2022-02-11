@@ -39,10 +39,13 @@ http://127.0.0.1:8123/
 #### Rcon (CMD...)
 http://127.0.0.1:4326/
 
-#### Grafana
+#### Minecraft Plan (Need to config)
+http://127.0.0.1:8804/
+
+#### Grafana (If start-full.sh)
 http://127.0.0.1:3000/
 
-#### Cadvisor
+#### Cadvisor (If start-full.sh)
 http://127.0.0.1:8180/
 
 #### Prometheus (Disabled by default)

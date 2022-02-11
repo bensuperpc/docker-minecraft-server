@@ -22,4 +22,6 @@
 #//////////////////////////////////////////////////////////////
 
 docker-compose -f docker-compose.yml \
+    -f docker-compose.monitor.yml \
+    -f docker-compose.cadvisor.yml \
     down
