@@ -1,7 +1,7 @@
 version: "3.8"
 
 services:
-  proxy:
+  mc-proxy:
     image: itzg/bungeecord:latest
     container_name: minecraft-proxy-server
     restart: on-failure:3
@@ -39,7 +39,7 @@ services:
     env_file:
       - minecraft.env
     environment:
-      MEMORY: "${MEMORY:-8G}"
+      MAX_MEMORY: "${MAX_MEMORY:-8G}"
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
@@ -66,7 +66,7 @@ services:
     environment:
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
-      MEMORY: "${MEMORY:-4G}"
+      MAX_MEMORY: "${MAX_MEMORY:-4G}"
     volumes:
       - mc-blitz-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro

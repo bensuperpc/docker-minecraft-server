@@ -1,6 +1,6 @@
 version: "3.8"
 
-services:  
+services:
   cadvisor:
     image: gcr.io/cadvisor/cadvisor:latest
     restart: on-failure:3

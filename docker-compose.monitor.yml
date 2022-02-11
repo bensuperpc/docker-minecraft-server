@@ -1,6 +1,6 @@
 version: "3.8"
 
-services:  
+services:
   monitor:
     image: itzg/mc-monitor:latest
     restart: on-failure:3

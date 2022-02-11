@@ -27,11 +27,11 @@ jobs:
           submodules: "recursive"
           fetch-depth: 0
       - name: "Build server"
-        run: MEMORY=2500M docker-compose -f docker-compose.yml build
+        run: MAX_MEMORY=3G docker-compose -f docker-compose.yml build
       - name: "Start server"
         run: ./start.sh
       - name: "Wait..."
-        run: sleep 240
+        run: sleep 480
       - name: "Check minecraft port"
         if: always()
         run: nc -zv 127.0.0.1 25565
@@ -41,12 +41,6 @@ jobs:
       - name: "Check web rcon port"
         if: always()
         run: nc -zv 127.0.0.1 4326
-      - name: "Check grafana port"
-        if: always()
-        run: nc -zv 127.0.0.1 3000
-      - name: "Check cadvisor port"
-        if: always()
-        run: nc -zv 127.0.0.1 8180
       - name: "Check server"
         if: always()
         run: docker-compose -f docker-compose.yml top
