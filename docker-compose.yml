@@ -10,8 +10,11 @@ services:
     environment:
       MEMORY: "1G"
     ports:
+      #       Server Minecraft port
       - "25565:25577"
+      #       Rcon port
       - "25576:25576"
+      #       Plan port
       # - "8806:8804"
     volumes:
       - proxy:/server
@@ -31,6 +34,7 @@ services:
       # - "19132:19132/udp"
       #       Dynmap port
       - "8123:8123"
+      #       Plan port
       - "8804:8804"
     env_file:
       - minecraft.env
@@ -55,6 +59,7 @@ services:
       # - "19132:19132/udp"
       #       Dynmap port
       - "8124:8123"
+      #       Plan port
       - "8805:8804"
     env_file:
       - minecraft.env
@@ -71,6 +76,8 @@ services:
     restart: on-failure:3
     depends_on:
       - mc
+      - mc-blitz
+      - proxy
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
