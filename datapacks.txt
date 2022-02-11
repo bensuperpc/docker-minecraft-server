@@ -1,0 +1,2 @@
+# planetminecraft not working with curl :/
+# https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/download/file/14707294/

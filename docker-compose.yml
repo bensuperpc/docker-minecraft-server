@@ -3,14 +3,10 @@ version: "3.8"
 services:
   proxy:
     image: itzg/bungeecord
+    restart: on-failure:3
+    env_file:
+      - proxy.env
     environment:
-      TYPE: VELOCITY
-      PLUGINS: "https://github.com/UnioDex/VelocityRcon/releases/download/v1.1/VelocityRcon.jar,https://ci.lucko.me/job/LuckPerms/lastSuccessfulBuild/artifact/velocity/build/libs/LuckPerms-Velocity-5.4.1.jar,https://ci.minebench.de/job/ConnectorPlugin/lastSuccessfulBuild/artifact/target/ConnectorPlugin.jar"
-      # SPIGET_PLUGINS: ""
-      DEBUG: "false"
-      ENABLE_RCON: "true"
-      RCON_PASSWORD: "minecraft"
-      RCON_PORT: "25576"
       MEMORY: "512m"
     ports:
       - "25565:25577"
@@ -40,6 +36,7 @@ services:
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
+      # - ./datapacks.txt:/extras/datapacks.txt:ro
   mc-blitz:
     image: itzg/minecraft-server:latest
     container_name: minecraft-blitz-server
@@ -63,6 +60,7 @@ services:
     volumes:
       - mc-blitz-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
+      # - ./datapacks.txt:/extras/datapacks.txt:ro
   rcon-web:
     image: itzg/rcon:latest
     restart: on-failure:3
