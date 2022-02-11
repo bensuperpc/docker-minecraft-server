@@ -10,7 +10,7 @@
   - Add github CI and update submodule
 
 ### Install
-You need Linux distribution like Ubuntu or Manjaoro
+You need Linux distribution like Ubuntu or Manjaro
 
 ```sh
 git clone --recurse-submodules https://github.com/Bensuperpc/docker-minecraft-server.git
