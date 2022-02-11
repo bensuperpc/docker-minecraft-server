@@ -7,7 +7,7 @@ services:
     env_file:
       - proxy.env
     environment:
-      MEMORY: "512m"
+      MEMORY: "768m"
     ports:
       - "25565:25577"
       - "25576:25576"
