@@ -171,4 +171,7 @@ https://ci.codemc.io/job/AuthMe/job/AuthMeReloaded/lastSuccessfulBuild/artifact/
 https://dev.bukkit.org/projects/signboard/files/latest
 
 # plan-player-analytics
-https://github.com/plan-player-analytics/Plan/releases/download/5.4.1575/Plan-5.4-dev-build-1575.jar
+https://github.com/plan-player-analytics/Plan/releases/download/5.4.1583/Plan-5.4-build-1583.jar
+
+# MiniMOTD
+https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.5/minimotd-universal-2.0.5.jar
