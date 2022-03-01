@@ -27,9 +27,9 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXAn
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.2/EssentialsXGeoIP-2.19.2.jar
 
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
-https://dev.bukkit.org/projects/worldedit/files/latest
+# https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
-# https://dev.bukkit.org/projects/fawe/files/latest
+https://dev.bukkit.org/projects/fawe/files/latest
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)

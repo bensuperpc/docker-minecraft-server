@@ -39,7 +39,7 @@ services:
     env_file:
       - minecraft.env
     environment:
-      MAX_MEMORY: "${MAX_MEMORY:-8G}"
+      MAX_MEMORY: "${MAX_MEMORY:-12G}"
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
