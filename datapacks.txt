@@ -1,2 +1,3 @@
 # planetminecraft not working with curl :/
 # https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/download/file/14707294/
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/Terralith_v2.2_Seed_3820.zip

@@ -1,5 +1,7 @@
 # Dynmap
-https://dev.bukkit.org/projects/dynmap/files/latest
+# https://dev.bukkit.org/projects/dynmap/files/latest
+# 	v3.4-beta-2 for Spigot/PaperMC v1.10.2 through v1.18.2 (11-03-2022)
+https://dev.bukkit.org/projects/dynmap/files/3670362/download
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
@@ -16,20 +18,21 @@ https://dev.bukkit.org/projects/dynmap-structures/files/latest
 
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
-https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsX-2.19.3.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
 
 # EssentialsX Add-on
-https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsXChat-2.19.3.jar
-https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsXSpawn-2.19.3.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsXDiscord-2.19.3.jar
-https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsXProtect-2.19.3.jar
-https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsXAntiBuild-2.19.3.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.3/EssentialsXGeoIP-2.19.3.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXDiscord-2.19.4.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXProtect-2.19.4.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXGeoIP-2.19.4.jar
 
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
-https://dev.bukkit.org/projects/fawe/files/latest
+# https://dev.bukkit.org/projects/fawe/files/latest
+https://ci.athion.net/job/FastAsyncWorldEdit/125/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.1-SNAPSHOT-125.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)

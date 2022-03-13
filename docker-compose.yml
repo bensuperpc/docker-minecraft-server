@@ -43,7 +43,7 @@ services:
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
-      # - ./datapacks.txt:/extras/datapacks.txt:ro
+      - ./datapacks.txt:/extras/datapacks.txt:ro
   mc-blitz:
     image: itzg/minecraft-server:latest
     container_name: minecraft-blitz-server
@@ -70,7 +70,7 @@ services:
     volumes:
       - mc-blitz-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
-      # - ./datapacks.txt:/extras/datapacks.txt:ro
+      - ./datapacks.txt:/extras/datapacks.txt:ro
   rcon-web:
     image: itzg/rcon:latest
     container_name: minecraft-rcon-web
