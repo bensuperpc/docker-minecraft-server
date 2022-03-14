@@ -135,7 +135,8 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # https://dev.bukkit.org/projects/signshop/files/latest
 
 # QuickShop-Reremake
-https://dev.bukkit.org/projects/quickshop-reremake/files/latest
+# https://dev.bukkit.org/projects/quickshop-reremake/files/latest
+https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2290/artifact/target/QuickShop-5.1.0.6-SNAPSHOT.jar
 
 # QualityArmory
 # https://dev.bukkit.org/projects/qualityarmory/files/latest
