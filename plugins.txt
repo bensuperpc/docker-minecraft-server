@@ -32,7 +32,7 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAn
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
 # https://dev.bukkit.org/projects/fawe/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/125/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.1-SNAPSHOT-125.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/130/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.1-SNAPSHOT-130.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
