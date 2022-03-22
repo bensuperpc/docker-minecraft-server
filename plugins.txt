@@ -32,11 +32,11 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAn
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
 # https://dev.bukkit.org/projects/fawe/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/130/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.1-SNAPSHOT-130.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/134/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.1-SNAPSHOT-134.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
-https://ci.lucko.me/job/LuckPerms/1417/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.9.jar
+https://ci.lucko.me/job/LuckPerms/1421/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.13.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
@@ -117,7 +117,7 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # https://dev.bukkit.org/projects/tree-assist/files/latest
 # Beta TreeAssist v7.3.10 (03-02-2022)
 # https://dev.bukkit.org/projects/tree-assist/files/3606400/download
-# https://cdn.discordapp.com/attachments/804019242512810034/945799643797811261/TreeAssist.jar
+https://cdn.discordapp.com/attachments/804019242512810034/951278280319852554/TreeAssist.jar
 
 # ChatColor
 # https://dev.bukkit.org/projects/chatcolor-s/files/latest
@@ -136,7 +136,7 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # QuickShop-Reremake
 # https://dev.bukkit.org/projects/quickshop-reremake/files/latest
-https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2290/artifact/target/QuickShop-5.1.0.6-SNAPSHOT.jar
+https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2292/artifact/target/QuickShop-5.1.0.6-SNAPSHOT.jar
 
 # QualityArmory
 # https://dev.bukkit.org/projects/qualityarmory/files/latest
