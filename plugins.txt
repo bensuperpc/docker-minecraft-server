@@ -36,7 +36,7 @@ https://ci.athion.net/job/FastAsyncWorldEdit/134/artifact/artifacts/FastAsyncWor
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
-https://ci.lucko.me/job/LuckPerms/1421/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.13.jar
+https://ci.lucko.me/job/LuckPerms/1423/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.15.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
@@ -72,7 +72,7 @@ https://dev.bukkit.org/projects/coreprotect/files/latest
 
 # Decent Holograms
 # https://www.spigotmc.org/resources/decent-holograms-1-8-1-18-papi-support-no-dependencies.96927/
-https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.3.0/DecentHolograms-2.3.0.jar
+https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.3.1/DecentHolograms-2.3.1.jar
 
 # Chunk Loader
 # https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
@@ -117,7 +117,7 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # https://dev.bukkit.org/projects/tree-assist/files/latest
 # Beta TreeAssist v7.3.10 (03-02-2022)
 # https://dev.bukkit.org/projects/tree-assist/files/3606400/download
-https://cdn.discordapp.com/attachments/804019242512810034/951278280319852554/TreeAssist.jar
+# https://cdn.discordapp.com/attachments/804019242512810034/955961417117339718/TreeAssist.jar
 
 # ChatColor
 # https://dev.bukkit.org/projects/chatcolor-s/files/latest
@@ -188,4 +188,4 @@ https://dev.bukkit.org/projects/imageonmap/files/latest
 https://github.com/plan-player-analytics/Plan/releases/download/5.4.1583/Plan-5.4-build-1583.jar
 
 # MiniMOTD
-# https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.5/minimotd-universal-2.0.5.jar
+https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.6/minimotd-universal-2.0.6.jar
