@@ -1,7 +1,7 @@
 # Dynmap
 # https://dev.bukkit.org/projects/dynmap/files/latest
-# 	v3.4-beta-2 for Spigot/PaperMC v1.10.2 through v1.18.2 (11-03-2022)
-https://dev.bukkit.org/projects/dynmap/files/3670362/download
+# v3.4-beta-3 for Spigot/Paper 1.10.2 through 1.18.2 (12-04-2022)
+https://dev.bukkit.org/projects/dynmap/files/3724063/download
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
@@ -32,11 +32,11 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAn
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
 # https://dev.bukkit.org/projects/fawe/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/134/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.1-SNAPSHOT-134.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/153/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.2-SNAPSHOT-153.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
-https://ci.lucko.me/job/LuckPerms/1423/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.15.jar
+https://ci.lucko.me/job/LuckPerms/1426/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.18.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
@@ -189,3 +189,6 @@ https://github.com/plan-player-analytics/Plan/releases/download/5.4.1583/Plan-5.
 
 # MiniMOTD
 https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.6/minimotd-universal-2.0.6.jar
+
+# Citizens2
+https://ci.citizensnpcs.co/job/Citizens2/2511/artifact/dist/target/Citizens-2.0.29-b2511.jar
