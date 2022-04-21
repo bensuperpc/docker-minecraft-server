@@ -4,6 +4,8 @@ services:
   mc-proxy:
     image: itzg/bungeecord:latest
     container_name: minecraft-proxy-server
+    profiles:
+      - mc-proxy
     restart: on-failure:3
     env_file:
       - proxy.env
@@ -22,6 +24,11 @@ services:
   mc:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
+    profiles:
+      - mc-server
+      - mc-server-main
+    depends_on:
+      - mc-proxy
     restart: on-failure:3
     # tty: true
     # stdin_open: false
@@ -47,6 +54,11 @@ services:
   mc-blitz:
     image: itzg/minecraft-server:latest
     container_name: minecraft-blitz-server
+    profiles:
+      - mc-server
+      - mc-server-blitz
+    depends_on:
+      - mc-proxy
     restart: on-failure:3
     # tty: true
     # stdin_open: false
@@ -74,6 +86,8 @@ services:
   rcon-web:
     image: itzg/rcon:latest
     container_name: minecraft-rcon-web
+    profiles:
+      - mc-web
     restart: on-failure:3
     depends_on:
       - mc
@@ -97,6 +111,9 @@ services:
   backups:
     image: itzg/mc-backup:latest
     container_name: minecraft-backup
+    profiles:
+      - mc-backup
+      - mc-backup-main
     restart: on-failure:3
     depends_on:
       - mc
@@ -118,6 +135,9 @@ services:
   backups-blitz:
     image: itzg/mc-backup:latest
     container_name: minecraft-backup-blitz
+    profiles:
+      - mc-backup
+      - mc-backup-blitz
     restart: on-failure:3
     depends_on:
       - mc-blitz

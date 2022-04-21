@@ -32,7 +32,7 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAn
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
 # https://dev.bukkit.org/projects/fawe/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/153/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.2-SNAPSHOT-153.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/160/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.1.3-SNAPSHOT-160.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
@@ -136,7 +136,9 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # QuickShop-Reremake
 # https://dev.bukkit.org/projects/quickshop-reremake/files/latest
-https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2292/artifact/target/QuickShop-5.1.0.6-SNAPSHOT.jar
+# https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake/131/artifact/target/QuickShop-5.1.0.6.jar
+https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2314/artifact/target/QuickShop-5.1.0.7-SNAPSHOT.jar
+# https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShopDynmap/7/artifact/target/QuickShop-Dynmap-1.0.jar
 
 # QualityArmory
 # https://dev.bukkit.org/projects/qualityarmory/files/latest
@@ -167,10 +169,10 @@ https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.13/SkinsR
 https://dev.bukkit.org/projects/imageonmap/files/latest
 
 # Geyser
-# https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
+https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
 
 # Floodgate
-# https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar
+https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar
 
 # PvPManager
 # https://dev.bukkit.org/projects/pvpmanager/files/latest
