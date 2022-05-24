@@ -35,7 +35,7 @@ https://dev.bukkit.org/projects/fawe/files/latest
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
-https://ci.lucko.me/job/LuckPerms/1430/artifact/bukkit/loader/build/libs/LuckPerms-Bukkit-5.4.22.jar
+https://download.luckperms.net/1433/bukkit/loader/LuckPerms-Bukkit-5.4.25.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
@@ -133,7 +133,7 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # QuickShop-Reremake
 # https://dev.bukkit.org/projects/quickshop-reremake/files/latest
 # https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake/131/artifact/target/QuickShop-5.1.0.6.jar
-https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2321/artifact/target/QuickShop-5.1.0.7-SNAPSHOT.jar
+https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2326/artifact/target/QuickShop-5.1.0.7-SNAPSHOT.jar
 # https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShopDynmap/7/artifact/target/QuickShop-Dynmap-1.0.jar
 
 # QualityArmory
@@ -183,10 +183,10 @@ https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBu
 # https://dev.bukkit.org/projects/signboard/files/latest
 
 # plan-player-analytics
-https://github.com/plan-player-analytics/Plan/releases/download/5.4.1633/Plan-5.4-build-1633.jar
+https://github.com/plan-player-analytics/Plan/releases/download/5.4.1661/Plan-5.4-dev-build-1661.jar
 
 # MiniMOTD
-https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.6/minimotd-universal-2.0.6.jar
+https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.7/minimotd-universal-2.0.7.jar
 
 # Citizens2
 https://ci.citizensnpcs.co/job/Citizens2/2536/artifact/dist/target/Citizens-2.0.29-b2536.jar

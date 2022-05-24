@@ -15,12 +15,11 @@ services:
       #       Server Minecraft port
       - "25565:25577"
       #       Rcon port
-      - "25576:25576"
+      - "25576:25575"
       #       Plan port
       # - "8806:8804"
     volumes:
       - proxy:/server
-      # - ./docker-bungeecord/docs/config.yml:/config/config.yml
   mc:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
@@ -44,7 +43,9 @@ services:
       #       Plan port
       - "8804:8804"
     env_file:
-      - minecraft.env
+      - server.env
+      - world.env
+      - mods_plugins.env
     environment:
       MAX_MEMORY: "${MAX_MEMORY:-12G}"
     volumes:
@@ -66,7 +67,7 @@ services:
       #       Server Minecraft port (Disable if you use proxy like)
       # - "25566:25566"
       #       Rcon port
-      - "25577:25577"
+      - "25577:25575"
       #       Server Minecraft Bedrock port (GeyserMC)
       # - "19132:19132/udp"
       #       Dynmap port
@@ -74,7 +75,9 @@ services:
       #       Plan port
       - "8805:8804"
     env_file:
-      - minecraft.env
+      - server.env
+      - world.env
+      - mods_plugins.env
     environment:
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
