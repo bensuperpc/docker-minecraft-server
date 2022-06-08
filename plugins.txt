@@ -35,7 +35,7 @@ https://dev.bukkit.org/projects/fawe/files/latest
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms (Need update sometime)
-https://download.luckperms.net/1433/bukkit/loader/LuckPerms-Bukkit-5.4.25.jar
+https://download.luckperms.net/1434/bukkit/loader/LuckPerms-Bukkit-5.4.26.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
@@ -71,7 +71,7 @@ https://dev.bukkit.org/projects/coreprotect/files/latest
 
 # Decent Holograms
 # https://www.spigotmc.org/resources/decent-holograms-1-8-1-18-papi-support-no-dependencies.96927/
-https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.3.1/DecentHolograms-2.3.1.jar
+https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.4.1.1/DecentHolograms-2.4.1.1.jar
 
 # Chunk Loader
 # https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
@@ -133,7 +133,7 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # QuickShop-Reremake
 # https://dev.bukkit.org/projects/quickshop-reremake/files/latest
 # https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake/131/artifact/target/QuickShop-5.1.0.6.jar
-https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2326/artifact/target/QuickShop-5.1.0.7-SNAPSHOT.jar
+https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2331/artifact/target/QuickShop-5.1.0.7-SNAPSHOT.jar
 # https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShopDynmap/7/artifact/target/QuickShop-Dynmap-1.0.jar
 
 # QualityArmory
@@ -159,16 +159,22 @@ https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2326
 # https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
-https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.13/SkinsRestorer.jar
+https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.15/SkinsRestorer.jar
 
 # ImageOnMap
 https://dev.bukkit.org/projects/imageonmap/files/latest
 
 # Geyser
-https://ci.opencollab.dev//job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
+https://ci.opencollab.dev/job/GeyserMC/job/Geyser/job/master/lastSuccessfulBuild/artifact/bootstrap/spigot/target/Geyser-Spigot.jar
 
 # Floodgate
-https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/target/floodgate-spigot.jar
+https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBuild/artifact/spigot/build/libs/floodgate-spigot.jar
+
+# ViaVersion
+https://github.com/ViaVersion/ViaVersion/releases/download/4.3.1/ViaVersion-4.3.1.jar
+
+# ViaBackwards
+https://github.com/ViaVersion/ViaBackwards/releases/download/4.3.0/ViaBackwards-4.3.0.jar
 
 # PvPManager
 # https://dev.bukkit.org/projects/pvpmanager/files/latest
@@ -189,4 +195,4 @@ https://github.com/plan-player-analytics/Plan/releases/download/5.4.1661/Plan-5.
 https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.7/minimotd-universal-2.0.7.jar
 
 # Citizens2
-https://ci.citizensnpcs.co/job/Citizens2/2536/artifact/dist/target/Citizens-2.0.29-b2536.jar
+https://ci.citizensnpcs.co/job/Citizens2/lastBuild/artifact/dist/target/Citizens-2.0.30-b2565.jar
