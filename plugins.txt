@@ -195,4 +195,4 @@ https://github.com/plan-player-analytics/Plan/releases/download/5.4.1661/Plan-5.
 https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.7/minimotd-universal-2.0.7.jar
 
 # Citizens2
-https://ci.citizensnpcs.co/job/Citizens2/lastBuild/artifact/dist/target/Citizens-2.0.30-b2565.jar
+https://ci.citizensnpcs.co/job/Citizens2/lastBuild/net.citizensnpcs$citizens/artifact/net.citizensnpcs/citizens/2.0.30-SNAPSHOT/citizens-2.0.30-SNAPSHOT.jar
