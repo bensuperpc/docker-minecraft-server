@@ -8,7 +8,7 @@ services:
       - mc-proxy
     restart: on-failure:3
     env_file:
-      - proxy.env
+      - env/proxy.env
     environment:
       INIT_MEMORY: "1G"
     ports:
@@ -43,9 +43,9 @@ services:
       #       Plan port
       - "8804:8804"
     env_file:
-      - server.env
-      - world.env
-      - mods_plugins.env
+      - env/server.env
+      - env/world.env
+      - env/mods_plugins.env
     environment:
       MAX_MEMORY: "${MAX_MEMORY:-12G}"
     volumes:
@@ -75,9 +75,9 @@ services:
       #       Plan port
       - "8805:8804"
     env_file:
-      - server.env
-      - world.env
-      - mods_plugins.env
+      - env/server.env
+      - env/world.env
+      - env/mods_plugins.env
     environment:
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
@@ -121,7 +121,7 @@ services:
     depends_on:
       - mc
     env_file:
-      - backup.env
+      - env/backup.env
     environment:
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc
@@ -145,7 +145,7 @@ services:
     depends_on:
       - mc-blitz
     env_file:
-      - backup.env
+      - env/backup.env
     environment:
       # instead of network_mode below, could declare RCON_HOST
       RCON_HOST: mc-blitz
