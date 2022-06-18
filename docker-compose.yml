@@ -51,7 +51,6 @@ services:
     volumes:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
-      - ./datapacks.txt:/extras/datapacks.txt:ro
   mc-waitroom:
     image: itzg/minecraft-server:latest
     container_name: minecraft-waitroom-server

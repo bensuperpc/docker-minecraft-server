@@ -1,11 +1,4 @@
-# planetminecraft not working with curl :/
-https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/better-stonecutter-v1.zip
-https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/cuttable-wood-v2-1.zip
-https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/easy-bone-block-v1.zip
-https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/more-smeltable-items-v2-0-2-mc1-17.zip
-
-# World Generation
-# https://www.planetminecraft.com/data-pack/terralith-overworld-evolved-100-biomes-caves-and-more/download/file/14707294/
-# https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/nullscape-v1-1.zip
-# https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/Terralith_v2.2_Seed_3820.zip
-# https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_world/incendium-v5-0-3.zip
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/better-stonecutter-v1-1.zip
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/cuttable-wood-v2-2.zip
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/easy-bone-blocks-v1-0-1.zip
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/more-smeltable-items-v2-0-3.zip

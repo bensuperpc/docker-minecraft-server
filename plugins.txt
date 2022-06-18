@@ -1,7 +1,7 @@
 # Dynmap
 # https://dev.bukkit.org/projects/dynmap/files/latest
-# v3.4-beta-3 for Spigot/Paper 1.10.2 through 1.18.2 (12-04-2022)
-https://dev.bukkit.org/projects/dynmap/files/3724063/download
+# (18-06-2022)
+https://dynmap.us/builds/dynmap/Dynmap-3.4-SNAPSHOT-spigot.jar
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
@@ -52,8 +52,8 @@ https://dev.bukkit.org/projects/advanced-portals/files/latest
 
 # ProtocolLib
 # https://www.spigotmc.org/resources/protocollib.1997/download?version=408253
-# https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar
-https://github.com/dmulloy2/ProtocolLib/releases/download/4.8.0/ProtocolLib.jar
+# https://github.com/dmulloy2/ProtocolLib/releases/download/4.8.0/ProtocolLib.jar
+https://ci.dmulloy2.net/job/ProtocolLib/569/artifact/target/ProtocolLib.jar
 
 # NBT-API
 https://dev.bukkit.org/projects/nbt-api/files/latest
@@ -159,7 +159,8 @@ https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2341
 # https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
-https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.15/SkinsRestorer.jar
+# https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.15/SkinsRestorer.jar
+https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/349/artifact/build/libs/SkinsRestorer.jar
 
 # ImageOnMap
 https://dev.bukkit.org/projects/imageonmap/files/latest
@@ -196,3 +197,9 @@ https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.7/minimotd-universal
 
 # Citizens2
 https://ci.citizensnpcs.co/job/Citizens2/lastBuild/net.citizensnpcs$citizens/artifact/net.citizensnpcs/citizens/2.0.30-SNAPSHOT/citizens-2.0.30-SNAPSHOT.jar
+
+# Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
+https://dev.bukkit.org/projects/simple-voice-chat/files/3830184/download
+
+https://ci.mg-dev.eu/job/BKCommonLib/1331/artifact/target/BKCommonLib-1.19-v1-SNAPSHOT-1331.jar
+https://ci.mg-dev.eu/job/MyWorlds/142/artifact/target/MyWorlds-1.19-v1-SNAPSHOT-142.jar
