@@ -52,40 +52,32 @@ services:
       - mc-data:/data
       - ./plugins.txt:/extras/plugins.txt:ro
       - ./datapacks.txt:/extras/datapacks.txt:ro
-  mc-blitz:
+  mc-waitroom:
     image: itzg/minecraft-server:latest
-    container_name: minecraft-blitz-server
+    container_name: minecraft-waitroom-server
     profiles:
-      - mc-server
-      - mc-server-blitz
+      - mc-server-waitroom
     depends_on:
       - mc-proxy
     restart: on-failure:3
     # tty: true
     # stdin_open: false
     ports:
-      #       Server Minecraft port (Disable if you use proxy like)
+      #       Server Minecraft port (Disable if you use proxy)
       # - "25566:25566"
       #       Rcon port
       - "25577:25575"
       #       Server Minecraft Bedrock port (GeyserMC)
       # - "19132:19132/udp"
-      #       Dynmap port
-      - "8124:8123"
-      #       Plan port
-      - "8805:8804"
     env_file:
       - env/server.env
-      - env/world.env
-      - env/mods_plugins.env
+      - env/waitroom.env
     environment:
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
       MAX_MEMORY: "${MAX_MEMORY:-4G}"
     volumes:
-      - mc-blitz-data:/data
-      - ./plugins.txt:/extras/plugins.txt:ro
-      - ./datapacks.txt:/extras/datapacks.txt:ro
+      - mc-waitroom-data:/data
   rcon-web:
     image: itzg/rcon:latest
     container_name: minecraft-rcon-web
@@ -94,7 +86,7 @@ services:
     restart: on-failure:3
     depends_on:
       - mc
-      - mc-blitz
+      - mc-waitroom
       - mc-proxy
     environment:
       RWA_USERNAME: admin
@@ -135,26 +127,26 @@ services:
       - mc-backups:/backups
     # share network namespace with server to simplify rcon access
     # network_mode: "service:mc"
-  backups-blitz:
+  backups-waitroom:
     image: itzg/mc-backup:latest
-    container_name: minecraft-backup-blitz
+    container_name: minecraft-backup-waitroom
     profiles:
       - mc-backup
-      - mc-backup-blitz
+      - mc-backup-waitroom
     restart: on-failure:3
     depends_on:
-      - mc-blitz
+      - mc-waitroom
     env_file:
       - env/backup.env
     environment:
       # instead of network_mode below, could declare RCON_HOST
-      RCON_HOST: mc-blitz
-      BACKUP_NAME: "server-blitz"
+      RCON_HOST: mc-waitroom
+      BACKUP_NAME: "server-waitroom"
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
     volumes:
       # mount the same volume used by server, but read-only
-      - mc-blitz-data:/data:ro
+      - mc-waitroom-data:/data:ro
       # use a host attached directory so that it in turn can be backed up
       # to external/cloud storage
       #- ./mc-backups:/backups
@@ -163,7 +155,7 @@ services:
     # network_mode: "service:mc"
 volumes:
   mc-data: {}
-  mc-blitz-data: {}
+  mc-waitroom-data: {}
   mc-backups: {}
   rcon: {}
   proxy: {}

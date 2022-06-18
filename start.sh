@@ -24,6 +24,7 @@
 docker-compose -f docker-compose.yml \
     --profile mc-proxy \
     --profile mc-server \
+    --profile mc-server-waitroom \
     --profile mc-backup \
     --profile mc-web \
     up -d
