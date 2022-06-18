@@ -76,7 +76,7 @@ https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.4.2/Dec
 # Chunk Loader
 # https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/latest
 # chunkloader 1.0.8-beta1 (02-02-22)
-https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/3592486/download
+# https://dev.bukkit.org/projects/chunkloader-force-chunks-to-load/files/3592486/download
 
 # Chunky Pregenerator
 # https://dev.bukkit.org/projects/chunky-pregenerator/files/latest
