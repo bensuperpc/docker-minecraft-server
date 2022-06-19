@@ -29,7 +29,7 @@ jobs:
       - name: "Build server"
         run: MAX_MEMORY=3G docker-compose -f docker-compose.yml build
       - name: "Start server"
-        run: ./start.sh
+        run: make start
       - name: "Wait..."
         run: sleep 480
       - name: "Check minecraft port"
@@ -43,10 +43,13 @@ jobs:
         run: nc -zv 127.0.0.1 4326
       - name: "Check server"
         if: always()
-        run: docker-compose -f docker-compose.yml top
+        run: make state
       - name: "Check logs server"
         if: always()
-        run: docker-compose -f docker-compose.yml logs
+        run: make logs
       - name: "Stop containers"
         if: always()
-        run: ./stop.sh
+        run: make stop
+      - name: "Remove containers"
+        if: always()
+        run: make down

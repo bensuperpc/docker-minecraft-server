@@ -50,7 +50,7 @@ services:
       MAX_MEMORY: "${MAX_MEMORY:-12G}"
     volumes:
       - mc-data:/data
-      - ./plugins.txt:/extras/plugins.txt:ro
+      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
   mc-waitroom:
     image: itzg/minecraft-server:latest
     container_name: minecraft-waitroom-server
@@ -120,32 +120,6 @@ services:
     volumes:
       # mount the same volume used by server, but read-only
       - mc-data:/data:ro
-      # use a host attached directory so that it in turn can be backed up
-      # to external/cloud storage
-      #- ./mc-backups:/backups
-      - mc-backups:/backups
-    # share network namespace with server to simplify rcon access
-    # network_mode: "service:mc"
-  backups-waitroom:
-    image: itzg/mc-backup:latest
-    container_name: minecraft-backup-waitroom
-    profiles:
-      - mc-backup
-      - mc-backup-waitroom
-    restart: on-failure:3
-    depends_on:
-      - mc-waitroom
-    env_file:
-      - env/backup.env
-    environment:
-      # instead of network_mode below, could declare RCON_HOST
-      RCON_HOST: mc-waitroom
-      BACKUP_NAME: "server-waitroom"
-      SERVER_PORT: "25566"
-      RCON_PORT: "25577"
-    volumes:
-      # mount the same volume used by server, but read-only
-      - mc-waitroom-data:/data:ro
       # use a host attached directory so that it in turn can be backed up
       # to external/cloud storage
       #- ./mc-backups:/backups
