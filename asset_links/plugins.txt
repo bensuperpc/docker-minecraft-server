@@ -1,7 +1,7 @@
 # Dynmap
 # https://dev.bukkit.org/projects/dynmap/files/latest
-# (18-06-2022)
-https://dynmap.us/builds/dynmap/Dynmap-3.4-SNAPSHOT-spigot.jar
+# (20-06-2022)
+https://dynmap.us/builds/dynmap/Dynmap-3.4-beta-4-spigot.jar
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
@@ -40,7 +40,7 @@ https://dev.bukkit.org/projects/worldguard/files/latest
 https://dev.bukkit.org/projects/fawe/files/latest
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
-# LuckPerms (Need update sometime)
+# LuckPerms
 https://download.luckperms.net/1438/bukkit/loader/LuckPerms-Bukkit-5.4.30.jar
 
 # Vault
@@ -64,9 +64,6 @@ https://ci.dmulloy2.net/job/ProtocolLib/569/artifact/target/ProtocolLib.jar
 # NBT-API
 https://dev.bukkit.org/projects/nbt-api/files/latest
 
-# Server Essentials for Bukkit
-# https://dev.bukkit.org/projects/server-essentials-for-bukkit/files/latest
-
 # CoreProtect
 https://dev.bukkit.org/projects/coreprotect/files/latest
 
@@ -77,15 +74,8 @@ https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.4.2/Dec
 # DropHeads
 # https://dev.bukkit.org/projects/dropheads/files/latest
 
-# SilkSpawners
-# https://dev.bukkit.org/projects/silkspawners/files/latest
-# https://dev.bukkit.org/projects/silkspawnersecoaddon/files/latest
-
 # OpenInv
 https://dev.bukkit.org/projects/openinv/files/latest
-
-# ClickSort
-# https://dev.bukkit.org/projects/clicksort/files/latest
 
 # Animated-TabList
 https://dev.bukkit.org/projects/animated-tab-tablist/files/latest
@@ -146,8 +136,7 @@ https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2341
 # https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
-# https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.1.15/SkinsRestorer.jar
-https://ci.codemc.io/job/SkinsRestorer/job/SkinsRestorerX-DEV/352/artifact/build/libs/SkinsRestorer.jar
+https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.0/SkinsRestorer.jar
 
 # ImageOnMap
 https://dev.bukkit.org/projects/imageonmap/files/latest
@@ -185,5 +174,5 @@ https://ci.citizensnpcs.co/job/Citizens2/lastBuild/net.citizensnpcs$citizens/art
 # Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
 https://dev.bukkit.org/projects/simple-voice-chat/files/3830184/download
 
-https://ci.mg-dev.eu/job/BKCommonLib/1332/artifact/target/BKCommonLib-1.19-v1-SNAPSHOT-1332.jar
-https://ci.mg-dev.eu/job/MyWorlds/142/artifact/target/MyWorlds-1.19-v1-SNAPSHOT-142.jar
+https://ci.mg-dev.eu/job/BKCommonLib/1334/artifact/target/BKCommonLib-1.19-v1-1334.jar
+https://ci.mg-dev.eu/job/MyWorlds/143/artifact/target/MyWorlds-1.19-v1-143.jar
