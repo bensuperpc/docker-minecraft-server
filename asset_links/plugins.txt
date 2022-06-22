@@ -19,7 +19,7 @@ https://dev.bukkit.org/projects/dynmap-essentialsx/files/3634752/download
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.5-dev+20-8d856dd.jar
+https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.5-dev+21-ff80338.jar
 
 # EssentialsX Add-on
 #https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
@@ -29,10 +29,14 @@ https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/Essentia
 #https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXGeoIP-2.19.4.jar
 
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXChat-2.19.5-dev+20-8d856dd.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXSpawn-2.19.5-dev+20-8d856dd.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+20-8d856dd.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.19.5-dev+20-8d856dd.jar
+https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXChat-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXSpawn-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.19.5-dev+21-ff80338.jar
+
+# serverutils
+# https://serverutils.fvdh.dev/api/v1/Bukkit/latest
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/ServerUtils-Bukkit-3.5.1.jar
 
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 # https://dev.bukkit.org/projects/worldedit/files/latest
@@ -91,6 +95,8 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 
 # TreeAssist
 # https://dev.bukkit.org/projects/tree-assist/files/latest
+# Beta TreeAssist v7.3.27 (22-06-2022)
+https://dev.bukkit.org/projects/tree-assist/files/3816822/download
 
 # ChatColor
 # https://dev.bukkit.org/projects/chatcolor-s/files/latest
