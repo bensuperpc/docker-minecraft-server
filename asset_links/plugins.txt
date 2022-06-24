@@ -45,7 +45,7 @@ https://dev.bukkit.org/projects/fawe/files/latest
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.0/WorldEditSelectionVisualizer-2.1.0.jar
 
 # LuckPerms
-https://download.luckperms.net/1438/bukkit/loader/LuckPerms-Bukkit-5.4.30.jar
+# https://download.luckperms.net/1438/bukkit/loader/LuckPerms-Bukkit-5.4.30.jar
 
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
@@ -89,9 +89,6 @@ https://dev.bukkit.org/projects/animated-tab-tablist/files/latest
 
 # UberEnchant
 https://dev.bukkit.org/projects/uberenchant/files/latest
-
-# VoidSpawn
-# https://dev.bukkit.org/projects/voidspawn/files/latest
 
 # TreeAssist
 # https://dev.bukkit.org/projects/tree-assist/files/latest
@@ -180,5 +177,8 @@ https://ci.citizensnpcs.co/job/Citizens2/lastBuild/net.citizensnpcs$citizens/art
 # Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
 https://dev.bukkit.org/projects/simple-voice-chat/files/3830184/download
 
-https://ci.mg-dev.eu/job/BKCommonLib/1334/artifact/target/BKCommonLib-1.19-v1-1334.jar
-https://ci.mg-dev.eu/job/MyWorlds/143/artifact/target/MyWorlds-1.19-v1-143.jar
+# BKCommonLib
+# https://ci.mg-dev.eu/job/BKCommonLib/1334/artifact/target/BKCommonLib-1.19-v1-1334.jar
+
+# MyWorlds
+# https://ci.mg-dev.eu/job/MyWorlds/143/artifact/target/MyWorlds-1.19-v1-143.jar
