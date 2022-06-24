@@ -19,20 +19,21 @@ https://dev.bukkit.org/projects/dynmap-essentialsx/files/3634752/download
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsX-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsX-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsX-2.19.5-dev+21-ff80338.jar
 
 # EssentialsX Add-on
-#https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
-#https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXDiscord-2.19.4.jar
-#https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXProtect-2.19.4.jar
-#https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXProtect-2.19.4.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXGeoIP-2.19.4.jar
 
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXChat-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXSpawn-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/lastSuccessfulBuild/artifact/jars/EssentialsXProtect-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXChat-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXSpawn-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXProtect-2.19.5-dev+21-ff80338.jar
 
 # serverutils
 # https://serverutils.fvdh.dev/api/v1/Bukkit/latest
@@ -50,18 +51,11 @@ https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.
 # Vault
 https://dev.bukkit.org/projects/vault/files/latest
 
-# Multiverse-Core, Multiverse-Portals, Multiverse-NetherPortals, Multiverse-Inventories, Multiverse-SignPortals
-# https://dev.bukkit.org/projects/multiverse-core/files/latest
-# https://dev.bukkit.org/projects/multiverse-portals/files/latest
-# https://dev.bukkit.org/projects/multiverse-netherportals/files/latest
-# https://dev.bukkit.org/projects/multiverse-inventories/files/latest
-# https://dev.bukkit.org/projects/multiverse-signportals/files/latest
-
 # Advanced Portals
-https://dev.bukkit.org/projects/advanced-portals/files/latest
+# https://dev.bukkit.org/projects/advanced-portals/files/latest
+https://github.com/sekwah41/Advanced-Portals/releases/download/v0.9.2/Advanced-Portals-0.9.2.jar
 
 # ProtocolLib
-# https://www.spigotmc.org/resources/protocollib.1997/download?version=408253
 # https://github.com/dmulloy2/ProtocolLib/releases/download/4.8.0/ProtocolLib.jar
 https://ci.dmulloy2.net/job/ProtocolLib/569/artifact/target/ProtocolLib.jar
 
@@ -85,7 +79,7 @@ https://dev.bukkit.org/projects/openinv/files/latest
 https://dev.bukkit.org/projects/animated-tab-tablist/files/latest
 
 # DeadChest
-# https://dev.bukkit.org/projects/dead-chest/files/latest
+https://dev.bukkit.org/projects/dead-chest/files/latest
 
 # UberEnchant
 https://dev.bukkit.org/projects/uberenchant/files/latest
@@ -95,48 +89,26 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # Beta TreeAssist v7.3.27 (22-06-2022)
 https://dev.bukkit.org/projects/tree-assist/files/3816822/download
 
-# ChatColor
-# https://dev.bukkit.org/projects/chatcolor-s/files/latest
-
-# Chests++
-# https://dev.bukkit.org/projects/chests-plus-plus/files/latest
-
 # Shopkeepers
-# https://dev.bukkit.org/projects/shopkeepers/files/latest
+https://dev.bukkit.org/projects/shopkeepers/files/latest
 
 # EconomyShopGUI
-# https://dev.bukkit.org/projects/economyshopgui/files/latest
+https://dev.bukkit.org/projects/economyshopgui/files/latest
 
 # SignShop v3
 # https://dev.bukkit.org/projects/signshop/files/latest
 
-# QuickShop-Reremake
+# Quickshop-reremake
 # https://dev.bukkit.org/projects/quickshop-reremake/files/latest
-# https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake/131/artifact/target/QuickShop-5.1.0.6.jar
-https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShop-Reremake-SNAPSHOT/2341/artifact/target/QuickShop-5.1.0.9-SNAPSHOT.jar
 # https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShopDynmap/7/artifact/target/QuickShop-Dynmap-1.0.jar
 
-# QualityArmory
-# https://dev.bukkit.org/projects/qualityarmory/files/latest
-
-# PowerRanks (Need PlaceholderAPI)
-# https://dev.bukkit.org/projects/powerranks/files/latest
-
 # CustomCrafting Advanced Custom Recipes
-# https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
-# https://dev.bukkit.org/projects/wolfyutilities/files/latest
+https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
+https://dev.bukkit.org/projects/wolfyutilities/files/latest
 
-# CraftBook 3
-# https://dev.bukkit.org/projects/craftbook/files/latest
-
-# MythicMobs
-# https://dev.bukkit.org/projects/mythicmobs/files/latest
-
-# AntiCheatReloaded
-# https://dev.bukkit.org/projects/anticheatreloaded/files/latest
 
 # Insta Mine Deepslate
-# https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
+https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
 https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.1/SkinsRestorer.jar
@@ -166,13 +138,13 @@ https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBu
 # https://dev.bukkit.org/projects/signboard/files/latest
 
 # plan-player-analytics
-https://github.com/plan-player-analytics/Plan/releases/download/5.4.1722/Plan-5.4-build-1722.jar
+https://github.com/plan-player-analytics/Plan/releases/download/5.5.1740/Plan-5.5-dev-build-1740.jar
 
 # MiniMOTD
 https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.8/minimotd-universal-2.0.8.jar
 
 # Citizens2
-https://ci.citizensnpcs.co/job/Citizens2/lastBuild/net.citizensnpcs$citizens/artifact/net.citizensnpcs/citizens/2.0.30-SNAPSHOT/citizens-2.0.30-SNAPSHOT.jar
+https://ci.citizensnpcs.co/job/Citizens2/2587/artifact/dist/target/Citizens-2.0.30-b2587.jar
 
 # Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
 https://dev.bukkit.org/projects/simple-voice-chat/files/3830184/download
