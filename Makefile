@@ -54,10 +54,6 @@ down:
 .PHONY: restart
 restart: down start
 
-.PHONY: restart
-restart:
-	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) restart
-
 .PHONY: logs
 logs:
 	docker-compose -f $(COMPOSE_FILE) logs
