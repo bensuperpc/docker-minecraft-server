@@ -44,15 +44,14 @@ start-at:
 	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) up
 
 .PHONY: stop
-stop:
-	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) stop
+stop: down
 
 .PHONY: down
 down:
 	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) down
 
 .PHONY: restart
-restart: down start
+restart: stop start
 
 .PHONY: logs
 logs:

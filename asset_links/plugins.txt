@@ -13,14 +13,13 @@ https://dev.bukkit.org/projects/dynmap-worldguard/files/3635984/download
 # v1.0-beta-1 (09-02-2022)
 https://dev.bukkit.org/projects/dynmap-essentialsx/files/3634752/download
 
-# Dynmap-Structures (Not working on 1.19 19-06-2022)
-# https://dev.bukkit.org/projects/dynmap-structures/files/latest
+# Dynmap-Structures
+https://dev.bukkit.org/projects/dynmap-structures/files/latest
 
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
-https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsX-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsX-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsX-2.19.5-dev+22-9c5536b.jar
 
 # EssentialsX Add-on
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
@@ -30,10 +29,10 @@ https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsX-2.19.5-dev+
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXGeoIP-2.19.4.jar
 
-https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXChat-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXSpawn-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+21-ff80338.jar
-https://ci.ender.zone/job/EssentialsX/1385/artifact/jars/EssentialsXProtect-2.19.5-dev+21-ff80338.jar
+https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXChat-2.19.5-dev+22-9c5536b.jar
+https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXSpawn-2.19.5-dev+22-9c5536b.jar
+https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+22-9c5536b.jar
+https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXProtect-2.19.5-dev+22-9c5536b.jar
 
 # serverutils
 # https://serverutils.fvdh.dev/api/v1/Bukkit/latest
@@ -106,7 +105,6 @@ https://dev.bukkit.org/projects/economyshopgui/files/latest
 https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
 https://dev.bukkit.org/projects/wolfyutilities/files/latest
 
-
 # Insta Mine Deepslate
 https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
@@ -147,7 +145,7 @@ https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.8/minimotd-universal
 https://ci.citizensnpcs.co/job/Citizens2/2587/artifact/dist/target/Citizens-2.0.30-b2587.jar
 
 # Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
-https://dev.bukkit.org/projects/simple-voice-chat/files/3830184/download
+https://dev.bukkit.org/projects/simple-voice-chat/files/latest
 
 # BKCommonLib
 # https://ci.mg-dev.eu/job/BKCommonLib/1334/artifact/target/BKCommonLib-1.19-v1-1334.jar
