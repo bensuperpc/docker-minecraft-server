@@ -21,13 +21,13 @@ git clone --recurse-submodules https://github.com/Bensuperpc/docker-minecraft-se
 #### Start server
 
 ```sh
-./start.sh
+make start
 ```
 
 #### Stop server
 
 ```sh
-./stop.sh
+make stop
 ```
 
 ### Server website 
