@@ -1,7 +1,7 @@
 # Dynmap
 # https://dev.bukkit.org/projects/dynmap/files/latest
 # (20-06-2022)
-https://dynmap.us/builds/dynmap/Dynmap-3.4-beta-4-spigot.jar
+https://dev.bukkit.org/projects/dynmap/files/3840479/download
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
@@ -19,7 +19,7 @@ https://dev.bukkit.org/projects/dynmap-structures/files/latest
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
-https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsX-2.19.5-dev+22-9c5536b.jar
+https://ci.ender.zone/job/EssentialsX/1390/artifact/jars/EssentialsX-2.19.5-dev+26-2bba577.jar
 
 # EssentialsX Add-on
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
@@ -29,10 +29,10 @@ https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsX-2.19.5-dev+
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXGeoIP-2.19.4.jar
 
-https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXChat-2.19.5-dev+22-9c5536b.jar
-https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXSpawn-2.19.5-dev+22-9c5536b.jar
-https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+22-9c5536b.jar
-https://ci.ender.zone/job/EssentialsX/1386/artifact/jars/EssentialsXProtect-2.19.5-dev+22-9c5536b.jar
+https://ci.ender.zone/job/EssentialsX/1390/artifact/jars/EssentialsXChat-2.19.5-dev+26-2bba577.jar
+https://ci.ender.zone/job/EssentialsX/1390/artifact/jars/EssentialsXSpawn-2.19.5-dev+26-2bba577.jar
+https://ci.ender.zone/job/EssentialsX/1390/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+26-2bba577.jar
+https://ci.ender.zone/job/EssentialsX/1390/artifact/jars/EssentialsXProtect-2.19.5-dev+26-2bba577.jar
 
 # serverutils
 # https://serverutils.fvdh.dev/api/v1/Bukkit/latest
