@@ -26,10 +26,8 @@ jobs:
         with:
           submodules: "recursive"
           fetch-depth: 0
-      - name: "Build server"
-        run: MAX_MEMORY=3G docker-compose -f docker-compose.yml build
       - name: "Start server"
-        run: make start
+        run: cd minecraft-server/hyperworldv2/ && make start
       - name: "Wait..."
         run: sleep 480
       - name: "Check minecraft port"
@@ -43,13 +41,13 @@ jobs:
         run: nc -zv 127.0.0.1 4326
       - name: "Check server"
         if: always()
-        run: make state
+        run: cd minecraft-server/hyperworldv2/ && make state
       - name: "Check logs server"
         if: always()
-        run: make logs
+        run: cd minecraft-server/hyperworldv2/ && make logs
       - name: "Stop containers"
         if: always()
-        run: make stop
+        run: cd minecraft-server/hyperworldv2/ && make stop
       - name: "Remove containers"
         if: always()
-        run: make down
+        run: cd minecraft-server/hyperworldv2/ && make down
