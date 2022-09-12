@@ -1,7 +1,7 @@
 # Dynmap
 # https://dev.bukkit.org/projects/dynmap/files/latest
-# (20-06-2022)
-https://dev.bukkit.org/projects/dynmap/files/3840479/download
+# (12-09-2022)
+https://dev.bukkit.org/projects/dynmap/files/3934649/download
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
