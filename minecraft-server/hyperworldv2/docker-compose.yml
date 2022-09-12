@@ -19,8 +19,8 @@ services:
       #       Plan port
       # - "8806:8804"
     volumes:
-      - proxy:/server
-  mc:
+      - mc-proxy:/server
+  mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
     profiles:
@@ -84,15 +84,15 @@ services:
       - mc-web
     restart: on-failure:3
     depends_on:
-      - mc
+      - mc-server
       - mc-waitroom
       - mc-proxy
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
       RWA_ADMIN: "TRUE"
-      # is referring to the hostname of 'mc' compose service below
-      RWA_RCON_HOST: mc
+      # is referring to the hostname of 'mc-server' compose service below
+      RWA_RCON_HOST: mc-server
       # needs to match the password configured for the container, which is 'minecraft' by default
       RWA_RCON_PASSWORD: minecraft
     ports:
@@ -101,8 +101,8 @@ services:
       #       websocket access from UI
       - "4327:4327"
     volumes:
-      - "rcon:/opt/rcon-web-admin/db"
-  backups:
+      - "mc-rcon:/opt/rcon-web-admin/db"
+  mc-backups:
     image: itzg/mc-backup:latest
     container_name: minecraft-backup
     profiles:
@@ -110,12 +110,12 @@ services:
       - mc-backup-main
     restart: on-failure:3
     depends_on:
-      - mc
+      - mc-server
     env_file:
       - env/backup.env
     environment:
       # instead of network_mode below, could declare RCON_HOST
-      RCON_HOST: mc
+      RCON_HOST: mc-server
       BACKUP_NAME: "server-main"
     volumes:
       # mount the same volume used by server, but read-only
@@ -127,8 +127,13 @@ services:
     # share network namespace with server to simplify rcon access
     # network_mode: "service:mc"
 volumes:
-  mc-data: {}
-  mc-waitroom-data: {}
-  mc-backups: {}
-  rcon: {}
-  proxy: {}
+  mc-data: 
+    external: true
+  mc-waitroom-data:
+    external: true
+  mc-backups:
+    external: true
+  mc-rcon:
+    external: true
+  mc-proxy:
+    external: true

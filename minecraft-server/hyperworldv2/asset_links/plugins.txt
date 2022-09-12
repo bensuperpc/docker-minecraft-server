@@ -18,16 +18,16 @@ https://dev.bukkit.org/projects/dynmap-structures/files/latest
 
 # EssentialsX
 # https://dev.bukkit.org/projects/essentialsx/files/latest
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsX-2.19.4.jar
-https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsX-2.19.5-dev+30-b135fcf.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsX-2.19.7.jar
+# https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsX-2.19.5-dev+30-b135fcf.jar
 
 # EssentialsX Add-on
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXChat-2.19.4.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXSpawn-2.19.4.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXDiscord-2.19.4.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXProtect-2.19.4.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXAntiBuild-2.19.4.jar
-# https://github.com/EssentialsX/Essentials/releases/download/2.19.4/EssentialsXGeoIP-2.19.4.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXChat-2.19.7.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXSpawn-2.19.7.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXDiscord-2.19.7.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXProtect-2.19.7.jar
+https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXAntiBuild-2.19.7.jar
+# https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXGeoIP-2.19.7.jar
 
 https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXChat-2.19.5-dev+30-b135fcf.jar
 https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXSpawn-2.19.5-dev+30-b135fcf.jar
@@ -36,13 +36,13 @@ https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXProtect-2.19
 
 # Serverutils
 # https://serverutils.fvdh.dev/api/v1/Bukkit/latest
-https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/ServerUtils-Bukkit-3.5.1.jar
+https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_worlds/ServerUtils-Bukkit-3.5.3.jar
 
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
-https://dev.bukkit.org/projects/fawe/files/latest
-https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.1/WorldEditSelectionVisualizer-2.1.1.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/276/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.5-SNAPSHOT-276.jar
+https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.2/WorldEditSelectionVisualizer-2.1.2.jar
 
 # LuckPerms
 # https://download.luckperms.net/1438/bukkit/loader/LuckPerms-Bukkit-5.4.30.jar
@@ -56,7 +56,7 @@ https://github.com/sekwah41/Advanced-Portals/releases/download/v0.9.2/Advanced-P
 
 # ProtocolLib
 # https://github.com/dmulloy2/ProtocolLib/releases/download/4.8.0/ProtocolLib.jar
-https://ci.dmulloy2.net/job/ProtocolLib/580/artifact/target/ProtocolLib.jar
+https://ci.dmulloy2.net/job/ProtocolLib/lastSuccessfulBuild/artifact/target/ProtocolLib.jar
 
 # NBT-API
 https://dev.bukkit.org/projects/nbt-api/files/latest
@@ -109,7 +109,7 @@ https://dev.bukkit.org/projects/wolfyutilities/files/latest
 https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
-https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.1/SkinsRestorer.jar
+https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.3/SkinsRestorer.jar
 
 # ImageOnMap
 https://dev.bukkit.org/projects/imageonmap/files/latest
@@ -136,10 +136,10 @@ https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBu
 # https://dev.bukkit.org/projects/signboard/files/latest
 
 # plan-player-analytics
-https://github.com/plan-player-analytics/Plan/releases/download/5.5.1791/Plan-5.5-dev-build-1791.jar
+https://github.com/plan-player-analytics/Plan/releases/download/5.5.1951/Plan-5.5-build-1951.jar
 
 # MiniMOTD
-https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.8/minimotd-universal-2.0.8.jar
+https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.9/minimotd-universal-2.0.9.jar
 
 # Citizens2
 https://ci.citizensnpcs.co/job/Citizens2/2617/artifact/dist/target/Citizens-2.0.30-b2617.jar
@@ -148,7 +148,7 @@ https://ci.citizensnpcs.co/job/Citizens2/2617/artifact/dist/target/Citizens-2.0.
 https://dev.bukkit.org/projects/simple-voice-chat/files/latest
 
 # BKCommonLib
-# https://ci.mg-dev.eu/job/BKCommonLib/1334/artifact/target/BKCommonLib-1.19-v1-1334.jar
+https://ci.mg-dev.eu/job/BKCommonLib/1366/artifact/target/BKCommonLib-1.19.2-v2-SNAPSHOT-1366.jar
 
 # MyWorlds
-# https://ci.mg-dev.eu/job/MyWorlds/143/artifact/target/MyWorlds-1.19-v1-143.jar
+https://ci.mg-dev.eu/job/MyWorlds/168/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-168.jar
