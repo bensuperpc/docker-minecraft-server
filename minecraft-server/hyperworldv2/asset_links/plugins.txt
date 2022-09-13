@@ -60,7 +60,7 @@ https://dev.bukkit.org/projects/coreprotect/files/latest
 
 # Decent Holograms
 # https://www.spigotmc.org/resources/decent-holograms-1-8-1-18-papi-support-no-dependencies.96927/
-https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.5.1/DecentHolograms-2.5.1.jar
+https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.7.2/DecentHolograms-2.7.2.jar
 
 # DropHeads
 # https://dev.bukkit.org/projects/dropheads/files/latest
@@ -136,13 +136,13 @@ https://github.com/plan-player-analytics/Plan/releases/download/5.5.1951/Plan-5.
 # https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.9/minimotd-universal-2.0.9.jar
 
 # Citizens2
-https://ci.citizensnpcs.co/job/Citizens2/2617/artifact/dist/target/Citizens-2.0.30-b2617.jar
+https://ci.citizensnpcs.co/job/Citizens2/2702/artifact/dist/target/Citizens-2.0.30-b2702.jar
 
 # Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
 https://dev.bukkit.org/projects/simple-voice-chat/files/latest
 
 # BKCommonLib
-https://ci.mg-dev.eu/job/BKCommonLib/1366/artifact/target/BKCommonLib-1.19.2-v2-SNAPSHOT-1366.jar
+https://ci.mg-dev.eu/job/BKCommonLib/1370/artifact/target/BKCommonLib-1.19.2-v2-SNAPSHOT-1370.jar
 
 # MyWorlds
 https://ci.mg-dev.eu/job/MyWorlds/168/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-168.jar
