@@ -17,9 +17,7 @@ https://dev.bukkit.org/projects/dynmap-essentialsx/files/3634752/download
 https://dev.bukkit.org/projects/dynmap-structures/files/latest
 
 # EssentialsX
-# https://dev.bukkit.org/projects/essentialsx/files/latest
 https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsX-2.19.7.jar
-# https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsX-2.19.5-dev+30-b135fcf.jar
 
 # EssentialsX Add-on
 https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXChat-2.19.7.jar
@@ -29,10 +27,6 @@ https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXPr
 https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXAntiBuild-2.19.7.jar
 # https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsXGeoIP-2.19.7.jar
 
-https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXChat-2.19.5-dev+30-b135fcf.jar
-https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXSpawn-2.19.5-dev+30-b135fcf.jar
-https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXAntiBuild-2.19.5-dev+30-b135fcf.jar
-https://ci.ender.zone/job/EssentialsX/1394/artifact/jars/EssentialsXProtect-2.19.5-dev+30-b135fcf.jar
 
 # Serverutils
 # https://serverutils.fvdh.dev/api/v1/Bukkit/latest
@@ -78,7 +72,7 @@ https://dev.bukkit.org/projects/openinv/files/latest
 https://dev.bukkit.org/projects/animated-tab-tablist/files/latest
 
 # DeadChest
-https://dev.bukkit.org/projects/dead-chest/files/latest
+# https://dev.bukkit.org/projects/dead-chest/files/latest
 
 # UberEnchant
 https://dev.bukkit.org/projects/uberenchant/files/latest
@@ -86,7 +80,7 @@ https://dev.bukkit.org/projects/uberenchant/files/latest
 # TreeAssist
 # https://dev.bukkit.org/projects/tree-assist/files/latest
 # Beta TreeAssist v7.3.31 (18-07-2022)
-https://dev.bukkit.org/projects/tree-assist/files/3866146/download
+https://dev.bukkit.org/projects/tree-assist/files/3963990/download
 
 # Shopkeepers
 https://dev.bukkit.org/projects/shopkeepers/files/latest
@@ -102,8 +96,8 @@ https://dev.bukkit.org/projects/economyshopgui/files/latest
 # https://ci.codemc.io/job/PotatoCraft-Studio/job/QuickShopDynmap/7/artifact/target/QuickShop-Dynmap-1.0.jar
 
 # CustomCrafting Advanced Custom Recipes
-https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
-https://dev.bukkit.org/projects/wolfyutilities/files/latest
+# https://dev.bukkit.org/projects/customcrafting-advanced-custom-recipes/files/latest
+# https://dev.bukkit.org/projects/wolfyutilities/files/latest
 
 # Insta Mine Deepslate
 https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
@@ -139,7 +133,7 @@ https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBu
 https://github.com/plan-player-analytics/Plan/releases/download/5.5.1951/Plan-5.5-build-1951.jar
 
 # MiniMOTD
-https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.9/minimotd-universal-2.0.9.jar
+# https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.9/minimotd-universal-2.0.9.jar
 
 # Citizens2
 https://ci.citizensnpcs.co/job/Citizens2/2617/artifact/dist/target/Citizens-2.0.30-b2617.jar

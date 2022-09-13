@@ -128,12 +128,12 @@ services:
     # network_mode: "service:mc"
 volumes:
   mc-data: 
-    external: true
+    name: mc-data
   mc-waitroom-data:
-    external: true
+    name: mc-waitroom-data
   mc-backups:
-    external: true
+    name: mc-backups
   mc-rcon:
-    external: true
+    name: mc-rcon
   mc-proxy:
-    external: true
+    name: mc-proxy
