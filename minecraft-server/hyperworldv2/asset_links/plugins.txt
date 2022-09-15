@@ -146,3 +146,6 @@ https://ci.mg-dev.eu/job/BKCommonLib/1370/artifact/target/BKCommonLib-1.19.2-v2-
 
 # MyWorlds
 https://ci.mg-dev.eu/job/MyWorlds/168/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-168.jar
+
+# PurpurExtras
+# https://cdn.modrinth.com/data/Hn8OHmqL/versions/dLwxAVZD/PurpurExtras-1.20.0.jar
