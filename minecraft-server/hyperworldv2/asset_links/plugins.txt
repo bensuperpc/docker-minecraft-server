@@ -33,7 +33,7 @@ https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_wor
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/276/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.5-SNAPSHOT-276.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/282/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.7-SNAPSHOT-282.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.2/WorldEditSelectionVisualizer-2.1.2.jar
 
 # LuckPerms
@@ -140,10 +140,10 @@ https://ci.citizensnpcs.co/job/Citizens2/2705/artifact/dist/target/Citizens-2.0.
 https://dev.bukkit.org/projects/simple-voice-chat/files/latest
 
 # BKCommonLib
-https://ci.mg-dev.eu/job/BKCommonLib/1387/artifact/target/BKCommonLib-1.19.2-v2-SNAPSHOT-1387.jar
+https://ci.mg-dev.eu/job/BKCommonLib/1388/artifact/target/BKCommonLib-1.19.2-v2-SNAPSHOT-1388.jar
 
 # MyWorlds
-https://ci.mg-dev.eu/job/MyWorlds/171/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-171.jar
+https://ci.mg-dev.eu/job/MyWorlds/172/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-172.jar
 
 # PurpurExtras
 https://cdn.modrinth.com/data/Hn8OHmqL/versions/dLwxAVZD/PurpurExtras-1.20.0.jar
