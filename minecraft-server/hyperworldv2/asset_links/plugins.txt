@@ -33,7 +33,7 @@ https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_wor
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/282/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.7-SNAPSHOT-282.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/307/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.10-SNAPSHOT-307.jar
 https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.2/WorldEditSelectionVisualizer-2.1.2.jar
 
 # LuckPerms
@@ -58,7 +58,7 @@ https://dev.bukkit.org/projects/coreprotect/files/latest
 
 # Decent Holograms
 # https://www.spigotmc.org/resources/decent-holograms-1-8-1-18-papi-support-no-dependencies.96927/
-https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.7.2/DecentHolograms-2.7.2.jar
+# https://github.com/DecentSoftware-eu/DecentHolograms/releases/download/2.7.2/DecentHolograms-2.7.2.jar
 
 # DropHeads
 # https://dev.bukkit.org/projects/dropheads/files/latest
@@ -128,22 +128,25 @@ https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBu
 # https://dev.bukkit.org/projects/signboard/files/latest
 
 # plan-player-analytics
-https://github.com/plan-player-analytics/Plan/releases/download/5.5.1969/Plan-5.5-build-1969.jar
+https://github.com/plan-player-analytics/Plan/releases/download/5.5.1984/Plan-5.5-build-1984.jar
 
 # MiniMOTD
 # https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.9/minimotd-universal-2.0.9.jar
 
 # Citizens2
-https://ci.citizensnpcs.co/job/Citizens2/2705/artifact/dist/target/Citizens-2.0.30-b2705.jar
+https://ci.citizensnpcs.co/job/Citizens2/2756/artifact/dist/target/Citizens-2.0.30-b2756.jar
 
 # Simple voice chat [BUKKIT/SPIGOT/PAPER][1.19] Simple Voice Chat 1.19-2.2.45 (18-06-2022)
 https://dev.bukkit.org/projects/simple-voice-chat/files/latest
 
 # BKCommonLib
-https://ci.mg-dev.eu/job/BKCommonLib/1388/artifact/target/BKCommonLib-1.19.2-v2-SNAPSHOT-1388.jar
+https://ci.mg-dev.eu/job/BKCommonLib/1414/artifact/target/BKCommonLib-1.19.2-v4-SNAPSHOT-1414.jar
 
 # MyWorlds
-https://ci.mg-dev.eu/job/MyWorlds/172/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-172.jar
+https://ci.mg-dev.eu/job/MyWorlds/181/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-181.jar
 
 # PurpurExtras
 https://cdn.modrinth.com/data/Hn8OHmqL/versions/dLwxAVZD/PurpurExtras-1.20.0.jar
+
+#FreedomChat
+https://cdn.modrinth.com/data/MubyTbnA/versions/mmbAVHjw/FreedomChat-1.2.1.jar
