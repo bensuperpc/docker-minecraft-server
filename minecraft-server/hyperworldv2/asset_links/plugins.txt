@@ -1,5 +1,5 @@
 # Dynmap
-https://dev.bukkit.org/projects/dynmap/files/latest
+https://dev.bukkit.org/projects/dynmap/files/4167109/download
 
 # Dynmap-WorldGuard
 # https://dev.bukkit.org/projects/dynmap-worldguard/files/latest
@@ -12,7 +12,7 @@ https://dev.bukkit.org/projects/dynmap-worldguard/files/3635984/download
 https://dev.bukkit.org/projects/dynmap-essentialsx/files/3634752/download
 
 # Dynmap-Structures
-https://dev.bukkit.org/projects/dynmap-structures/files/latest
+https://dev.bukkit.org/projects/dynmap-structures/files/3845985/download
 
 # EssentialsX
 https://github.com/EssentialsX/Essentials/releases/download/2.19.7/EssentialsX-2.19.7.jar
@@ -33,8 +33,8 @@ https://github.com/bensuperpc/docker-minecraft-server/releases/download/Test_wor
 # WorldEdit, WorldGuard and FastAsyncWorldEdit
 # https://dev.bukkit.org/projects/worldedit/files/latest
 https://dev.bukkit.org/projects/worldguard/files/latest
-https://ci.athion.net/job/FastAsyncWorldEdit/307/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.4.10-SNAPSHOT-307.jar
-https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.2/WorldEditSelectionVisualizer-2.1.2.jar
+https://ci.athion.net/job/FastAsyncWorldEdit/339/artifact/artifacts/FastAsyncWorldEdit-Bukkit-2.5.1-SNAPSHOT-339.jar
+https://github.com/MrMicky-FR/WorldEditSelectionVisualizer/releases/download/v2.1.3/WorldEditSelectionVisualizer-2.1.3.jar
 
 # LuckPerms
 # https://download.luckperms.net/1438/bukkit/loader/LuckPerms-Bukkit-5.4.30.jar
@@ -101,7 +101,7 @@ https://dev.bukkit.org/projects/economyshopgui/files/latest
 https://dev.bukkit.org/projects/insta-mine-deepslate/files/latest
 
 # SkinsRestorerX
-https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.3/SkinsRestorer.jar
+https://github.com/SkinsRestorer/SkinsRestorerX/releases/download/14.2.5/SkinsRestorer.jar
 
 # ImageOnMap
 https://dev.bukkit.org/projects/imageonmap/files/latest
@@ -128,7 +128,7 @@ https://ci.opencollab.dev/job/GeyserMC/job/Floodgate/job/master/lastSuccessfulBu
 # https://dev.bukkit.org/projects/signboard/files/latest
 
 # plan-player-analytics
-https://github.com/plan-player-analytics/Plan/releases/download/5.5.1984/Plan-5.5-build-1984.jar
+https://github.com/plan-player-analytics/Plan/releases/download/5.5.2163/Plan-5.5-build-2163.jar
 
 # MiniMOTD
 # https://github.com/jpenilla/MiniMOTD/releases/download/v2.0.9/minimotd-universal-2.0.9.jar
@@ -140,13 +140,13 @@ https://ci.citizensnpcs.co/job/Citizens2/2756/artifact/dist/target/Citizens-2.0.
 https://dev.bukkit.org/projects/simple-voice-chat/files/latest
 
 # BKCommonLib
-https://ci.mg-dev.eu/job/BKCommonLib/1414/artifact/target/BKCommonLib-1.19.2-v4-SNAPSHOT-1414.jar
+https://ci.mg-dev.eu/job/BKCommonLib/1454/artifact/target/BKCommonLib-1.19.3-v2-SNAPSHOT-1454.jar
 
 # MyWorlds
-https://ci.mg-dev.eu/job/MyWorlds/181/artifact/target/MyWorlds-1.19.2-v1-SNAPSHOT-181.jar
+https://ci.mg-dev.eu/job/MyWorlds/lastSuccessfulBuild/artifact/target/MyWorlds-1.19.3-v2-SNAPSHOT-196.jar
 
 # PurpurExtras
-https://cdn.modrinth.com/data/Hn8OHmqL/versions/dLwxAVZD/PurpurExtras-1.20.0.jar
+https://cdn.modrinth.com/data/Hn8OHmqL/versions/w60JPGhg/PurpurExtras-1.23.0.jar
 
 #FreedomChat
-https://cdn.modrinth.com/data/MubyTbnA/versions/mmbAVHjw/FreedomChat-1.2.1.jar
+https://cdn.modrinth.com/data/MubyTbnA/versions/qGaisS0d/FreedomChat-1.3.1.jar

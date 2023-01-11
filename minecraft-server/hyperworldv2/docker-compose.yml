@@ -19,7 +19,7 @@ services:
       #       Plan port
       # - "8806:8804"
     volumes:
-      - mc-proxy:/server
+      - ./mc-proxy:/server
   mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
@@ -49,8 +49,8 @@ services:
     environment:
       MAX_MEMORY: "${MAX_MEMORY:-12G}"
     volumes:
-      - mc-data:/data
-      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
+      - ./mc-data:/data
+#      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
   mc-waitroom:
     image: itzg/minecraft-server:latest
     container_name: minecraft-waitroom-server
@@ -76,7 +76,7 @@ services:
       RCON_PORT: "25577"
       MAX_MEMORY: "${MAX_MEMORY:-4G}"
     volumes:
-      - mc-waitroom-data:/data
+      - ./mc-waitroom-data:/data
   rcon-web:
     image: itzg/rcon:latest
     container_name: minecraft-rcon-web
@@ -101,7 +101,7 @@ services:
       #       websocket access from UI
       - "4327:4327"
     volumes:
-      - "mc-rcon:/opt/rcon-web-admin/db"
+      - ./mc-rcon:/opt/rcon-web-admin/db
   mc-backups:
     image: itzg/mc-backup:latest
     container_name: minecraft-backup
@@ -119,11 +119,11 @@ services:
       BACKUP_NAME: "server-main"
     volumes:
       # mount the same volume used by server, but read-only
-      - mc-data:/data:ro
+      - ./mc-data:/data:ro
       # use a host attached directory so that it in turn can be backed up
       # to external/cloud storage
       #- ./mc-backups:/backups
-      - mc-backups:/backups
+      - ./mc-backups:/backups
     # share network namespace with server to simplify rcon access
     # network_mode: "service:mc"
 volumes:
@@ -137,3 +137,8 @@ volumes:
     name: mc-rcon
   mc-proxy:
     name: mc-proxy
+
+networks:
+  app-network:
+    driver: bridge
+    name: app-network
