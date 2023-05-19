@@ -18,13 +18,61 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 
+DOCKER := docker
+
+# Disable: mc-server-waitroom
+PROFILE := mc-proxy mc-server mc-backup mc-web
+PROFILE_CMD := $(addprefix --profile ,$(PROFILE))
+
+COMPOSE_FILE := docker-compose.yml
+
+AUTHOR := itzg
+
 IMAGE_NAME := minecraft-server mc-backup minecraft-bedrock-server bungeecord mc-router rcon
 
 IMAGE_AUTHOR := $(addprefix itzg/, $(IMAGE_NAME))
 
 IMAGE_FULL_NAME := $(addsuffix :latest, $(IMAGE_AUTHOR))
 
+.PHONY: build all
+all: start
+
+.PHONY: start
+start:
+	cd minecraft-server/
+	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) up -d
+
+start-at:
+	cd minecraft-server/
+	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) up
+
+.PHONY: stop
+stop: down
+
+.PHONY: down
+down:
+	cd minecraft-server/
+	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) down
+
+.PHONY: restart
+restart: stop start
+
+.PHONY: logs
+logs:
+	cd minecraft-server/
+	docker-compose -f $(COMPOSE_FILE) logs
+
+.PHONY: state
+state:
+	cd minecraft-server/
+	docker-compose -f $(COMPOSE_FILE) ps
+	docker-compose -f $(COMPOSE_FILE) top
+
 .PHONY: update
 update:
 	git pull --recurse-submodules --all --progress
 	echo $(IMAGE_FULL_NAME) | xargs -n1 docker pull
+
+.PHONY: clean
+clean: $(SUBDIRS)
+	$(DOCKER) images --filter=reference='bensuperpc/*' --format='{{.Repository}}:{{.Tag}}' | xargs -r $(DOCKER) rmi -f

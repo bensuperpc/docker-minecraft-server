@@ -20,6 +20,8 @@ services:
       # - "8806:8804"
     volumes:
       - ./mc-proxy:/server
+    networks:
+      - app-network
   mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
@@ -40,6 +42,8 @@ services:
       # - "19132:19132/udp"
       #       Dynmap port
       - "8123:8123"
+      #       BlueMap port
+      - "8100:8100"
       #       Plan port
       - "8804:8804"
     env_file:
@@ -51,6 +55,8 @@ services:
     volumes:
       - ./mc-data:/data
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
+    networks:
+      - app-network
   mc-waitroom:
     image: itzg/minecraft-server:latest
     container_name: minecraft-waitroom-server
@@ -77,6 +83,8 @@ services:
       MAX_MEMORY: "${MAX_MEMORY:-4G}"
     volumes:
       - ./mc-waitroom-data:/data
+    networks:
+      - app-network
   rcon-web:
     image: itzg/rcon:latest
     container_name: minecraft-rcon-web
@@ -102,6 +110,8 @@ services:
       - "4327:4327"
     volumes:
       - ./mc-rcon:/opt/rcon-web-admin/db
+    networks:
+      - app-network
   mc-backups:
     image: itzg/mc-backup:latest
     container_name: minecraft-backup
@@ -126,6 +136,8 @@ services:
       - ./mc-backups:/backups
     # share network namespace with server to simplify rcon access
     # network_mode: "service:mc"
+    networks:
+      - app-network
 volumes:
   mc-data: 
     name: mc-data

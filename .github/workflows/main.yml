@@ -27,7 +27,7 @@ jobs:
           submodules: "recursive"
           fetch-depth: 0
       - name: "Start server"
-        run: cd minecraft-server/hyperworldv2/ && make start
+        run: make start
       - name: "Wait..."
         run: sleep 480
       - name: "Check minecraft port"
@@ -41,13 +41,13 @@ jobs:
         run: nc -zv 127.0.0.1 4326
       - name: "Check server"
         if: always()
-        run: cd minecraft-server/hyperworldv2/ && make state
+        run: make state
       - name: "Check logs server"
         if: always()
-        run: cd minecraft-server/hyperworldv2/ && make logs
+        run: make logs
       - name: "Stop containers"
         if: always()
-        run: cd minecraft-server/hyperworldv2/ && make stop
+        run: make stop
       - name: "Remove containers"
         if: always()
-        run: cd minecraft-server/hyperworldv2/ && make down
+        run: make down
