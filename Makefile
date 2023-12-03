@@ -39,34 +39,29 @@ all: start
 
 .PHONY: start
 start:
-	cd minecraft-server/
-	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) up -d
+	docker-compose -f minecraft-server/$(COMPOSE_FILE) $(PROFILE_CMD) up -d
 
 start-at:
-	cd minecraft-server/
-	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) up
+	docker-compose -f minecraft-server/$(COMPOSE_FILE) $(PROFILE_CMD) up
 
 .PHONY: stop
 stop: down
 
 .PHONY: down
 down:
-	cd minecraft-server/
-	docker-compose -f $(COMPOSE_FILE) $(PROFILE_CMD) down
+	docker-compose -f minecraft-server/$(COMPOSE_FILE) $(PROFILE_CMD) down
 
 .PHONY: restart
 restart: stop start
 
 .PHONY: logs
 logs:
-	cd minecraft-server/
-	docker-compose -f $(COMPOSE_FILE) logs
+	docker-compose -f minecraft-server/$(COMPOSE_FILE) logs
 
 .PHONY: state
 state:
-	cd minecraft-server/
-	docker-compose -f $(COMPOSE_FILE) ps
-	docker-compose -f $(COMPOSE_FILE) top
+	docker-compose -f minecraft-server/$(COMPOSE_FILE) ps
+	docker-compose -f minecraft-server/$(COMPOSE_FILE) top
 
 .PHONY: update
 update:

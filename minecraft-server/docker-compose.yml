@@ -10,10 +10,13 @@ services:
     env_file:
       - env/proxy.env
     environment:
-      INIT_MEMORY: "1G"
+      INIT_MEMORY: "512M"
+      MAX_MEMORY: "2048M"
     ports:
       #       Server Minecraft port
       - "25565:25577"
+      #       Server Minecraft Bedrock port (GeyserMC)
+      - "19132:19132/udp"
       #       Rcon port
       - "25576:25575"
       #       Plan port
@@ -51,7 +54,7 @@ services:
       - env/world.env
       - env/mods_plugins.env
     environment:
-      MAX_MEMORY: "${MAX_MEMORY:-12G}"
+      MAX_MEMORY: "${MAX_MEMORY:-11G}"
     volumes:
       - ./mc-data:/data
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
@@ -80,7 +83,7 @@ services:
     environment:
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
-      MAX_MEMORY: "${MAX_MEMORY:-4G}"
+      MAX_MEMORY: "${MAX_MEMORY:-3G}"
     volumes:
       - ./mc-waitroom-data:/data
     networks:
@@ -93,7 +96,6 @@ services:
     restart: on-failure:3
     depends_on:
       - mc-server
-      - mc-waitroom
       - mc-proxy
     environment:
       RWA_USERNAME: admin

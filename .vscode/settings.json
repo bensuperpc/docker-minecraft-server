@@ -1,0 +1,15 @@
+{
+    "files.associations": {},
+    "search.followSymlinks": false,
+    "files.exclude": {
+        "**/.git/objects/**": true,
+    },
+    "files.watcherExclude": {
+            "**/.git/objects/**": true,
+            "**/submodule/**": true,
+    },
+    "search.exclude": {
+            "**/.git/objects/**": true,
+            "**/submodule/**": true,
+    },
+}
