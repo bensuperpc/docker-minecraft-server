@@ -54,7 +54,7 @@ services:
       - env/world.env
       - env/mods_plugins.env
     environment:
-      MAX_MEMORY: "${MAX_MEMORY:-11G}"
+      MAX_MEMORY: "${MAX_MEMORY:-20G}"
     volumes:
       - ./mc-data:/data
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
@@ -83,7 +83,7 @@ services:
     environment:
       SERVER_PORT: "25566"
       RCON_PORT: "25577"
-      MAX_MEMORY: "${MAX_MEMORY:-3G}"
+      MAX_MEMORY: "${MAX_MEMORY:-4G}"
     volumes:
       - ./mc-waitroom-data:/data
     networks:
