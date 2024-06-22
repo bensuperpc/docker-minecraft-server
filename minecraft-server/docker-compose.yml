@@ -16,9 +16,9 @@ services:
       #       Server Minecraft port
       - "25565:25577"
       #       Server Minecraft Bedrock port (GeyserMC)
-      - "19132:19132/udp"
+      #- "19132:19132/udp"
       #       Rcon port
-      - "25576:25575"
+      #- "25576:25575"
       #       Plan port
       # - "8806:8804"
     volumes:
@@ -54,7 +54,7 @@ services:
       - env/world.env
       - env/mods_plugins.env
     environment:
-      MAX_MEMORY: "${MAX_MEMORY:-20G}"
+      MAX_MEMORY: "${MAX_MEMORY:-24G}"
     volumes:
       - ./mc-data:/data
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro

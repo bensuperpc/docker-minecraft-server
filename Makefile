@@ -21,8 +21,10 @@
 DOCKER := docker
 
 # Disable: mc-server-waitroom
-PROFILE := mc-proxy mc-server mc-backup mc-web
+PROFILE := mc-proxy mc-server mc-backup
 PROFILE_CMD := $(addprefix --profile ,$(PROFILE))
+
+# mc-web
 
 COMPOSE_FILE := docker-compose.yml
 
