@@ -68,7 +68,7 @@ state:
 .PHONY: update
 update:
 	echo $(IMAGE_FULL_NAME) | xargs -n1 docker pull
-	git pull --recurse-submodules --all --progress
+	#git pull --recurse-submodules --all --progress
 
 .PHONY: clean
 clean: $(SUBDIRS)
