@@ -1,15 +1,8 @@
 #//////////////////////////////////////////////////////////////
-#//   ____                                                   //
-#//  | __ )  ___ _ __  ___ _   _ _ __   ___ _ __ _ __   ___  //
-#//  |  _ \ / _ \ '_ \/ __| | | | '_ \ / _ \ '__| '_ \ / __| //
-#//  | |_) |  __/ | | \__ \ |_| | |_) |  __/ |  | |_) | (__  //
-#//  |____/ \___|_| |_|___/\__,_| .__/ \___|_|  | .__/ \___| //
-#//                             |_|             |_|          //
-#//////////////////////////////////////////////////////////////
 #//                                                          //
-#//  Script, 2022                                            //
+#//  Minecraft, 2024                                         //
 #//  Created: 14, April, 2022                                //
-#//  Modified: 19, June, 2022                                //
+#//  Modified: 05, May, 2024                                 //
 #//  file: -                                                 //
 #//  -                                                       //
 #//  Source:                                                 //
@@ -18,56 +11,76 @@
 #//                                                          //
 #//////////////////////////////////////////////////////////////
 
+SERVER_DIRECTORY := minecraft-server
+
 DOCKER := docker
 
 # Disable: mc-web mc-backup
-PROFILE := mc-proxy mc-server
-PROFILE_CMD := $(addprefix --profile ,$(PROFILE))
+PROFILES := mc-proxy mc-server mc-openssh
+PROFILE_CMD := $(addprefix --profile ,$(PROFILES))
 
-COMPOSE_FILE := docker-compose.yml
+COMPOSE_FILES :=  $(shell find ./$(SERVER_DIRECTORY) -name 'docker-compose*.yml' -type f | sed -e 's/^/--file /')
+COMPOSE_DIR := --project-directory ./$(SERVER_DIRECTORY)
 
-AUTHOR := itzg
+UID := 1000
+GID := 1000
 
-IMAGE_NAME := minecraft-server mc-backup minecraft-bedrock-server bungeecord mc-router rcon
+ENV_ARG_VAR := PUID=$(UID) PGID=$(GID)
 
-IMAGE_AUTHOR := $(addprefix itzg/, $(IMAGE_NAME))
-
-IMAGE_FULL_NAME := $(addsuffix :latest, $(IMAGE_AUTHOR))
+DOCKER_COMPOSE_COMMAND := $(ENV_ARG_VAR) $(DOCKER) compose $(COMPOSE_DIR) $(COMPOSE_FILES) $(PROFILE_CMD)
 
 .PHONY: build all
 all: start
 
+.PHONY: build
+build:
+	$(DOCKER_COMPOSE_COMMAND) build
+
 .PHONY: start
 start:
-	docker-compose -f minecraft-server/$(COMPOSE_FILE) $(PROFILE_CMD) up -d
+	$(DOCKER_COMPOSE_COMMAND) up -d
 
+.PHONY: start-at
 start-at:
-	docker-compose -f minecraft-server/$(COMPOSE_FILE) $(PROFILE_CMD) up
+	$(DOCKER_COMPOSE_COMMAND) up
+
+.PHONY: docker-check
+docker-check:
+	$(DOCKER_COMPOSE_COMMAND) config
 
 .PHONY: stop
 stop: down
 
 .PHONY: down
 down:
-	docker-compose -f minecraft-server/$(COMPOSE_FILE) $(PROFILE_CMD) down
+	$(DOCKER_COMPOSE_COMMAND) down
 
 .PHONY: restart
 restart: stop start
 
 .PHONY: logs
 logs:
-	docker-compose -f minecraft-server/$(COMPOSE_FILE) logs
+	$(DOCKER_COMPOSE_COMMAND) logs
 
 .PHONY: state
 state:
-	docker-compose -f minecraft-server/$(COMPOSE_FILE) ps
-	docker-compose -f minecraft-server/$(COMPOSE_FILE) top
+	$(DOCKER_COMPOSE_COMMAND) ps
+	$(DOCKER_COMPOSE_COMMAND) top
+
+.PHONY: update-docker
+update-docker:
+	$(DOCKER_COMPOSE_COMMAND) pull
 
 .PHONY: update
-update:
-	echo $(IMAGE_FULL_NAME) | xargs -n1 docker pull
-	#git pull --recurse-submodules --all --progress
+update: update-docker
+	git submodule update --init --recursive --remote
+	git pull --recurse-submodules --all --progress
 
 .PHONY: clean
-clean: $(SUBDIRS)
-	$(DOCKER) images --filter=reference='bensuperpc/*' --format='{{.Repository}}:{{.Tag}}' | xargs -r $(DOCKER) rmi -f
+clean:
+	docker system prune -f
+
+.PHONY: purge
+purge:
+	$(ENV_ARG_VAR) $(DOCKER) compose $(COMPOSE_DIR) $(COMPOSE_FILES) down -v --rmi all
+

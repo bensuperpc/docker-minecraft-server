@@ -92,17 +92,45 @@ services:
     depends_on:
       - mc-server
       - mc-proxy
-    restart: on-failure:3
+    restart: on-failure:5
     env_file:
-      - env/backup.env
+      - ./env/backup.env
     volumes:
       - ./mc-backup:/mnt/restic
       - ./mc-data:/data/mc-data:ro
       - ./mc-proxy:/data/mc-proxy:ro
+    network_mode: none
+    cap_drop:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
+
+  # mc-openssh
+  mc-openssh:
+    image: linuxserver/openssh-server:latest
+    container_name: mc-openssh
+    profiles:
+      - mc-openssh
+    depends_on:
+      - mc-server
+      - mc-proxy
+    restart: on-failure:5
+    env_file:
+      - ./env/openssh.env
+    environment:
+      - PUID=${PUID:-1000}
+      - PGID=${PGID:-1000}
+    volumes:
+      - mc-openssh:/config:rw
+      - ./config/authorized_keys:/authorized_ssh_keys:ro
+      - ./mc-data:/mc-data:rw
+      - ./mc-proxy:/mc-proxy:rw
     networks:
       - app-network
     security_opt:
-      - no-new-privileges:true
+      - no-new-privileges:false
+    ports:
+      - 2222:2222
 
 volumes:
   mc-data: 
@@ -113,6 +141,8 @@ volumes:
     name: mc-rcon
   mc-proxy:
     name: mc-proxy
+  mc-openssh:
+    name: mc-openssh
 
 networks:
   app-network:
