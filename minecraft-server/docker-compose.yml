@@ -1,5 +1,3 @@
-version: "3.8"
-
 services:
   mc-proxy:
     image: itzg/bungeecord:latest
@@ -25,6 +23,7 @@ services:
       - ./mc-proxy:/server
     networks:
       - app-network
+
   mc-server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
@@ -34,13 +33,11 @@ services:
     depends_on:
       - mc-proxy
     restart: on-failure:3
-    # tty: true
-    # stdin_open: false
     ports:
       #       Server Minecraft port (Disable if you use proxy)
       # - "25565:25565"
       #       Rcon port
-      - "25575:25575"
+      # - "25575:25575"
       #       Server Minecraft Bedrock port (GeyserMC)
       # - "19132:19132/udp"
       #       Dynmap port
@@ -60,34 +57,7 @@ services:
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
     networks:
       - app-network
-  mc-waitroom:
-    image: itzg/minecraft-server:latest
-    container_name: minecraft-waitroom-server
-    profiles:
-      - mc-server-waitroom
-    depends_on:
-      - mc-proxy
-    restart: on-failure:3
-    # tty: true
-    # stdin_open: false
-    ports:
-      #       Server Minecraft port (Disable if you use proxy)
-      # - "25566:25566"
-      #       Rcon port
-      - "25577:25575"
-      #       Server Minecraft Bedrock port (GeyserMC)
-      # - "19132:19132/udp"
-    env_file:
-      - env/server.env
-      - env/waitroom.env
-    environment:
-      SERVER_PORT: "25566"
-      RCON_PORT: "25577"
-      MAX_MEMORY: "${MAX_MEMORY:-4G}"
-    volumes:
-      - ./mc-waitroom-data:/data
-    networks:
-      - app-network
+
   rcon-web:
     image: itzg/rcon:latest
     container_name: minecraft-rcon-web
@@ -103,8 +73,7 @@ services:
       RWA_ADMIN: "TRUE"
       # is referring to the hostname of 'mc-server' compose service below
       RWA_RCON_HOST: mc-server
-      # needs to match the password configured for the container, which is 'minecraft' by default
-      RWA_RCON_PASSWORD: minecraft
+      RWA_RCON_PASSWORD: 6hxU3Oxmh2Q8e6S9fjkdWJikRCON_PASSWORD
     ports:
       #       web UI port
       - "4326:4326"
@@ -114,39 +83,32 @@ services:
       - ./mc-rcon:/opt/rcon-web-admin/db
     networks:
       - app-network
-  mc-backups:
-    image: itzg/mc-backup:latest
-    container_name: minecraft-backup
+
+  mc-backup:
+    image: mazzolino/restic:latest
+    container_name: mc-backup
     profiles:
       - mc-backup
-      - mc-backup-main
-    restart: on-failure:3
     depends_on:
       - mc-server
+      - mc-proxy
+    restart: on-failure:3
     env_file:
       - env/backup.env
-    environment:
-      # instead of network_mode below, could declare RCON_HOST
-      RCON_HOST: mc-server
-      BACKUP_NAME: "server-main"
     volumes:
-      # mount the same volume used by server, but read-only
-      - ./mc-data:/data:ro
-      # use a host attached directory so that it in turn can be backed up
-      # to external/cloud storage
-      #- ./mc-backups:/backups
-      - ./mc-backups:/backups
-    # share network namespace with server to simplify rcon access
-    # network_mode: "service:mc"
+      - ./mc-backup:/mnt/restic
+      - ./mc-data:/data/mc-data:ro
+      - ./mc-proxy:/data/mc-proxy:ro
     networks:
       - app-network
+    security_opt:
+      - no-new-privileges:true
+
 volumes:
   mc-data: 
     name: mc-data
-  mc-waitroom-data:
-    name: mc-waitroom-data
-  mc-backups:
-    name: mc-backups
+  mc-backup:
+    name: mc-backup
   mc-rcon:
     name: mc-rcon
   mc-proxy:
