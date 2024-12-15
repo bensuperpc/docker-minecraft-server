@@ -13,7 +13,7 @@
 
 SERVER_DIRECTORY := minecraft-server
 
-# Disable: mc-web mc-backup
+# Disable: mc-web mc-backup mc-openssh
 DOCKER_PROFILES := mc-proxy mc-server
 
 include DockerCompose.mk

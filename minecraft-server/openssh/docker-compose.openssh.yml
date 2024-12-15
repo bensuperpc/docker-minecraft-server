@@ -1,10 +1,10 @@
 services:
   # openssh
-  minecraft_openssh:
+  mc-openssh:
     image: linuxserver/openssh-server:latest
-    container_name: minecraft_openssh
+    container_name: mc-openssh
     profiles:
-      - minecraft_openssh
+      - mc-openssh
     depends_on:
       - mc-server
     restart: on-failure:5
@@ -14,8 +14,11 @@ services:
       - PUID=${PUID:-1000}
       - PGID=${PGID:-1000}
     volumes:
-      - minecraft_openssh_config:/config
+      - mc-openssh-config:/config
       - ./openssh/config/authorized_keys:/authorized_ssh_keys:ro
+      - ./minecraft-server/mc-data:/mc-data
+      - ./minecraft-server/mc-proxy:/mc-proxy
+      - ./backup/mc-backup:/mc-backup
     networks:
       - minecraft_network
     security_opt:
@@ -26,13 +29,5 @@ services:
       - 2222:2222
 
 volumes:
-  minecraft_openssh_config:
-    name: minecraft_openssh_config
-  mc-data: 
-    name: mc-data
-  mc-backup:
-    name: mc-backup
-  mc-rcon:
-    name: mc-rcon
-  mc-proxy:
-    name: mc-proxy
+  mc-openssh-config:
+    name: mc-openssh-config
