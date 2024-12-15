@@ -41,7 +41,7 @@ services:
       #       Server Minecraft Bedrock port (GeyserMC)
       # - "19132:19132/udp"
       #       Dynmap port
-      - "8123:8123"
+      # - "8123:8123"
       #       BlueMap port
       - "8100:8100"
       #       Plan port
@@ -57,6 +57,14 @@ services:
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
     networks:
       - app-network
+    deploy:
+      resources:
+#        limits:
+#          cpus: '8.0'
+#          memory: 26G
+        reservations:
+          cpus: '0.01'
+          memory: 20M
 
   rcon-web:
     image: itzg/rcon:latest
@@ -94,15 +102,18 @@ services:
       - mc-proxy
     restart: on-failure:3
     env_file:
-      - env/backup.env
+      - ./env/backup.env
     volumes:
       - ./mc-backup:/mnt/restic
       - ./mc-data:/data/mc-data:ro
       - ./mc-proxy:/data/mc-proxy:ro
-    networks:
-      - app-network
     security_opt:
       - no-new-privileges:true
+    network_mode: none
+    cap_drop:
+      - NET_ADMIN
+      - NET_RAW
+      - SYS_ADMIN
 
 volumes:
   mc-data: 
