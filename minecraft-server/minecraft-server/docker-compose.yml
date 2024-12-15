@@ -6,7 +6,7 @@ services:
       - mc-proxy
     restart: on-failure:3
     env_file:
-      - env/proxy.env
+      - ./minecraft-server/env/proxy.env
     environment:
       INIT_MEMORY: "512M"
       MAX_MEMORY: "2048M"
@@ -20,9 +20,9 @@ services:
       #       Plan port
       # - "8806:8804"
     volumes:
-      - ./mc-proxy:/server
+      - ./minecraft-server/mc-proxy:/server
     networks:
-      - app-network
+      - minecraft_network
 
   mc-server:
     image: itzg/minecraft-server:latest
@@ -47,16 +47,16 @@ services:
       #       Plan port
       - "8804:8804"
     env_file:
-      - env/server.env
-      - env/world.env
-      - env/mods_plugins.env
+      - ./minecraft-server/env/server.env
+      - ./minecraft-server/env/world.env
+      - ./minecraft-server/env/mods_plugins.env
     environment:
       MAX_MEMORY: "${MAX_MEMORY:-24G}"
     volumes:
-      - ./mc-data:/data
-#      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
+      - ./minecraft-server/mc-data:/data
+#      - ./minecraft-server/asset_links/plugins.txt:/extras/plugins.txt:ro
     networks:
-      - app-network
+      - minecraft_network
     deploy:
       resources:
 #        limits:
@@ -88,9 +88,9 @@ services:
       #       websocket access from UI
       - "4327:4327"
     volumes:
-      - ./mc-rcon:/opt/rcon-web-admin/db
+      - ./minecraft-server/mc-rcon:/opt/rcon-web-admin/db
     networks:
-      - app-network
+      - minecraft_network
 
   mc-backup:
     image: mazzolino/restic:latest
@@ -104,9 +104,9 @@ services:
     env_file:
       - ./env/backup.env
     volumes:
-      - ./mc-backup:/mnt/restic
-      - ./mc-data:/data/mc-data:ro
-      - ./mc-proxy:/data/mc-proxy:ro
+      - ./backup/mc-backup:/mnt/restic
+      - ./minecraft-server/mc-data:/data/mc-data:ro
+      - ./minecraft-server/mc-proxy:/data/mc-proxy:ro
     security_opt:
       - no-new-privileges:true
     network_mode: none
@@ -126,6 +126,6 @@ volumes:
     name: mc-proxy
 
 networks:
-  app-network:
+  minecraft_network:
     driver: bridge
-    name: app-network
+    name: minecraft_network
