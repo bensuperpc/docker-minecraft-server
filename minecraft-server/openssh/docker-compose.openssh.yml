@@ -16,8 +16,8 @@ services:
     volumes:
       - mc-openssh-config:/config
       - ./openssh/config/authorized_keys:/authorized_ssh_keys:ro
-      - ./minecraft-server/mc-data:/mc-data
-      - ./minecraft-server/mc-proxy:/mc-proxy
+      - ./mc-data:/mc-data
+      - ./mc-proxy:/mc-proxy
       - ./backup/mc-backup:/mc-backup
     networks:
       - minecraft_network

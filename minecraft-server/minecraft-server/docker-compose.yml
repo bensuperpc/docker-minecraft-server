@@ -6,7 +6,7 @@ services:
       - mc-proxy
     restart: on-failure:3
     env_file:
-      - ./minecraft-server/env/proxy.env
+      - ./env/proxy.env
     environment:
       INIT_MEMORY: "512M"
       MAX_MEMORY: "2048M"
@@ -20,7 +20,7 @@ services:
       #       Plan port
       # - "8806:8804"
     volumes:
-      - ./minecraft-server/mc-proxy:/server
+      - ./mc-proxy:/server
     networks:
       - minecraft_network
 
@@ -47,14 +47,14 @@ services:
       #       Plan port
       - "8804:8804"
     env_file:
-      - ./minecraft-server/env/server.env
-      - ./minecraft-server/env/world.env
-      - ./minecraft-server/env/mods_plugins.env
+      - ./env/server.env
+      - ./env/world.env
+      - ./env/mods_plugins.env
     environment:
       MAX_MEMORY: "${MAX_MEMORY:-24G}"
     volumes:
-      - ./minecraft-server/mc-data:/data
-#      - ./minecraft-server/asset_links/plugins.txt:/extras/plugins.txt:ro
+      - ./mc-data:/data
+#      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
     networks:
       - minecraft_network
     deploy:
@@ -88,7 +88,7 @@ services:
       #       websocket access from UI
       - "4327:4327"
     volumes:
-      - ./minecraft-server/mc-rcon:/opt/rcon-web-admin/db
+      - ./mc-rcon:/opt/rcon-web-admin/db
     networks:
       - minecraft_network
 
@@ -99,8 +99,3 @@ volumes:
     name: mc-rcon
   mc-proxy:
     name: mc-proxy
-
-networks:
-  minecraft_network:
-    driver: bridge
-    name: minecraft_network
