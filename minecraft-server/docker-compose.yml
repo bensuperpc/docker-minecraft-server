@@ -5,8 +5,3 @@ include:
   - openssh/docker-compose.openssh.yml
 # Backup server
   - backup/docker-compose.yml
-
-networks:
-  infra-network:
-    driver: bridge
-    name: infra-network

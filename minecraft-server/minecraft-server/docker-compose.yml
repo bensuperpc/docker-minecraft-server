@@ -100,3 +100,8 @@ volumes:
     name: mc-rcon
   mc-proxy:
     name: mc-proxy
+
+networks:
+  infra-network:
+    driver: bridge
+    name: infra-network
