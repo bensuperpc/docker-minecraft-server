@@ -4,6 +4,7 @@ services:
     container_name: minecraft-proxy-server
     profiles:
       - mc-proxy
+      - mc-server
     restart: on-failure:3
     env_file:
       - ./env/proxy.env
@@ -22,7 +23,7 @@ services:
     volumes:
       - ./mc-proxy:/server
     networks:
-      - minecraft_network
+      - infra-network
 
   mc-server:
     image: itzg/minecraft-server:latest
@@ -56,7 +57,7 @@ services:
       - ./mc-data:/data
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
     networks:
-      - minecraft_network
+      - infra-network
     deploy:
       resources:
 #        limits:
@@ -90,7 +91,7 @@ services:
     volumes:
       - ./mc-rcon:/opt/rcon-web-admin/db
     networks:
-      - minecraft_network
+      - infra-network
 
 volumes:
   mc-data: 

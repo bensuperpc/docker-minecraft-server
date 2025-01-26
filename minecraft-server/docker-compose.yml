@@ -7,6 +7,6 @@ include:
   - backup/docker-compose.yml
 
 networks:
-  minecraft_network:
+  infra-network:
     driver: bridge
-    name: minecraft_network
+    name: infra-network
