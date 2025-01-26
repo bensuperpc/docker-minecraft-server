@@ -4,4 +4,4 @@ include:
 # OpenSSH server
   - openssh/docker-compose.openssh.yml
 # Backup server
-  - backup/docker-compose.yml
+  - backup/docker-compose.backup.yml
