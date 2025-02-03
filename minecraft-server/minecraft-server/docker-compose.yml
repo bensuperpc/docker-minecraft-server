@@ -94,12 +94,12 @@ services:
       - infra-network
 
 volumes:
-  mc-data: 
-    name: mc-data
-  mc-rcon:
-    name: mc-rcon
-  mc-proxy:
-    name: mc-proxy
+  minecraft_server_data:
+    name: minecraft_server_data
+  minecraft_server_config:
+    name: minecraft_server_config
+  minecraft_server_log:
+    name: minecraft_server_log
 
 networks:
   infra-network:

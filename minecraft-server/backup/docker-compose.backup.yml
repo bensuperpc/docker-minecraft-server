@@ -23,5 +23,5 @@ services:
       - SYS_ADMIN
 
 volumes:
-  mc-backup:
-    name: mc-backup
+  minecraft_server_backup:
+    name: minecraft_server_backup
