@@ -16,9 +16,10 @@ services:
     volumes:
       - minecraft_serve_openssh_config:/config
       - ./openssh/config/authorized_keys:/authorized_ssh_keys:ro
-      - ./mc-data:/mc-data
-      - ./mc-proxy:/mc-proxy
-      - ./backup/mc-backup:/mc-backup
+      - minecraft_server_data:/minecraft_server_data
+      - minecraft_proxy_data:/minecraft_proxy_data
+      - minecraft_server_backup:/minecraft_server_backup
+      - minecraft_rcon_data:/minecraft_rcon_data
     networks:
       - infra-network
     security_opt:
@@ -35,7 +36,7 @@ volumes:
     name: minecraft_server_backup
   minecraft_server_data:
     name: minecraft_server_data
-  minecraft_server_config:
-    name: minecraft_server_config
-  minecraft_server_log:
-    name: minecraft_server_log
+  minecraft_proxy_data:
+    name: minecraft_proxy_data
+  minecraft_rcon_data:
+    name: minecraft_rcon_data

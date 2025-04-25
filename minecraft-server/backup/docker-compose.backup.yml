@@ -11,9 +11,10 @@ services:
     env_file:
       - ./env/backup.env
     volumes:
-      - ./backup/mc-backup:/mnt/restic
-      - ./mc-data:/data/mc-data:ro
-      - ./mc-proxy:/data/mc-proxy:ro
+      - minecraft_server_backup:/mnt/restic
+      - minecraft_server_data:/data/minecraft_server_data:ro
+      - minecraft_proxy_data:/data/minecraft_proxy_data:ro
+      - minecraft_rcon_data:/data/minecraft_rcon_data:ro
     security_opt:
       - no-new-privileges:true
     network_mode: none
@@ -25,3 +26,9 @@ services:
 volumes:
   minecraft_server_backup:
     name: minecraft_server_backup
+  minecraft_server_data:
+    name: minecraft_server_data
+  minecraft_proxy_data:
+    name: minecraft_proxy_data
+  minecraft_rcon_data:
+    name: minecraft_rcon_data

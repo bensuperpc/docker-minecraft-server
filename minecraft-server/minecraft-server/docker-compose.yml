@@ -21,7 +21,7 @@ services:
       #       Plan port
       # - "8806:8804"
     volumes:
-      - ./mc-proxy:/server
+      - minecraft_proxy_data:/server
     networks:
       - infra-network
 
@@ -54,7 +54,7 @@ services:
     environment:
       MAX_MEMORY: "${MAX_MEMORY:-24G}"
     volumes:
-      - ./mc-data:/data
+      - minecraft_server_data:/data
 #      - ./asset_links/plugins.txt:/extras/plugins.txt:ro
     networks:
       - infra-network
@@ -89,17 +89,17 @@ services:
       #       websocket access from UI
       - "4327:4327"
     volumes:
-      - ./mc-rcon:/opt/rcon-web-admin/db
+      - minecraft_rcon_data:/opt/rcon-web-admin/db
     networks:
       - infra-network
 
 volumes:
   minecraft_server_data:
     name: minecraft_server_data
-  minecraft_server_config:
-    name: minecraft_server_config
-  minecraft_server_log:
-    name: minecraft_server_log
+  minecraft_proxy_data:
+    name: minecraft_proxy_data
+  minecraft_rcon_data:
+    name: minecraft_rcon_data
 
 networks:
   infra-network:
