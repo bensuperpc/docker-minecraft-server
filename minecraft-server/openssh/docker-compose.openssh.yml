@@ -1,10 +1,10 @@
 services:
   # openssh
-  mc-openssh:
+  minecraft_openssh:
     image: linuxserver/openssh-server:latest
-    container_name: mc-openssh
+    container_name: minecraft_openssh
     profiles:
-      - mc-openssh
+      - minecraft_openssh
     depends_on:
       - minecraft_server
     restart: on-failure:5
