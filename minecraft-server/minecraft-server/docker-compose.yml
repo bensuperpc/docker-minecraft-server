@@ -4,7 +4,7 @@ services:
     container_name: minecraft-proxy-server
     profiles:
       - mc-proxy
-      - mc-server
+      - minecraft_server
     restart: on-failure:3
     env_file:
       - ./env/proxy.env
@@ -25,12 +25,11 @@ services:
     networks:
       - infra-network
 
-  mc-server:
+  minecraft_server:
     image: itzg/minecraft-server:latest
     container_name: minecraft-server
     profiles:
-      - mc-server
-      - mc-server-main
+      - minecraft_server
     depends_on:
       - mc-proxy
     restart: on-failure:3
@@ -74,14 +73,14 @@ services:
       - mc-web
     restart: on-failure:3
     depends_on:
-      - mc-server
+      - minecraft_server
       - mc-proxy
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
       RWA_ADMIN: "TRUE"
-      # is referring to the hostname of 'mc-server' compose service below
-      RWA_RCON_HOST: mc-server
+      # is referring to the hostname of 'minecraft_server' compose service below
+      RWA_RCON_HOST: minecraft_server
       RWA_RCON_PASSWORD: 6hxU3Oxmh2Q8e6S9fjkdWJikRCON_PASSWORD
     ports:
       #       web UI port

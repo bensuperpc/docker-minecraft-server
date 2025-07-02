@@ -6,7 +6,7 @@ services:
     profiles:
       - mc-openssh
     depends_on:
-      - mc-server
+      - minecraft_server
     restart: on-failure:5
     env_file:
       - ./openssh/env/openssh.env

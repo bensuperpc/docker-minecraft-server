@@ -14,6 +14,6 @@
 PROJECT_DIRECTORY := minecraft-server
 
 # Disable: mc-web mc-backup mc-openssh
-DOCKER_PROFILES := mc-proxy mc-server
+DOCKER_PROFILES := mc-proxy minecraft_server
 
 include DockerCompose.mk
