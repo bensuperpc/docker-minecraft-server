@@ -1,9 +1,9 @@
 services:
-  mc-proxy:
+  minecraft_proxy:
     image: itzg/bungeecord:latest
     container_name: minecraft-proxy-server
     profiles:
-      - mc-proxy
+      - minecraft_proxy
       - minecraft_server
     restart: on-failure:3
     env_file:
@@ -31,7 +31,7 @@ services:
     profiles:
       - minecraft_server
     depends_on:
-      - mc-proxy
+      - minecraft_proxy
     restart: on-failure:3
     ports:
       #       Server Minecraft port (Disable if you use proxy)
@@ -74,7 +74,7 @@ services:
     restart: on-failure:3
     depends_on:
       - minecraft_server
-      - mc-proxy
+      - minecraft_proxy
     environment:
       RWA_USERNAME: admin
       RWA_PASSWORD: admin
