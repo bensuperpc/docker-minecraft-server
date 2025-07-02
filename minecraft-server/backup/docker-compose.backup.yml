@@ -1,9 +1,9 @@
 services:
-  mc-backup:
+  minecraft_backup:
     image: mazzolino/restic:latest
-    container_name: mc-backup
+    container_name: minecraft_backup
     profiles:
-      - mc-backup
+      - minecraft_backup
     depends_on:
       - minecraft_server
       - mc-proxy
