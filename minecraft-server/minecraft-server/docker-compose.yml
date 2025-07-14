@@ -1,7 +1,7 @@
 services:
   minecraft_proxy:
     image: itzg/bungeecord:latest
-    container_name: minecraft-proxy-server
+    container_name: minecraft_proxy_server
     profiles:
       - minecraft_proxy
       - minecraft_server
@@ -25,9 +25,9 @@ services:
     networks:
       - infra-network
 
-  minecraft_server:
+  mc-server:
     image: itzg/minecraft-server:latest
-    container_name: minecraft-server
+    container_name: minecraft_server
     profiles:
       - minecraft_server
     depends_on:
@@ -68,7 +68,7 @@ services:
 
   rcon-web:
     image: itzg/rcon:latest
-    container_name: minecraft-rcon-web
+    container_name: minecraft_rcon_web
     profiles:
       - mc-web
     restart: on-failure:3

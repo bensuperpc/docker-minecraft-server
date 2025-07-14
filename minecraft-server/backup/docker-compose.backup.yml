@@ -5,7 +5,7 @@ services:
     profiles:
       - minecraft_backup
     depends_on:
-      - minecraft_server
+      - mc-server
       - minecraft_proxy
     restart: on-failure:3
     env_file:
